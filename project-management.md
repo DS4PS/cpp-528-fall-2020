@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: Project Management Frameworks
+title: Project Management Tools 
 image: data-analytics.png
 image-width: 150px
 ---
@@ -205,25 +205,6 @@ If previous stages were successful and there was a decision made to deploy the m
 <br>
 
 
-## Your Applied Project
-
-The project this semester in relationship to CRISP-DM phases: 
-
-PROJECT STEP  |  CRISP-DM PHASE
---------------|------------------
-Week 1 - Tax Incentives and Neighborhood Change   |  (1) Business Understanding  
-Week 2 - Developing Community Indices to Measure Change    |  (2) Data Understanding; (3) Data Preparation
-Week 3 – Descriptive Analysis of Community Change   |  (2) Data Understanding; (4) Modeling
-Week 4 – Predictive Analysis of Community Change   |  (4) Modeling 
-Week 5 – Federal Tax Credits as the Treatment   |  (2) Data Understanding; (3) Data Preparation
-Week 6 – Regression Analysis  | (4) Modeling; (5) Evaluation 
-Week 7 - Finalize Models and Report  |  (5) Evaluation; (6) Deployment  
-
-As you can see, the steps are iterative as you start the project with Census data, look at patterns in neighborhood change, model change as a function of community demographic characteristics, then add new data on two tax credit programs (New Market Tax Credits and Low Income Housing Tax Credits). Using the new data you will iterate some more through modeling and evaluation of results. 
-
-In this context Phase (6) Deployment refers to your final report that will be packaged and published using GitHub pages and presented as a reproducible project. You can think about this as a modern form of a deliverable that a consulting firm might create for a government client that has hired the firm to conduct an expert evaluation of a federal program. The deliverable includes the recommendation of the team, as well as all of the data and methods used to produce those recommendations.  
-
-<br>
 
 
 
@@ -254,7 +235,7 @@ In this context Phase (6) Deployment refers to your final report that will be pa
 [Kanban vs Scrum](https://www.atlassian.com/agile/kanban/kanban-vs-scrum)
 
 
-## Documentation Best Practices 
+## Documentation
 
 > Nearly everyone knows that that they need good documentation, and most people try to create good documentation. And most people fail.
 > 
