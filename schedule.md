@@ -94,7 +94,7 @@ These GitHub repositories provide a few examples of work that is designed to be 
 
 
 
-## Neighborhood Change 
+## Neighborhood Change Project
 
 CPP 528 is organized around a single large project that allows you to revisit and practice skills from 523, 524, 526 and 527. 
 
@@ -136,49 +136,6 @@ These analysis will mirror with following project management steps:
 *	Week 5: Format Report / Add Citations 
 *	Week 6: Interpret Models 
 *	Week 7: Finalize Deliverables 
-
-
-## Getting Help
-
-Similar to other courses the discussion board is run through the GitHub issues feature. It is a great forum tool because:
-
-* You can format code and math using standard markdown syntax. 
-* You can cut and paste images directly into the message. 
-* You can direction responses using @username mentions. 
-
-Please use the discussion boards to practice your social coding etiquette. 
-
-* Ask clear questions. 
-* Provide sufficient code for the reader to diagnose the problem. 
-* When possible, use reproducible examples. 
-* Preview your responses before posting to ensure proper formatting. 
-
-Recall that you format code by placing fences around the code:
-
-````
-```
-# your code here
-lm( y ~ x1 + x2 )
-```
-````
-
-The fences are three back-ticks. These look like quotation marks, but are actually the character at the top left of your keyboard (if you have a US or European keyboard). 
-
-GitHub does not have a native math rendering language (RMD documents, on the other hand, [support formulas](https://www.calvin.edu/~rpruim/courses/s341/S17/from-class/MathinRmd.html)). 
-
-You have two options when using formulas: type them as regular text and use code formatting to make them clear (this option is usually sufficient). 
-
-````
-```
-y = b0 + b1•X1 + b2•X2 + e
-
-b1 = cov(x,y) / var(x)
-```
-````
-
-Or type your formula in a formula editor and copy and paste an image.
-
-Use **dput()** to share R objects in a format that can be copied from the forum and pasted into R to recreate the vectors or data frames. 
 
 
 <br>
