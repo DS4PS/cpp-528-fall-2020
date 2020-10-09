@@ -199,14 +199,6 @@ Use **dput()** to share R objects in a format that can be copied from the forum 
 
 # Week 1 - Introduction to Project Management  
 
-
-## Description
-
-This section introduces project management frameworks for data science. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u77n2nKmIP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 **Learning Objectives**
 
 Once you have completed this section you will be able to:
@@ -216,19 +208,25 @@ Once you have completed this section you will be able to:
 * apply key principles of the Kanban task system 
 * begin building a repository optimized for effect project management 
 
+[Motivating the Topic](https://ds4ps.org/cpp-528-fall-2020/motivation/)
+
+
+**Project Management**
+
 <br>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u77n2nKmIP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Project Management 
+<br>
 
-According to the articles, what are the key components of a good project management system in data science? 
-
-
-**Required**
+**Required Reading:**
 
 1.	[The “Gold Standard” for Data Science Project Management](https://towardsdatascience.com/the-gold-standard-of-data-science-project-management-13d68c9e85d6)
 
-**Background**
+> According to the articles, what are the key components of a good project management system in data science? 
+
+
+**Background Reading:**
 
 1.	[Best Practices for Data Science Project Workflows and File Organization](https://github.com/moldach/project-directory), available on GitHub
 1.  [One-Page Visual Guide to CRISP-DM](https://exde.files.wordpress.com/2009/03/crisp_visualguide.pdf)
@@ -237,6 +235,94 @@ According to the articles, what are the key components of a good project managem
 
 *NOTE that you will see some conflicting advice on best practices, and some practices that are only appropriate when you are working with large teams or automating things like testing, so not everything will be appropriate for your project this semester. Your first time reading the material just try to get a general sense of the types of project management practices are being prescribed but don't get lost in the details just yet. You can adapt some practices and table others. You will have a rubric for your final project that will help guide which practices are important for this class.*
 <br>
+
+
+
+
+
+## Step 01 - Configure Your Project Repository on GitHub 
+
+
+### Process Management 
+
+**Kanban**
+
+*Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
+
+*The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.*
+
+[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
+
+<br>
+<hr>
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/236558214" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+<br>
+
+**Kanban Boards in GitHub**
+
+> The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.
+
+Just like GitHub pages are a powerful feature available in each repository, GitHub also has project management tools built right in. 
+
+[Creating a Project Board](https://help.github.com/en/github/managing-your-work-on-github/creating-a-project-board)
+
+1. At the top of your repo, click on **Projects** 
+2. Select **New Project**  
+3. Name and describe your board purpose, and select **Templates**  
+4. Choose the **Basic Kanban** option  
+5. Create four boards: 
+  - **Ideas** 
+  - **To Do** 
+  - **Doing** 
+  - **Done** 
+6. Brainstorm project tasks with your team for the coming week and add all of the cards to **To Do** 
+7. Assign immediate tasks to each person, add their names to their cards, and move to **Doing**  
+8. Update the board each week with completed tasks, new assignments, and new tasks  
+
+One thing that takes practice is breaking complex operations down into discrete tasks. Think about this like wedding planning - sending out invitations is one task, booking a venue another, etc. But you can break down a task like invitations much further:
+
+*	[ ] create invite list  
+*	[ ] acquire addresses  
+*	[ ] track RSVPs  
+*	[ ] finalize attendance list  
+
+
+You can create one large task with a check-list of sub-tasks, or a set of distinct tasks. Both are viable ways to organize the work. 
+
+As a general rule of thumb when using project boards to manage a team, I would group tasks only if they will all be done by the same person in the same time period. If one person is tasked with sending out invites, and another with collecting RSVPs and collating to the final attendee list, split them up. 
+
+<hr>
+
+Note a check-box is created like this: 
+
+````
+*	[ ] finalize attendance list  
+````
+
+And to close it add an X to the box: 
+
+````
+*	[X] finalize attendance list  
+````
+
+- [X] finalize attendance list 
+
+
+**Instructions:**
+
+You will find the rubric used to grade the final project here: 
+
+[[RUBRIC](project/project-rubric.pdf)]
+
+For your lab assignment this week split the rubric into tasks on your Kanban board on GitHub and make a preliminary plan for team members to take the lead on specific tasks.
+
+Let the instructor know when you have your board set up and ready for inspection. 
+
+
+
 
 
 ## Neighborhood Revitalization
@@ -295,138 +381,47 @@ FRONTLINE and NPR investigate the billions spent on affordable housing, and why 
 
 
 
+## YellowDig Topic
 
+**Post on {{page.yellowdig.post-01}}**
 
+Can Tax Credits Be An Effective Mechanism for Neighborhood Revitalization? 
 
+At some point in this project you might pause and wonder, of [all of the possible mechanisms for catalyzing economic development](articles/revitalization/Revitalizing_Inner_City_Neighborhoods.pdf), why are we using tax credits, and do they really work? 
 
+Even more weird, the money does not even go to the neighborhoods in need. The credits are claimed by intermediaries, whose job is then to convince others to invest in the neighborhoods. 
 
+One convincing argument is that if cities tried to directly invest in distressed neighborhoods they would likely run out of resources before achieving impact. Alternatively, if tax credits are structured correctly every one dollar the government spends can bring five or ten dollars of private investement to a community. That doesn't guarantee the investments are going to the right projects or benefitting the people in need, but it is at least a provacative story proponents can tell. 
 
+The mystery is what makes this case study so interesting. Tax credits have potential to make a big impact, or the potential to waste a lot of money. 
 
+For your topic this week, reflect on the idea of using tax credits as a mechanisms to catalyze development. How might these policy tools go wrong? The biggest criticism against a lot of these programs is that you cannot determine which investors would have invested in the neighborhood without the tax credits, so even when we see a lot of private investment it is hard to tell how much was caused by the tax credit. This is the primary selection problem that makes research challenging in this space. 
 
-## Step 01 - Configure Your Project Repository on GitHub 
+But it's not the only issue. Consider the Frontline news story on some recent fraud tha was uncovered. It's not surprising that when there are billions of dollars at stake the program invites corruption. 
 
+[Frontline Episode: Poverty, Politics and Profit](https://www.pbs.org/wgbh/frontline/film/poverty-politics-and-profit/)
 
+*Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
 
-### Process Management 
+<hr> 
 
-**Kanban**
+After reading a little about the programs, what are your views on the mechanisms? 
 
-*Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
+What is your instinctive response after learning some of the details of how they operate? 
 
-*The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.*
+Before we explore the data, what is your apriori hypothesis? Do you think they will work as designed? 
 
-[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
+-----
 
+**Post your ideas to YellowDig** 
+
+<a class="uk-button uk-button-primary" href="{{page.yellowdig_url}}">YELLOWDIG</a>
+
+<br>
 <br>
 <hr>
-
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/236558214" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
-<hr>
-<br>
-
-**Kanban Boards in GitHub**
-
-> The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.
-
-[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
-
-Just like GitHub pages are a powerful feature available in each repository, GitHub also has project management tools built right in. 
-
-[Creating a Project Board](https://help.github.com/en/github/managing-your-work-on-github/creating-a-project-board)
-
-1. At the top of your repo, click on **Projects** 
-2. Select **New Project**  
-3. Name and describe your board purpose, and select **Templates**  
-4. Choose the **Basic Kanban** option  
-5. Create four boards: 
-  - **Ideas** 
-  - **To Do** 
-  - **Doing** 
-  - **Done** 
-6. Brainstorm project tasks with your team for the coming week and add all of the cards to **To Do** 
-7. Assign immediate tasks to each person, add their names to their cards, and move to **Doing**  
-8. Update the board each week with completed tasks, new assignments, and new tasks  
-
-One thing that takes practice is breaking complex operations down into discrete tasks. Think about this like wedding planning - sending out invitations is one task, booking a venue another, etc. But you can break down a task like invitations much further:
-
-*	[ ] create invite list  
-*	[ ] acquire addresses  
-*	[ ] track RSVPs  
-*	[ ] finalize attendance list  
-
-
-You can create one large task with a check-list of sub-tasks, or a set of distinct tasks. Both are viable ways to organize the work. 
-
-As a general rule of thumb when using project boards to manage a team, I would group tasks only if they will all be done by the same person in the same time period. If one person is tasked with sending out invites, and another with collecting RSVPs and collating to the final attendee list, split them up. 
-
-<hr>
-
-Note a check-box is created like this: 
-
-````
-*	[ ] finalize attendance list  
-````
-
-And to close it add an X to the box: 
-
-````
-*	[X] finalize attendance list  
-````
-
-- [X] finalize attendance list 
-
-Let the instructor know when you have your Kanban board set up on GitHub for inspection. 
-
-
-### Directory Structure
-
-Your final deliverable will consist of two 10-slide presentations: 
-
-1. Results determining whether the tax policies are having the intended impact. 
-2. An guide to using the repository to replicate the study. 
-
-You need to provide careful documentation of how you get from raw data in your project to final results. Think about it as a book where each chapter covers a distinct task: 
-
-* Creating instruments to measure community health 
-* Identifying indicators of gentrification 
-* Descriptive analysis of neighborhood change 
-* Community demographics that predict revitalization 
-* Impact of federal programs 
-* Packaging of final deliverables
-
-You will activate the GitHub page option for your repository and use the main landing page as the executive summary and index for HTML files that you generate in R Studio from your analysis. 
-
-For example, this was a project students did with the Syracuse Land Bank to help them identify data that could be used to target rehabilitation projects:
-
-[https://lecy.github.io/SyracuseLandBank/](https://lecy.github.io/SyracuseLandBank/)
-
-And another guide describing how you might document the journey from raw data to the final dataset that you use for your analysis. Every step should be explicit, and you should openly discuss the how and why of data wrangling:
-
-[https://github.com/jtleek/datasharing](https://github.com/jtleek/datasharing)
-
-Your repository will have the following directories: 
-
-* data 
-  - raw
-  - processed 
-  - final 
-* functions 
-* analysis 
-* docs (website files go here) 
-
-Each folder should contain it's own README.md file with notes on what the folder contains. 
-
-Learn more about Portability and Version Control:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JOH3pZ47MVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
 <br>
 <br>
-
-
 
 
 
@@ -437,7 +432,6 @@ Learn more about Portability and Version Control:
 
 
 # Week 2 - Data Management 
-
 
 
 ## Building a Neighborhood Change Database
@@ -549,6 +543,50 @@ gropu project
 ````
 
 
+
+### Directory Structure
+
+Your final deliverable will consist of two 10-slide presentations: 
+
+1. Results determining whether the tax policies are having the intended impact. 
+2. An guide to using the repository to replicate the study. 
+
+You need to provide careful documentation of how you get from raw data in your project to final results. Think about it as a book where each chapter covers a distinct task: 
+
+* Creating instruments to measure community health 
+* Identifying indicators of gentrification 
+* Descriptive analysis of neighborhood change 
+* Community demographics that predict revitalization 
+* Impact of federal programs 
+* Packaging of final deliverables
+
+You will activate the GitHub page option for your repository and use the main landing page as the executive summary and index for HTML files that you generate in R Studio from your analysis. 
+
+For example, this was a project students did with the Syracuse Land Bank to help them identify data that could be used to target rehabilitation projects:
+
+[https://lecy.github.io/SyracuseLandBank/](https://lecy.github.io/SyracuseLandBank/)
+
+And another guide describing how you might document the journey from raw data to the final dataset that you use for your analysis. Every step should be explicit, and you should openly discuss the how and why of data wrangling:
+
+[https://github.com/jtleek/datasharing](https://github.com/jtleek/datasharing)
+
+Your repository will have the following directories: 
+
+* data 
+  - raw
+  - processed 
+  - final 
+* functions 
+* analysis 
+* docs (website files go here) 
+
+Each folder should contain it's own README.md file with notes on what the folder contains. 
+
+Learn more about Portability and Version Control:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JOH3pZ47MVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 ## Documenting Your Data Steps
 
@@ -748,49 +786,6 @@ county.fips <- paste0( st.fips, ct.fips )
 
 
 
-
-
-## YellowDig Topic
-
-**Post on {{page.yellowdig.post-01}}**
-
-Can Tax Credits Be An Effective Mechanism for Neighborhood Revitalization? 
-
-At some point in this project you might pause and wonder, of [all of the possible mechanisms for catalyzing economic development](articles/revitalization/Revitalizing_Inner_City_Neighborhoods.pdf), why are we using tax credits, and do they really work? 
-
-Even more weird, the money does not even go to the neighborhoods in need. The credits are claimed by intermediaries, whose job is then to convince others to invest in the neighborhoods. 
-
-One convincing argument is that if cities tried to directly invest in distressed neighborhoods they would likely run out of resources before achieving impact. Alternatively, if tax credits are structured correctly every one dollar the government spends can bring five or ten dollars of private investement to a community. That doesn't guarantee the investments are going to the right projects or benefitting the people in need, but it is at least a provacative story proponents can tell. 
-
-The mystery is what makes this case study so interesting. Tax credits have potential to make a big impact, or the potential to waste a lot of money. 
-
-For your topic this week, reflect on the idea of using tax credits as a mechanisms to catalyze development. How might these policy tools go wrong? The biggest criticism against a lot of these programs is that you cannot determine which investors would have invested in the neighborhood without the tax credits, so even when we see a lot of private investment it is hard to tell how much was caused by the tax credit. This is the primary selection problem that makes research challenging in this space. 
-
-But it's not the only issue. Consider the Frontline news story on some recent fraud tha was uncovered. It's not surprising that when there are billions of dollars at stake the program invites corruption. 
-
-[Frontline Episode: Poverty, Politics and Profit](https://www.pbs.org/wgbh/frontline/film/poverty-politics-and-profit/)
-
-*Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
-
-<hr> 
-
-After reading a little about the programs, what are your views on the mechanisms? 
-
-What is your instinctive response after learning some of the details of how they operate? 
-
-Before we explore the data, what is your apriori hypothesis? Do you think they will work as designed? 
-
------
-
-**Post your ideas to YellowDig** 
-
-<a class="uk-button uk-button-primary" href="{{page.yellowdig_url}}">YELLOWDIG</a>
-
-<br>
-<br>
-<hr>
-<br>
-<br>
 
 
 
