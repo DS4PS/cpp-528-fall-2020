@@ -642,75 +642,53 @@ The following video showcases how to collaborate on GitHub using GitHub Desktop 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">Submit Lab</a>
 
 <br>
-<br>
 <hr>
 <br>
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Week 3 - Analysis of Neighborhood Change  
-
-For this part of the project you will: 
-
-- Using the 2000 to 2010 template, calculate change in the MHV variable between 1990 and 2000.
--	Measure gentrification that occurs between 2000-2010.
-- Pick a city and create a new dorling cartogram to visualize your data.
-- Prepare descriptive statistics and chloropleth maps describing the MHV change variable. 
-
-
-
-## Lab 03
-
-<br>
-
-**Descriptive Analysis**
-
-[TUTORIAL ON DESCRIPTIVE ANALYSIS](labs/lab-04-tutorial.html)
-
-<a class="uk-button uk-button-default" href="../labs/lab-04-instructions.html">Lab Instructions</a>
-
-https://ds4ps.org/cpp-528-spr-2020/labs/lab-04-instructions.html
-
-**Submission** 
-
-<br>
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">Submit Lab</a>
-
-<br>
-<hr>
-<br>
-
-
 
 
 
 
 ## YellowDig Discussion 
+
+
+**Refining a Theory of Neighborhood Change**
+
+The first step in the CRISP-R model is developing a **"Business Understanding"** of the problem. In evaluation we will refer to this step as defining our theory of change for the program - how we believe the program or project is creating impact. 
+
+*This stage is aimed toward getting a general understanding of the client’s business. It is crucial in most cases to understand the application of the product to be developed. If it is skipped — you might end up with a great solution for a problem that does not exist.*
+
+1. Determine Business Objectives
+- Background
+- Business Objectives
+- Business Success Criteria
+1. Assess the Situation
+- Inventory of Resources
+- Requirements, Assumptions, and Constraints
+- Risks and Contingencies
+- Terminology
+- Costs and Benefits
+1. Determine Goals
+- Data Mining Goals
+- Data Mining Success Criteria
+1. Produce Project Plan
+- Project Plan
+- Initial Assessment of Tools and Techniques
+
+In evaluation I would add steps that emphasize the importance of identifying the primary outcomes or dependendent variables of the study.
+
 <br>
 
-**Development Assistance**
+**Goals of Development Assistance**
+
+The federal programs under consideration are one of many programs that consist of "aid" or "assistance" dollars being sent to vulnerable communities to catalyze some sort of change. 
 
 One of my favorite data viz fails is this tone-def visualization of World Bank contracts presented by adapting what appears to be a World War III missile attack simulation. Development aid is launched from the donor country and explodes as it hits the recipient country:
 
 [http://d3.artzub.com/wbca/](http://d3.artzub.com/wbca/)
 
-The metaphor is perfect for todays discussion topic because the science of economic development is still in the leaches phase and many argue that current policies do more harm than good. 
+The metaphor is perfect for todays discussion topic because the science of economic development is still in the leaches phase and many argue that some policies do more harm than good. 
 
+> It is important to identify clear goals or outcomes for these programs in order to build a theory of change around the intended impact and start to operationalize measures for outcomes. 
 
 **The Great Debate - People vs Places**
 
@@ -799,8 +777,69 @@ Assuming data is no issue, what sorts of investments would you want to include a
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
 
+
+
+
 <br>
 <br>
+<hr>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Week 3 - Analysis of Neighborhood Change  
+
+For this part of the project you will: 
+
+- Using the 2000 to 2010 template, calculate change in the MHV variable between 1990 and 2000.
+-	Measure gentrification that occurs between 2000-2010.
+- Pick a city and create a new dorling cartogram to visualize your data.
+- Prepare descriptive statistics and chloropleth maps describing the MHV change variable. 
+
+
+
+## Lab 03
+
+<br>
+
+**Descriptive Analysis**
+
+[TUTORIAL ON DESCRIPTIVE ANALYSIS](labs/lab-04-tutorial.html)
+
+<a class="uk-button uk-button-default" href="../labs/lab-04-instructions.html">Lab Instructions</a>
+
+https://ds4ps.org/cpp-528-spr-2020/labs/lab-04-instructions.html
+
+**Submission** 
+
+<br>
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">Submit Lab</a>
+
+<br>
+<hr>
+<br>
+
+
+
+
+
+
+
 
 
 
