@@ -1033,7 +1033,7 @@ Next week, after you have finished your lab report back on what level of gentrif
 
 
 
-*** { @unit = "FRI Apr 10th", @title = "YellowDig Discussion", @assignment, @foldout }
+YellowDig Discussion
 
 <br>
 
@@ -1073,32 +1073,14 @@ Next week, after you have finished your lab report back on what level of gentrif
 <br>
 
 
-<!---
-
--->
 
 
 
 
 
 
+# Week 4 - Analysis of Neighborhood Change  
 
-<!--- 
-######################################################
-####
-####      WEEK 4
-####
-######################################################
--->
-
-
-** Week 4 - Analysis of Neighborhood Change  
-
-
-
-*** { @unit = "", @title = "Unit Overview", @foldout }
-
-<br>
 
 ## Descriptive Analysis of Community Change 
 
@@ -1123,7 +1105,7 @@ The following code will provide a template for analysis of neighborhood change.
 
 
 
-*** { @unit = "MON Apr 13th", @title = "Lab 04", @assignment, @foldout }
+Lab 04
 
 <br>
 
@@ -1150,11 +1132,10 @@ https://ds4ps.org/cpp-528-spr-2020/labs/lab-04-instructions.html
 
 
 
-*** { @unit = "FRI Apr 17th", @title = "YellowDig Discussion", @assignment, @foldout }
-
+## YellowDig Discussion 
 <br>
 
-## Development Assistance 
+**Development Assistance**
 
 One of my favorite data viz fails is this tone-def visualization of World Bank contracts presented by adapting what appears to be a World War III missile attack simulation. Development aid is launched from the donor country and explodes as it hits the recipient country:
 
@@ -1256,38 +1237,13 @@ Assuming data is no issue, what sorts of investments would you want to include a
 <br>
 
 
-<!---
-
--->
 
 
 
 
 
+# Week 5 - Predicting Neighborhood Change 
 
-
-
-
-<!--- 
-######################################################
-######################################################
-######################################################
-######################################################
-####
-####
-####                     WEEK 5
-####
-####
-######################################################
-######################################################
-######################################################
-######################################################
-
-
-** Week 5 - Predicting Neighborhood Change 
-
-
-*** { @unit = "", @title = "Unit Overview" }
 
 
 <br>
@@ -1296,11 +1252,6 @@ Assuming data is no issue, what sorts of investments would you want to include a
 <br>
 
 
-
-*** { @unit = "", @title = "Hedonic Pricing Methodology", @reading, @foldout }
-
-
-<br>
 
 Introduction to models where the outcome is home value: hedonic pricing models. 
 
@@ -1365,30 +1316,8 @@ https://www.strongtowns.org/journal/2011/6/13/the-growth-ponzi-scheme-part-1.htm
 
 
 
-<!--- 
-######################################################
-######################################################
-######################################################
-######################################################
-####
-####
-####               WEEK   6
-####
-####
-######################################################
-######################################################
-######################################################
-######################################################
+# Week 6 - Adding Federal Program Data 
 
--->
-
-** Week 6 - Adding Federal Program Data 
-
-
-
-*** { @unit = "", @title = "Unit Overview", @foldout }
-
-<br>
 
 This week offers an opportunity to analyze real-world policy data to make sense of two large federal programs. 
 
@@ -1406,40 +1335,16 @@ Your final grade is primarily based upon your group's ability to compile all of 
 
 
 
-*** { @unit = "", @title = "Hedonic Pricing Methodology", @reading, @foldout }
-
-
-<br>
-
-Introduction to models where the outcome is home value: hedonic pricing models. 
-
-The main insight is that home price is a variable that aggregates a tremendous amount of information about characteristics of houses, neighborhoods, and cities. We can use regression to separate out these difference attributes at different levels, and see they each contributes to the market value of a home. 
-
-Since we are using the median home value variable which represents an entire census tract we focus on how neighborhood attributes and changes in attributes over time impact the average home price in the tract. 
-
-[Hedonic Pricing Models Overview](https://github.com/DS4PS/cpp-528-spr-2020/raw/master/articles/home-value-change/hedonic-pricing-method.pdf)
-
-[Hedonic Pricing Regression Example in R](https://github.com/buruzaemon/hedonic)
-
-[Valuation Using Hedonic Pricing Models](https://scholarship.sha.cornell.edu/cgi/viewcontent.cgi?article=1058&context=crer)
-
-
 <br>
 
 
-*** { @unit = "", @title = "Summary of Tax Credit Programs", @reading, @foldout }
+Summary of Tax Credit Programs
 
 
 <br>
 
 [Background Info on NMTC & LIHTC](../lectures/NMTC-and-LIHTC-overview.pdf)
 
-<br>
-<br>
-
-
-
-*** { @unit = "MON Apr 27th", @title = "Lab 05", @assignment, @foldout  }
 
 
 <br>
@@ -1452,18 +1357,6 @@ Since we are using the median home value variable which represents an entire cen
 <br>
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
-
-
-<br>
-<br>
-
-
-
-
-
-
-
-*** { @unit = "MON Apr 27th", @title = "Lab 06", @assignment, @foldout  }
 
 <br>
 
@@ -1479,15 +1372,7 @@ Since we are using the median home value variable which represents an entire cen
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
 <br>
-<br>
 
-
-
-
-
-*** { @unit = "MON Apr 27th", @title = "YellowDig - Models", @assignment, @foldout }
-
-<br>
 
 ### Models
 
@@ -1518,24 +1403,9 @@ Do New Market Tax Credits impact home values?
 
 
 
+# Week 7 - Finalizing Deliverables 
 
 
-
-
-<!--- 
-######################################################
-####
-####      WEEK 7
-####
-######################################################
--->
-
-
-
-** Week 7 - Finalizing Deliverables 
-
-
-*** { @unit = "", @title = "Unit Overview", @foldout }
 
 <br>
 
@@ -1544,13 +1414,6 @@ Your final week will be spent finalizing all of your project files, models, docu
 There is no final presentation, so the YellowDig posts give you a chance to share your work and reflect on key components of the course. 
 
 The weekly YellowDig point restrictions have been lifted this week, so all of your activities contribute toward your final YellowDig score. Point requirements will be adjusted to account for the week without a topic. 
-
-<br>
-<br>
-
-
-
-*** { @unit = "FRI May 1st", @title = "Final Products Due", @assignment, @foldout }
 
 <br>
 
@@ -1572,12 +1435,6 @@ Make sure to review the project rubric to ensure you have included all of the ne
 
 
 
-
-
-
-*** { @unit = "FRI May 1st", @title = "YellowDig - Project Management", @assignment, @foldout }
-
-<br>
 
 ### Collaboration Tools  
 
@@ -1601,14 +1458,6 @@ Does the usefulness of the project management tools change with the complexity o
 <br>
 <br>
 
-
-
-
-
-
-*** { @unit = "FRI May 1st", @title = "YellowDig - Open Science", @assignment, @foldout }
-
-<br>
 
 ### How Confident Are You in Your Recommendations?   
 
@@ -1641,14 +1490,6 @@ What was the hardest part of reviewing someone else's code?
 
 
 
-
-
-
-
-*** { @unit = "SUN May 3rd", @title = "YellowDig - Deliverables", @assignment, @foldout }
-
-<br>
-
 ### Final Deliverables   
 
 Share a link to your project website and highlight specific sections when you answer the following: 
@@ -1670,7 +1511,7 @@ Each team member should answer individually.
 
 
 
-
+</div>
 
 
 
