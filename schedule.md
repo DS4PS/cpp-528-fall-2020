@@ -72,11 +72,6 @@ You will be assigned to teams. Each team will work on the class project independ
 
 **The course is designed to teach standard frameworks for organizing large data projects and coordinating team efforts using tools in GitHub and R Studio.**
 
-
-## Motivating the Topic
-
-https://ds4ps.org/cpp-528-fall-2020/motivation/
-
 ## Metrics for Success
 
 Some easy heuristics to test whether the project management system is working: 
