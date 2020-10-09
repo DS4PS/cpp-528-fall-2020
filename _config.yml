@@ -13,7 +13,7 @@ author:
     github:     lecy   # Github username for avatar
 
 # calendly app for virtual office hours
-calendly:  'https://calendly.com/lecy/15min'
+calendly:  ''
 
 
 
@@ -40,8 +40,8 @@ header:
 #   url: https://ds4ps.org/dp4ss/#dp4ss-data-programming-for-the-social-sciences
 - title: Resources
   url: resources/
-- title: Yellowdig
-  url: https://canvas.asu.edu/courses/49307/assignments/1166912
+# - title: Yellowdig
+#   url: https://canvas.asu.edu/courses/49307/assignments/1166912
 # - title: Canvas
 #  url: https://canvas.asu.edu/courses/29528
 - title: Get Help
@@ -52,15 +52,15 @@ header:
 # GITHUB CONFIGURATIONS 
 
 url :               "https://ds4ps.github.io"
-baseurl:            "/cpp-528-spr-2020"
-course_url:         "http://ds4ps.org/cpp-528-spr-2020/"
+baseurl:            "/cpp-528-fall-2020"
+course_url:         "http://ds4ps.org/cpp-528-fall-2020/"
 title:              DS4PS # don't change this
 
 github_info:
     username:          DS4PS # Github location of the course
     branch:            master
-    website-repo:      cpp-528-spr-2020
-    course-repo:       cpp-528-spr-2020
+    website-repo:      cpp-528-fall-2020
+    course-repo:       cpp-528-fall-2020
 
 
 
