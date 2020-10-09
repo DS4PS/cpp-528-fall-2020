@@ -764,19 +764,18 @@ More importantly, try to think about the requirements necessary to make the clai
 
 If a community is on the up-swing it will attract tax credit dollars, but it will also attract a lot of other types of investment. We can only cleanly identify the impact of tax credits if we can control for all other types of investment. Therein lies the rub. 
 
+<br>
+<hr>
+
 **Reflection** 
 
 If you could get data on any capital expenditure or economic transfer that landed in a census tract, what data would you want to include in the model? Are there place-based investments like infrastructure or schools that you think would matter? Programs that target the type of residents that live in the community? Private investments like new businesses (Starbucks and Whole Foods) or improvements to current housing stock. Parks? Bike paths? Recreation facilities? 
 
 Assuming data is no issue, what sorts of investments would you want to include as controls in your model? 
 
-<br>
-<hr>
-
 **Post your reflection to YellowDig by {{page.yellowdig.post-02}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
-
 
 <br>
 <hr>
@@ -1403,6 +1402,10 @@ article {
 }
 em {
   color: black !important;
+}
+
+.uk-button-primary {
+    background-color: #f08d14;
 }
 </style>
 
