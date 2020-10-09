@@ -184,7 +184,9 @@ Once you have completed this section you will be able to:
 
 
 
-## Lab 01 - Configure Your Project Repository on GitHub 
+## Lab Overview
+
+**Configure Your Project Repository on GitHub**
 
 **Due {{page.labs.lab-01}}**
 
