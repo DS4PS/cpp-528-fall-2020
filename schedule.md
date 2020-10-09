@@ -70,7 +70,7 @@ You will apply this knowledge through an applied data project looking at neighbo
 
 You will be assigned to teams. Each team will work on the class project independently. The goal of working in a team is to put the project management principles into practice, and to get some experience collaborating on a project that is large enough that tasks must be split between members and redudancy can be used for quality assurance purposes. 
 
-**Project Management**
+## Project Management
 
 The course is designed to teach standard frameworks for organizing large data projects and coordinating team efforts using tools in GitHub and R Studio.
 
