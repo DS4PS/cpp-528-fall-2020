@@ -180,7 +180,8 @@ Once you have completed this section you will be able to:
 
 **Background Reading:**
 
-1.	[Best Practices for Data Science Project Workflows and File Organization](https://github.com/moldach/project-directory), available on GitHub
+1.	[Project Management Tools](https://ds4ps.org/cpp-528-fall-2020/project-management/) 
+1.  [Best Practices for Data Science Project Workflows and File Organization](https://github.com/moldach/project-directory), available on GitHub
 1.  [One-Page Visual Guide to CRISP-DM](https://exde.files.wordpress.com/2009/03/crisp_visualguide.pdf)
 1.	[Zen And The aRt Of Workflow Maintenance](https://speakerdeck.com/jennybc/zen-and-the-art-of-workflow-maintenance)  
 1.	[Cookie Cutter Data Science:](https://drivendata.github.io/cookiecutter-data-science/)
