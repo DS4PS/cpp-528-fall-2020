@@ -194,9 +194,9 @@ Once you have completed this section you will be able to:
 
 **Due {{page.labs.lab-01}}**
 
-**Process Management**
 
-[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
+
+[**What is Kanban?**](https://www.digite.com/kanban/what-is-kanban/)
 
 *Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
 
@@ -317,7 +317,7 @@ But it's not the only issue. Consider the Frontline news story on some recent fr
 
 **Neighborhood Revitalization Background Reading:**
 
-Which community characteristics or conditions best predict revitalization is emminent? 
+Skim the following articles on how to best structure projects to help distressed neighborhoods: 
 
 1. What Works Collaborative (2012): [Building Successful Neighborhoods](articles/revitalization/building-successful-neighborhoods.pdf)  
 1. Lincoln Institute (2008): [People or Place? Revisiting the Who Versus the Where of Urban Development](articles/revitalization/people-or-place-revisiting-the-debate.pdf)  
@@ -335,7 +335,8 @@ Before we explore the data, what is your apriori hypothesis? Do you think they w
 
 -----
 
-**Post your ideas to YellowDig** 
+**Share one insight from the background reading on YellowDig, and make a prediction whether you think the data will show that either program works.**
+
 
 <a class="uk-button uk-button-default" href="{{page.yellowdig_url}}">YELLOWDIG</a>
 
