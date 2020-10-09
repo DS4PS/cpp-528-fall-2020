@@ -357,7 +357,7 @@ Before we explore the data, what is your apriori hypothesis? Do you think they w
 # Week 2 - Data Management 
 
 
-## Building a Neighborhood Change Database
+**Building a Neighborhood Change Database**
 
 In this project we are ultimately interested in building models to explain neighborhood change between 1990 and 2010.
 
@@ -369,24 +369,82 @@ This unit covers the remaining data steps necessary to wrangle the harmonized ce
 
 <br>
 
-## Lessons on Using Open Data
-
-In my experience Census data is ALWAYS way more complicated than it needs to be because it was designed by people whose primary job is to collect the data and build datasets. They are not the primary users of the data. Since they have to publish tables that allow policy-makers to ask and answer thousands of questions about US society in a way that doesn't violate privacy of individuals, the result is a framework with over 40,000 variables to account for myriad combinations of multiple variables that are needed to answer specifc questions. And also the result is an overwhelming amount of information and complixity for the typical user. 
-
-The week's lab demonstrates an important and strategic approach to using open-source administrative datasets. Just because you are using a free data source, you don't have to use their architecture. If the strugure of the data is confusing, find a framing that makes sense for you and your use cases and convert the raw data to that architecture. It is an up-front cost that often pays back the time invested with dividends. 
-
-I learned this lesson speaking with the DataWheel team, a group of programmers from MIT that started a company that creates awesome visualizations and reports using government data, most prominently on the DataUSA.io website. They describe their work in the following way: 
-
-> Our team, comprised of economists, data scientists, designers, researchers and business executives, worked for over a year with input from policymakers, government officials and everyday citizens to develop Data USA, the most comprehensive website and visualization engine of public US Government data. 
-> 
-> Data USA puts public US Government data in your hands. Instead of searching through multiple data sources that are often incomplete and difficult to access, you can simply point to Data USA to answer your questions. Data USA provides an open, easy-to-use platform that turns data into knowledge. It allows millions of people to conduct their own analyses and create their own stories about America – its people, places, industries, skill sets and educational institutions. Ultimately, accelerating society’s ability to learn and better understand itself.
-
-The brilliant thing they have done is taking data that is already *public* and *free* but almost impossible to use because of its complexity, and they redesigned the databases to make it easier to use. The reason their site works so well is they have essentially rebuilt two dozen large government databases, but removed all of the legacy design limitations and added the insight that the data needs to be linked to be valuable. They then built an API so that they can share the data with themselves. Specifically, each time a webpage is loaded for a city or other location it pulls the data on the locality fresh from their datbases and renders all of the website content in real time. 
-
-It's a simple insight, but an important one. When you start a large data project you should always be asking yourself, what would the data need to look like to make my analysis easy to implement? 
 
 
-## Lab Preview 
+## Background Reading 
+
+**CRISP-DM** is a useful checklists used for planning data-driven projects. 
+
+> Cross-industry standard process for data mining (CRISP-DM) describes six major iterative phases, each with their own defined tasks and set of deliverables such as documentation and reports.
+
+1. Business Understanding: determine business objectives; assess situation; determine data mining goals; produce project plan 
+2. Data Understanding: collect initial data; describe data; explore data; verify data quality 
+3. Data Preparation (generally, the most time-consuming phase): select data; clean data; construct data; integrate data; format data 
+4. Modeling: select modeling technique; generate test design; build model; assess model 
+5. Evaluation: evaluate results; review process; determine next steps 
+6. Deployment: plan deployment; plan monitoring and maintenance; produce final report; review project 
+
+Each step in the model is designed to help a team anticipate tasks in the data analytics process. 
+
+[**One-Page Visual Overview**](https://exde.files.wordpress.com/2009/03/crisp_visualguide.pdf)
+
+This phase of the class project focuses on the following task lists in CRISP-DM:
+
+**Data Understanding**
+
+The second stage consists of collecting and exploring the input dataset. The set goal might be unsolvable using the input data, you might need to use public datasets, or even create a specific one for the set goal.
+
+1. Collect Initial Data
+- Initial Data Collection Report
+1. Describe Data
+- Data Description Report
+1. Explore Data
+- Data Exploration Report
+1. Verify Data Quality
+- Data Quality Report
+
+
+**Data Preparation**
+
+As we all know, bad input inevitably leads to bad output. Therefore no matter what you do in modeling — if you made major mistakes while preparing the data — you will end up returning to this stage and doing it over again.
+
+1. Select Data
+- The rationale for Inclusion/Exclusion
+1. Clean Data
+- Data Cleaning Report
+1. Construct Data
+- Derived Attributes
+- Generated Records
+1. Integrate Data
+- Merged Data
+1. Format Data
+- Reformatted Data
+1. Dataset Description
+
+<br> 
+
+**Material for Reference:**
+
+Note that the name uses the phrase "for data mining", but it is a general framework for data science projects that was developed when "data mining" was a popular term used to describe an emerging field. In the metaphor the data is the rich medium that analysts mine for insights about business processes. The term has fallen out of favor because mining sounds atheoretical. Computer scientists were criticized for developing algorithms that can detect patterns and make predictions without any understanding of the processes or contexts, often leading to ethically questionable recommendations or problematic recommendations. The phrase "data science" was adopted to convey that there is a method to the madness. The CRISP-DM process applies broadly to most data science projects. 
+
+For a slightly more extensive list of tasks at each phase, see: 
+
+* [A general overview of existing data science methodologies](https://medium.com/datadriveninvestor/data-science-project-management-methodologies-f6913c6b29eb)
+* [Full Guide](https://inseaddataanalytics.github.io/INSEADAnalytics/CRISP_DM.pdf)
+
+**Examples of Integration of the CRISP-DM Process in R**
+
+CRISP-DM is one example of a project task-list, but not the only option. You will find that the R community has started incorporating some of these process models / project management tools into R packages:
+
+* [R Bloggers: CRISP-DM and why you should know about it](https://www.r-bloggers.com/crisp-dm-and-why-you-should-know-about-it/)  
+* [Useful R Packages That Align with CRISP-DM](https://www.datasciencecentral.com/profiles/blogs/userful-r-packages-that-aligns-with-the-crisp-dm-methodology)  
+
+
+<br>
+
+
+
+## Lab Overview
 
 This lab demonstrates a very minor redesign of the Longitudinal Tracts Database files to make the rest of the project smoother. 
 
@@ -394,13 +452,7 @@ Variable names are standardized, files combined, meta-data on tracts made access
 
 You will follow the steps that were deployed to accomplish this, build a new data dictionary that has a more intuitive structure, and create a couple of functions to operationalize a more intuitive work flow with the data. 
 
-<br>
-<br>
-
-
-
-
-## Data 
+**Data**
 
 You will find the Census Longitudinal Tabulated Database (LTDB) file here: 
 
@@ -420,7 +472,7 @@ The second dataset contains only variables that come from the Dicennial Census s
 
 <br> 
 
-## Set Up Your Data Directory
+**Set Up Your Data Directory**
 
 While working on Lab-02 start building out your **data** directory for your project. 
 
@@ -467,7 +519,7 @@ gropu project
 
 
 
-### Directory Structure
+**Directory Structure**
 
 Your final deliverable will consist of two 10-slide presentations: 
 
@@ -511,7 +563,7 @@ Learn more about Portability and Version Control:
 
 <br>
 
-## Documenting Your Data Steps
+**Documenting Your Data Steps**
 
 Start creating a guide to use of the data in this project. 
 
@@ -581,127 +633,17 @@ The following video showcases how to collaborate on GitHub using GitHub Desktop 
 <br> 
 
 
-
-### Identifying Urban Counties
-
-Note that we are comparing neighborhoods (census tracts) within cities, so comparisons with rural areas are not very meaningful. Before you begin your analysis drop all of the rural tracts located outside of metropolitan areas. 
-
-Also note that the cost of living in cities varies a tremendous amount. The median value of a home in a poor neighborhood in San Francisco or New York might still be higher than most median home values in Iowa. So it is important to think through your comparisons, especially when calculating Z-scores (standard normal scores) for each variable. Should the reference point be all other census tracts located in cities in the US? Or should it be all other census tracts in the same city? 
-
-In most cases within-city comparisons will be more meaningful than across city comparisons, especially when calculating things like percentiles and Z-scores. This is because the measures capture opportunities and opportunity costs primarily within the same metro area. If a census tract in a rust-belt city has high school graduation rates that are low compared to national norms, but still relatively high compared to other tracts in the city, it will still be a desirable neighborhood since it is one of the best options in the city. The relative comparison to other local tracts better captures the way information will be used by citizens when making decisions like where to purchase their next home. 
-
-If the LTDB does not have sufficient info on urban versus rural tracts, or metro area traits, you will need to find this meta-data elsewhere. You can try the NBER: Combined MSA CBSA FIPS County Crosswalk 2005, 2011-2017: [CSV DOWNLOAD](https://data.nber.org/cbsa-msa-fips-ssa-county-crosswalk/cbsatocountycrosswalk.csv)
-
-https://data.nber.org/data/cbsa-msa-fips-ssa-county-crosswalk.html
-
-And note in the data dictionary for CBSA Name (copied below): "blanks are rural"
-
-You can add metro attributes and urban / rural status by merging the crosswalk data using county FIPS codes. 
-
-```r
-URL <- "https://data.nber.org/cbsa-msa-fips-ssa-county-crosswalk/cbsatocountycrosswalk.csv"
-crosswalk <- read.csv( URL, stringsAsFactors=F )
-
-# all metro areas in the country
-sort( unique( crosswalk$cbsaname ) )
-
-crosswalk$urban <- ifelse( crosswalk$cbsaname == "", "rural", "urban" )
-
-keep.these <- c( "countyname","state","fipscounty", 
-                 "msa","msaname", 
-                 "cbsa","cbsaname",
-                 "urban" )
-
-cw <- dplyr::select( crosswalk, keep.these )
-
-# merge into census data by county FIPS
-# watch the leading zeros problem
-```
-
-And the data dictionary for the file: 
-
-```
-_dta:
-  1.  cbsatocountycrosswalk2005 set up by Jean Roth , jroth@nber.org , 20 Dec 2016
-  2.  Source: fr05_cbsa_msa_xwalk_pub.txt
-  3.  NBER URL: http://www.nber.org/data/cbsa-msa-fips-ssa-county-crosswalk.html
-  4.  Source Page: http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Acute-Inpatient-Files-for-Download-Items/CMS022637.html
-  5.  Source File URL: http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Downloads/fr05_cbsa_msa_xwalk_pub.zip
-  6.  by Jean Roth , jroth@nber.org , 28 Nov 2016
-
-ssacounty:
-  1.  Los Angeles FIPS 06037 can have two SSA county codes: 05210 and 05200
-
-  obs:         3,293                          
- vars:            21                          20 Dec 2016 11:41
- size:       757,390                          (_dta has notes)
------------------------------------------------------------------------------------------------------------
-              storage   display    value
-variable name   type    format     label      variable label
------------------------------------------------------------------------------------------------------------
-countyname      str26   %26s                  County Name
-state           str2    %9s                   State
-ssacounty       str5    %9s                 * SSA County Code
-fipscounty      str5    %9s                   FIPS County Code
-msa             str6    %9s                   Old MSA
-l               str1    %9s                   Lugar
-msaname         str48   %48s                  Old MSA Name
-cbsa            str5    %9s                   CBSA - if blank then rural area (set equal to first 2 digits of ssa code)
-cbsaname        str50   %50s                  CBSA Name
-cbsaold         long    %12.0g                 (Blanks are Rural)
-cbsanameold     str42   %42s                   (Blanks are Rural)
-ssast           str2    %9s                   SSA State code
-fipst           str2    %9s                   FIPS State code
-y2005           float   %9.0g                 Present in 2005 source file
-y2011           float   %9.0g                 Present in 2011 source file
-y2012           float   %9.0g                 Present in 2012 source file
-y2013           float   %9.0g                 Present in 2013 source file
-y2014           float   %9.0g                 Present in 2014 source file
-y2015           float   %9.0g                 Present in 2015 source file
-y2016           float   %9.0g                 Present in 2016 source file
-y2017           float   %9.0g                 Present in 2017 source file
-                                            * indicated variables have notes
-------------------------------------------------------------------------------------------------------------
-Sorted by: fipscounty  ssacounty
-```
-
-Note that you might need to construct a new FIPS code from existing FIPS codes. Recall they all have the structure:
-
-```r
-# S - state (2)
-# C - county (3)
-# T - census tract (6)
-
-SS-CCC-TTTTTT
-
-county.fips <- paste0( st.fips, ct.fips )
-```
-
-But beware of the leading zeros problem if your data is numeric! You might need to add zeros: 
-
-```r
-st.fips <- state + 10000
-st.fips <- substr( st.fips, 4, 5 )  # extract last two numbers 
-ct.fips <- county + 10000
-ct.fips <- substr( ct.fips, 3, 5 )  # extract last three numbers 
-county.fips <- paste0( st.fips, ct.fips )
-```
-
-<hr> 
-
-
-
-## Lab Instructions
+**Lab Instructions:**
  
-*NOTE that the due date has been extended a week. Lab 03 and Lab 04 are both due on the same date. Additional code has been provided in the lab to siplify your tasks in order to account for the compressed schedule.*
-
-
 <a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-03-instructions.html">LAB INSTRUCTIONS</a>
 
 <br>
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">Submit Lab</a>
 
+<br>
+<br>
+<hr>
 <br>
 <br>
 
