@@ -70,9 +70,9 @@ You will apply this knowledge through an applied data project looking at neighbo
 
 You will be assigned to teams. Each team will work on the class project independently. The goal of working in a team is to put the project management principles into practice, and to get some experience collaborating on a project that is large enough that tasks must be split between members and redudancy can be used for quality assurance purposes. 
 
-**The course is designed to teach standard frameworks for organizing large data projects and coordinating team efforts using tools in GitHub and R Studio.**
+**Project Management**
 
-## Metrics for Success
+The course is designed to teach standard frameworks for organizing large data projects and coordinating team efforts using tools in GitHub and R Studio.
 
 Some easy heuristics to test whether the project management system is working: 
 
@@ -98,7 +98,11 @@ These GitHub repositories provide a few examples of work that is designed to be 
 
 CPP 528 is organized around a single large project that allows you to revisit and practice skills from 523, 524, 526 and 527. 
 
-The research question is whether two large federal programs designed to revitalize distressed neighborhoods in US cities have been successful. 
+For the project, your team has been hired by the federal government to provide a rigorous assessment of program impact. You will assess whether two large federal programs designed to revitalize distressed neighborhoods in US cities have been successful. 
+
+You need to compile the data necessary for the analysis, run some models, and provide your client with a final report stating your assessment of program impact.
+
+> The research question: Has each federal program been successful in facilitating economic development in distressed communities? 
 
 **Low Income Housing Tax Credits**
 
@@ -109,10 +113,6 @@ Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments
 New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
 
 We will use 2000 to 2010 as the study period and look at broad trends in neighborhood change over this decade, then examine whether neighborhoods targeted by the programs have achieved any more success than they would have without the billion of dollars in federal subsidies. 
-
-For the project, your team has been hired by the federal government to provide a rigorous assessment of program impact. You need to compile the data necessary for the analysis, run some models, and provide your client with a final report stating your assessment of program impact.
-
-> The research question: Has each federal program been successful in facilitating economic development in distressed communities? 
 
 
 ## Course Cadence 
@@ -185,25 +185,20 @@ Once you have completed this section you will be able to:
 1.	[Zen And The aRt Of Workflow Maintenance](https://speakerdeck.com/jennybc/zen-and-the-art-of-workflow-maintenance)  
 1.	[Cookie Cutter Data Science:](https://drivendata.github.io/cookiecutter-data-science/)
 
-*NOTE that you will see some conflicting advice on best practices, and some practices that are only appropriate when you are working with large teams or automating things like testing, so not everything will be appropriate for your project this semester. Your first time reading the material just try to get a general sense of the types of project management practices are being prescribed but don't get lost in the details just yet. You can adapt some practices and table others. You will have a rubric for your final project that will help guide which practices are important for this class.*
-<br>
 
 
 
-
-
-## Step 01 - Configure Your Project Repository on GitHub 
+## Lab 01 - Configure Your Project Repository on GitHub 
 
 
 ### Process Management 
 
-**Kanban**
+[**What is Kanban?**](https://www.digite.com/kanban/what-is-kanban/)
 
 *Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
 
 *The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.*
 
-[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
 
 <br>
 <hr>
@@ -263,9 +258,9 @@ And to close it add an X to the box:
 - [X] finalize attendance list 
 
 
-**Instructions:**
+**Lab Instructions:**
 
-You will find the rubric used to grade the final project here: 
+You will find the final project rubric here: 
 
 [[RUBRIC](project/project-rubric.pdf)]
 
@@ -273,61 +268,6 @@ For your lab assignment this week split the rubric into tasks on your Kanban boa
 
 Let the instructor know when you have your board set up and ready for inspection. 
 
-
-
-
-
-## Neighborhood Revitalization
-
-Which community characteristics or conditions best predict revitalization is emminent? 
-
-**Required**
-
-1. What Works Collaborative (2012): [Building Successful Neighborhoods](articles/revitalization/building-successful-neighborhoods.pdf)  
-1. Lincoln Institute (2008): [People or Place? Revisiting the Who Versus the Where of Urban Development](articles/revitalization/people-or-place-revisiting-the-debate.pdf)  
-1. Burnette (2017): [Predicting Gentrification](articles/revitalization/predicting-revitalization.pdf)  
-
-**Watch:**
-
-1.	Low Income Housing Tax Credits Overview 
-2.	New Market Tax Credits Case Studies
-3.	Frontline Episode: Poverty, Politics and Profit - CH3 LIHTC Scandal 
-
-<br>
-<br>
-
-
-**Low Income Housing Tax Credits**
-
-Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DdUcOFRdyTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<br>
-<br>
-
-
-**New Market Tax Credits**
-
-New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
-
-Watch case studies on the impact that New Market Tax Credits have achieved in three communities: 
-
-[NMTC Case Studies](https://www.cohnreznick.com/nmtc-map)
-
-
-<br>
-<br>
-
-
-**Challenges of Catalyzing Change Through Tax Credits**
-
-FRONTLINE and NPR investigate the billions spent on affordable housing, and why so few get the help they need.
-
-[Frontline Episode: Poverty, Politics and Profit](https://www.pbs.org/wgbh/frontline/film/poverty-politics-and-profit/)
-
-*Make sure to watch Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
 
 <br>
 
@@ -355,6 +295,33 @@ But it's not the only issue. Consider the Frontline news story on some recent fr
 
 *Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
 
+
+**Neighborhood Revitalization Background Reading:**
+
+Which community characteristics or conditions best predict revitalization is emminent? 
+
+1. What Works Collaborative (2012): [Building Successful Neighborhoods](articles/revitalization/building-successful-neighborhoods.pdf)  
+1. Lincoln Institute (2008): [People or Place? Revisiting the Who Versus the Where of Urban Development](articles/revitalization/people-or-place-revisiting-the-debate.pdf)  
+1. Burnette (2017): [Predicting Gentrification](articles/revitalization/predicting-revitalization.pdf)  
+
+**Low Income Housing Tax Credits**
+
+Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DdUcOFRdyTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+**New Market Tax Credits**
+
+New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
+
+Watch case studies on the impact that New Market Tax Credits have achieved in three communities: 
+
+[NMTC Case Studies](https://www.cohnreznick.com/nmtc-map)
+
+
+<br>
 <hr> 
 
 After reading a little about the programs, what are your views on the mechanisms? 
