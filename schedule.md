@@ -282,6 +282,22 @@ Let the instructor know when you have your board set up and ready for inspection
 
 Can Tax Credits Be An Effective Mechanism for Neighborhood Revitalization? 
 
+**New Market Tax Credits**
+
+New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
+
+Watch case studies on the impact that New Market Tax Credits have achieved in three communities: 
+
+[NMTC Case Studies](https://www.cohnreznick.com/nmtc-map)
+
+**Low Income Housing Tax Credits**
+
+Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DdUcOFRdyTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 At some point in this project you might pause and wonder, of [all of the possible mechanisms for catalyzing economic development](articles/revitalization/Revitalizing_Inner_City_Neighborhoods.pdf), why are we using tax credits, and do they really work? 
 
 Even more weird, the money does not even go to the neighborhoods in need. The credits are claimed by intermediaries, whose job is then to convince others to invest in the neighborhoods. 
@@ -307,22 +323,6 @@ Which community characteristics or conditions best predict revitalization is emm
 1. Lincoln Institute (2008): [People or Place? Revisiting the Who Versus the Where of Urban Development](articles/revitalization/people-or-place-revisiting-the-debate.pdf)  
 1. Burnette (2017): [Predicting Gentrification](articles/revitalization/predicting-revitalization.pdf)  
 
-**Low Income Housing Tax Credits**
-
-Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DdUcOFRdyTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
-**New Market Tax Credits**
-
-New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
-
-Watch case studies on the impact that New Market Tax Credits have achieved in three communities: 
-
-[NMTC Case Studies](https://www.cohnreznick.com/nmtc-map)
-
 
 <br>
 <hr> 
@@ -337,7 +337,7 @@ Before we explore the data, what is your apriori hypothesis? Do you think they w
 
 **Post your ideas to YellowDig** 
 
-<a class="uk-button uk-button-primary" href="{{page.yellowdig_url}}">YELLOWDIG</a>
+<a class="uk-button uk-button-default" href="{{page.yellowdig_url}}">YELLOWDIG</a>
 
 <br>
 <br>
