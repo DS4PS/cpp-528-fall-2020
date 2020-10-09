@@ -1404,7 +1404,7 @@ em {
 }
 
 .uk-button-primary {
-    background-color: #f08d14;
+    background-color: #26b8ef;
 }
 </style>
 
