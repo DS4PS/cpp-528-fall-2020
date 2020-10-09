@@ -90,9 +90,6 @@ These GitHub repositories provide a few examples of work that is designed to be 
 - [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
 - [Traffic Stops Across Connecticut](http://trafficstops.trendct.org/data/)
 
-<br>
-
-
 
 ## Neighborhood Change Project
 
