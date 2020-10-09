@@ -163,8 +163,6 @@ Once you have completed this section you will be able to:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u77n2nKmIP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<br>
-
 **Required Reading:**
 
 1.  [Motivating the Topic](https://ds4ps.org/cpp-528-fall-2020/motivation/) 
@@ -278,8 +276,6 @@ Let the instructor know when you have your board set up and ready for inspection
 
 ## YellowDig Topic
 
-**Post on {{page.yellowdig.post-01}}**
-
 Can Tax Credits Be An Effective Mechanism for Neighborhood Revitalization? 
 
 **New Market Tax Credits**
@@ -335,8 +331,9 @@ Before we explore the data, what is your apriori hypothesis? Do you think they w
 
 -----
 
-**Share one insight from the background reading on YellowDig, and make a prediction whether you think the data will show that either program works.**
+> Share one insight from the background reading on YellowDig, and make a prediction whether you think the data will show that either program works.
 
+**Post by {{page.yellowdig.post-01}}**
 
 <a class="uk-button uk-button-default" href="{{page.yellowdig_url}}">YELLOWDIG</a>
 
@@ -635,7 +632,7 @@ The following video showcases how to collaborate on GitHub using GitHub Desktop 
 
 **Lab Instructions:**
 
-**Post on {{page.labs.lab-02}}**
+**Due on {{page.labs.lab-02}}**
 
 <a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-03-instructions.html">LAB INSTRUCTIONS</a>
 
@@ -650,7 +647,7 @@ The following video showcases how to collaborate on GitHub using GitHub Desktop 
 
 
 
-## YellowDig Discussion 
+## YellowDig Topic
 
 
 
