@@ -417,10 +417,9 @@ As we all know, bad input inevitably leads to bad output. Therefore no matter wh
 1. Format Data
 - Reformatted Data
 1. Dataset Description
+ 
 
-<br> 
-
-**Material for Reference:**
+**Reference Material:**
 
 Note that the name uses the phrase "for data mining", but it is a general framework for data science projects that was developed when "data mining" was a popular term used to describe an emerging field. In the metaphor the data is the rich medium that analysts mine for insights about business processes. The term has fallen out of favor because mining sounds atheoretical. Computer scientists were criticized for developing algorithms that can detect patterns and make predictions without any understanding of the processes or contexts, often leading to ethically questionable recommendations or problematic recommendations. The phrase "data science" was adopted to convey that there is a method to the madness. The CRISP-DM process applies broadly to most data science projects. 
 
@@ -436,7 +435,21 @@ CRISP-DM is one example of a project task-list, but not the only option. You wil
 * [R Bloggers: CRISP-DM and why you should know about it](https://www.r-bloggers.com/crisp-dm-and-why-you-should-know-about-it/)  
 * [Useful R Packages That Align with CRISP-DM](https://www.datasciencecentral.com/profiles/blogs/userful-r-packages-that-aligns-with-the-crisp-dm-methodology)  
 
+<br>
 
+**Working with GitHub Desktop***
+
+The following video showcases how to collaborate on GitHub using GitHub Desktop and RStudio. The video shows how to: 
+
+* clone a repository from GitHub;
+* create a new branch from master;
+* commit your changes;
+* push your changes;
+* submit a pull request;
+* add commits to a branch other than master; and 
+* how to pull in changes from master.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nFPPJHmX7Lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
 
@@ -613,24 +626,10 @@ This allows us to isolate errors made in preparing the data (data wrangling) fro
 
 You should not be doing data wrangling in your analytical steps with the exception of variable transformations related to modeling. For example, creating a squared value of a variable X to use in a quadratic model, logging a variable, or dividind by a constant to change the unit of analysis. Since these are steps related directly to the modeling process it is helpful to keep them together. 
 
-**Working with GitHub Desktop***
 
-The following video showcases how to collaborate on GitHub using GitHub Desktop and RStudio. The video shows how to: 
-
-* clone a repository from GitHub;
-* create a new branch from master;
-* commit your changes;
-* push your changes;
-* submit a pull request;
-* add commits to a branch other than master; and 
-* how to pull in changes from master.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nFPPJHmX7Lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br> 
-
-
-**Lab Instructions:**
+<hr>
 
 **Due on {{page.labs.lab-02}}**
 
