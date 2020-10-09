@@ -160,10 +160,10 @@ Once you have completed this section you will be able to:
 * apply key principles of the Kanban task system 
 * begin building a repository optimized for effect project management 
 
-[Motivating the Topic](https://ds4ps.org/cpp-528-fall-2020/motivation/)
 
 
-**Project Management**
+## Lecture Material 
+
 
 <br>
 
@@ -173,6 +173,7 @@ Once you have completed this section you will be able to:
 
 **Required Reading:**
 
+1.  [Motivating the Topic](https://ds4ps.org/cpp-528-fall-2020/motivation/) 
 1.	[The “Gold Standard” for Data Science Project Management](https://towardsdatascience.com/the-gold-standard-of-data-science-project-management-13d68c9e85d6)
 
 > According to the articles, what are the key components of a good project management system in data science? 
@@ -191,10 +192,11 @@ Once you have completed this section you will be able to:
 
 ## Lab 01 - Configure Your Project Repository on GitHub 
 
+**Due {{page.labs.lab-01}}**
 
-### Process Management 
+**Process Management**
 
-[**What is Kanban?**](https://www.digite.com/kanban/what-is-kanban/)
+[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
 
 *Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
 
