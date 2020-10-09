@@ -159,10 +159,7 @@ Once you have completed this section you will be able to:
 
 
 
-## Lecture Material 
-
-
-<br>
+## Background Material 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u77n2nKmIP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -260,13 +257,17 @@ And to close it add an X to the box:
 
 **Lab Instructions:**
 
+**Post on {{page.labs.lab-01}}**
+
 You will find the final project rubric here: 
 
 [[RUBRIC](project/project-rubric.pdf)]
 
 For your lab assignment this week split the rubric into tasks on your Kanban board on GitHub and make a preliminary plan for team members to take the lead on specific tasks.
 
-Let the instructor know when you have your board set up and ready for inspection. 
+Let the instructor know when you have your board set up and ready for inspection by submitting the link for your project board. 
+
+[insert submission link]
 
 
 <br>
@@ -368,7 +369,7 @@ This unit covers the remaining data steps necessary to wrangle the harmonized ce
 
 
 
-## Background Reading 
+## Background Material 
 
 **CRISP-DM** is a useful checklists used for planning data-driven projects. 
 
@@ -631,7 +632,9 @@ The following video showcases how to collaborate on GitHub using GitHub Desktop 
 
 
 **Lab Instructions:**
- 
+
+**Post on {{page.labs.lab-02}}**
+
 <a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-03-instructions.html">LAB INSTRUCTIONS</a>
 
 <br>
@@ -646,6 +649,7 @@ The following video showcases how to collaborate on GitHub using GitHub Desktop 
 
 
 ## YellowDig Discussion 
+
 
 
 **Refining a Theory of Neighborhood Change**
@@ -771,6 +775,8 @@ Assuming data is no issue, what sorts of investments would you want to include a
 
 
 **Post your reflection YellowDig:**
+
+**Post on {{page.yellowdig.post-02}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
 
