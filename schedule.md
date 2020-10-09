@@ -41,7 +41,6 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 
 
 
-
 <div class = "uk-container uk-container-small">
   
 <br><br>
@@ -57,55 +56,96 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 -----------------------
 
 <br>
-
+<br>
+<br>
+<br>
 
 
 
 # Course Overview 
+ 
+CPP 528 is the third course in the Foundations of Data Science sequence. This semester synthesizes and extends work from 526 and 527 by introducing project management frameworks to your workflow. 
+
+You will apply this knowledge through an applied data project looking at neighborhood change in US metro areas. The project is designed as if you are being hired by the government to evaluate two large federal programs designed to revitalize distressed communities. Your final deliverable will be a report detailing your conclusions. The report will link to a GitHub repository that provides all of the data and code needed to reproduce the results from your study. 
+
+You will be assigned to teams. Each team will work on the class project independently. The goal of working in a team is to put the project management principles into practice, and to get some experience collaborating on a project that is large enough that tasks must be split between members and redudancy can be used for quality assurance purposes. 
+
+**The course is designed to teach standard frameworks for organizing large data projects and coordinating team efforts using tools in GitHub and R Studio.**
 
 
+## Motivating the Topic
 
-CPP 527 is the second course in the Foundations of Data Science sequence. 
+https://ds4ps.org/cpp-528-fall-2020/motivation/
 
-This semester is designed to extend your working knowledge of data programming by introducing programming topics that will make you a more adaptive and creative analyst. 
+## Metrics for Success
 
-This course will cover: 
+Some easy heuristics to test whether the project management system is working: 
 
-* control structures like loops
-* new data structures like lists 
-* regular expressions for working with text 
-* creation of packages in R 
-* creating of websites in GitHub 
-* building RMD templates to automate reporting 
+-	Can you easily reproduce the results from your project working from raw data to final models with a single script? 
+-	Can you identify what changes have been made to your project, by whom, and when? 
+-	Can someone else that was not a member of your team easily use your project? 
+-	Are you building institutional capacity (libraries) to do future projects faster and better? 
 
-We will also cover the foundations of document design using both GitHub pages (free websites like this one) and customized RMD templates to enable you to better structure results from analytical projects. 
+**Examples of Project Repositories Built for Reproducibility:**
 
-The skills you learn this term can be used to build simulations in R, codify common workflows, and create specialized applications. 
+These GitHub repositories provide a few examples of work that is designed to be reproducible and extensible by providing access to the data and code used for analysis, or in the BBC case generating a set of reporting templates that be re-used and adapted by journalists across the agency to build institutional knowledge to make the organization more efficient. 
+
+- [City of Chicago Food Inspection Evaluation](https://chicago.github.io/food-inspections-evaluation/)
+- [US EPA Modeling Lake Trophic State](https://github.com/USEPA/LakeTrophicModelling)
+- [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
+- [Traffic Stops Across Connecticut](http://trafficstops.trendct.org/data/)
 
 <br>
-<br>
+
+
+
+## Neighborhood Change 
+
+CPP 528 is organized around a single large project that allows you to revisit and practice skills from 523, 524, 526 and 527. 
+
+The research question is whether two large federal programs designed to revitalize distressed neighborhoods in US cities have been successful. 
+
+**Low Income Housing Tax Credits**
+
+Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
+
+**New Market Tax Credits**
+
+New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
+
+We will use 2000 to 2010 as the study period and look at broad trends in neighborhood change over this decade, then examine whether neighborhoods targeted by the programs have achieved any more success than they would have without the billion of dollars in federal subsidies. 
+
+For the project, your team has been hired by the federal government to provide a rigorous assessment of program impact. You need to compile the data necessary for the analysis, run some models, and provide your client with a final report stating your assessment of program impact.
+
+> The research question: Has each federal program been successful in facilitating economic development in distressed communities? 
 
 
 ## Course Cadence 
 
-The class is designed around labs each week and practice problems that you will discuss with classmates on YellowDig. 
+The project will be split into the following steps: 
 
-![](https://raw.githubusercontent.com/DS4PS/cpp-527-fall-2020/master/assets/img/course-cadence.png)
+*	Week 1: Neighborhood Revitalization Background  
+*	Week 2: Build the Census Dataset  
+*	Week 3: Descriptive Analysis
+*	Week 4: Model Neighborhood Change
+*	Week 5: Construct Measures of Neighborhood Health
+*	Week 6: Estimate Program Impact  
+*	Week 7: Finalize Deliverables 
 
-I will schedule review sessions early in the week so that you have a chance to start the new lab and come with questions. 
+These analysis will mirror with following project management steps: 
 
-You can post to YellowDig and participate in discussions throughout the week. I would request that you refrain from posting solutions to each week's questions until Monday, though, so that everyone has a chance to share solutions. You can discuss the problems throughout the week. 
-
-There are three additional projects you must complete throughout the term. They are small projects, but require more autonomy than labs. Keep an eye out for these deadlines. 
-
-* Building an R package from code you develop on Labs 01-02 (due mid term) 
-* Build a report template (due end of term) 
-* Create a code-through tutorial (due end of term) 
+*	Week 1: Introduction to Project Management  
+*	Week 2: Build an R Data Package    
+*	Week 3: Document the Data 
+*	Week 4: Draft Report   
+*	Week 5: Format Report / Add Citations 
+*	Week 6: Interpret Models 
+*	Week 7: Finalize Deliverables 
 
 
 ## Getting Help
 
-Note that similar to other courses the discussion board is run through the GitHub issues feature. It is a great forum tool because:
+Similar to other courses the discussion board is run through the GitHub issues feature. It is a great forum tool because:
 
 * You can format code and math using standard markdown syntax. 
 * You can cut and paste images directly into the message. 
@@ -145,615 +185,20 @@ Or type your formula in a formula editor and copy and paste an image.
 
 Use **dput()** to share R objects in a format that can be copied from the forum and pasted into R to recreate the vectors or data frames. 
 
-----
-
 
 <br>
 <br>
-
-
-
-
-## Practice Problem Warmup
-
-**Post on {{page.yellowdig.post-01}}**
-
-
------
-
-**Post your ideas to YellowDig** 
-
-
-<a class="uk-button uk-button-primary" href="{{page.yellowdig_url}}">YELLOWDIG</a>
-
-
-
-
-
-
-
-
-<!--- 
-#########################################
-#########################################
-##########
-##########         WEEK 01
-##########
-#########################################
-#########################################
--->
-
-# Week 1 - Project Management 
-
-
-
-
-
-<a class="uk-button uk-button-default" href="../labs/lab-01-instructions.html">LAB-01 Instructions</a>
-
-**Submit Solutions to Canvas:** 
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
-
-<br>
-
-
-
-## YellowDig Practice Problems
-
-**Post on {{page.yellowdig.post-02}}**
-
-
-
-
-<!--- 
-######################################################
-####
-####      Intro
-####
-######################################################
--->
-
-** Course Overview 
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "", @title = "Motivating the Course", @foldout   }
-
-<br> 
-
-
-
-*** { @unit = "", @title = "Course Objectives",  @foldout   }
-
-<br> 
-
-## CPP 528 - Project Management 
-
-CPP 528 is the third course in the Foundations of Data Science sequence. This semester synthesizes and extends work from 526 and 527 by introducing a project management framework. 
-
-You will apply this knowledge through an applied data project looking at neighborhood change in US metro areas. The project is designed as if you are being hired by the government to evaluate two large federal programs designed to revitalize distressed communities. Your final deliverable will be a report detailing your conclusions. The report will link to a GitHub repository that provides all of the data and code needed to reproduce the results from your study. 
-
-You will be assigned to teams. Each team will work on the class project independently. The goal of working in a team is to put the project management principles into practice, and to get some experience collaborating on a project that is large enough that tasks must be split between members and redudancy can be used for quality assurance purposes. 
-
-**The course is designed to teach standard frameworks for organizing large data projects and coordinating team efforts using tools in GitHub and R Studio.**
-
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--- 
-######################################################
-####
-####      PROJECT MANAGEMENT FRAMEWORKS 
-####
-######################################################
--->
-   
-** Project Management Frameworks
-
-
-
-*** { @unit = "", @title = "A Project Management Framework",  @foldout   }
-
-<br>
-
-## Project Management Frameworks 
-
-Although we can never fully eliminate errors, we can introduce reasonable quality control processes to ensure that our analysis is (1) as accurate as possible, and (2) transparent enough so that others can review the work directly, and thus are more likely to identify errors.
-
-We typically use data to identify new relationships or patterns (discovery), to present the world at a point in time (descriptive), to tease apart causal effects of specific policies or programs (evaluation), or to use models to predict behavior or events (predictive analysis). All of these tasks require four things:  
-
-**Data**
--	acquisition
--	cleaning / recoding / refinement 
--	wrangling (aggregating across units, merging, filtering)
-
-**Software**
--	a platform or language (like R)
--	use of specific packages 
-
-**Code** 
--	custom functions  
--	custom tables and graphics 
--	analysis and models 
-
-**Deliverable (a report in this context)**
--	data-driven document (code)
--	templates and styles 
--	formatting tables and graphics for report
--	imported content like images and citations 
-
-**Project management in the data science context describes a system for approaching an analytical task that provides methods for writing and testing code to optimize accuracy, and offers a shared framework to make it easier for multiple team members to collaborate.** 
-
-As you know by now, even seemingly simple projects can have a lot of moving parts. The goal of a project management framework is to:
-
--	Make the process efficient
--	Avoid introducing errors into data or code 
--	Utilize transparency to build trust and catch mistakes 
--	Make the work:
-  -	reproducible (recreation of current results)
-  -	extensible or scalable (use components in future projects) 
-
-The frameworks below introduce popular systems created to organize projects and manage workflow. 
-
-<br>
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "", @title = "CRISP-DM",  @foldout   }
-
-<br> 
-
-## CRISP-DM Model
-
-Our first framework describes the stages of a data-driven project. The work during an analytics-oriented project is broken into six phases with checklists for each in order to help the team anticipate next steps in the process and to assess whether all necessary tasks have been performed at each step. 
-
-
-> Cross-industry standard process for data mining (CRISP-DM) in 1996 to standardize a data mining process across industries. It describes six major iterative phases, each with their own defined tasks and set of deliverables such as documentation and reports.
-
-1. Business Understanding: determine business objectives; assess situation; determine data mining goals; produce project plan 
-2. Data Understanding: collect initial data; describe data; explore data; verify data quality 
-3. Data Preparation (generally, the most time-consuming phase): select data; clean data; construct data; integrate data; format data 
-4. Modeling: select modeling technique; generate test design; build model; assess model 
-5. Evaluation: evaluate results; review process; determine next steps 
-6. Deployment: plan deployment; plan monitoring and maintenance; produce final report; review project 
-
-[Citation](http://www.datascience-pm.com/crisp-dm-2/)
-
-Note that the name uses the phrase "for data mining", but it is a general framework for data science projects that was developed when "data mining" was a popular term used to describe an emerging field. In the metaphor the data is the rich medium that analysts mine for insights about business processes. The term has fallen out of favor because mining sounds atheoretical. Computer scientists were criticized for developing algorithms that can detect patterns and make predictions without any understanding of the processes or contexts, often leading to ethically questionable recommendations or problematic recommendations. The phrase "data science" was adopted to convey that there is a method to the madness. The CRISP-DM process applies broadly to most data science projects. 
-
-For a slightly more extensive list of tasks at each phase, see: 
-
-* [A general overview of existing data science methodologies](https://medium.com/datadriveninvestor/data-science-project-management-methodologies-f6913c6b29eb)
-* [One-Page Visual Overview](https://exde.files.wordpress.com/2009/03/crisp_visualguide.pdf)
-* [Full Guide](https://inseaddataanalytics.github.io/INSEADAnalytics/CRISP_DM.pdf)
-
-**R Integration:**
-
-* [R Bloggers: CRISP-DM and why you should know about it](https://www.r-bloggers.com/crisp-dm-and-why-you-should-know-about-it/)  
-* [Useful R Packages That Align with CRISP-DM](https://www.datasciencecentral.com/profiles/blogs/userful-r-packages-that-aligns-with-the-crisp-dm-methodology)  
-
-
-
-### Stages of CRISP-DM
-
-From [Data Science Project Management Methodologies](https://medium.com/datadriveninvestor/data-science-project-management-methodologies-f6913c6b29eb)
-
-<br> 
-
-
-**Business Understanding**
-
-This stage is aimed toward getting a general understanding of the client’s business. It is crucial in most cases to understand the application of the product to be developed. If it is skipped — you might end up with a large trained neural network, that has to be deployed to a mobile phone and work in realtime.
-
-1. Determine Business Objectives
-- Background
-- Business Objectives
-- Business Success Criteria
-1. Assess the Situation
-- Inventory of Resources
-- Requirements, Assumptions, and Constraints
-- Risks and Contingencies
-- Terminology
-- Costs and Benefits
-1. Determine Goals
-- Data Mining Goals
-- Data Mining Success Criteria
-1. Produce Project Plan
-- Project Plan
-- Initial Assessment of Tools and Techniques
-
-<br>
-
-
-**Data Understanding**
-
-The second stage consists of collecting and exploring the input dataset. The set goal might be unsolvable using the input data, you might need to use public datasets, or even create a specific one for the set goal.
-
-1. Collect Initial Data
-- Initial Data Collection Report
-1. Describe Data
-- Data Description Report
-1. Explore Data
-- Data Exploration Report
-1. Verify Data Quality
-- Data Quality Report
-
-<br>
-
-
-**Data Preparation**
-
-As we all know, bad input inevitably leads to bad output. Therefore no matter what you do in modeling — if you made major mistakes while preparing the data — you will end up returning to this stage and doing it over again.
-
-1. Select Data
-- The rationale for Inclusion/Exclusion
-1. Clean Data
-- Data Cleaning Report
-1. Construct Data
-- Derived Attributes
-- Generated Records
-1. Integrate Data
-- Merged Data
-1. Format Data
-- Reformatted Data
-1. Dataset Description
-
-<br> 
-
-**Modeling**
-
-This stage is an execution of all of your findings from previous stages. You already know the input to the model, you can tell which models are compatible with the target platform. Now is the time to bring it all to life.
-
-1. Select Modeling Techniques
-- Modeling Technique
-- Modeling Assumptions
-1. Generate Test Design
-- Test Design
-1. Build Model
-- Parameter Settings
-- Models
-- Model Descriptions
-1. Assess Model
-- Model Assessment
-- Revised Parameter Settings
-
-<br> 
-
-
-**Evaluation**
-
-This stage is aimed at the evaluation of the obtained results. We need to check if the business goal was fulfilled and plan further steps of the project.
-
-1. Evaluate Results
-- Assessment of Data Mining Results w.r.t. Business Success Criteria
-- Approved Models
-1. Review Process
-- Review of Process
-1. Determine Next Steps
-- List of Possible Actions
-- Decision
-
-<br> 
-
-
-**Deployment of Deliverables** 
-
-If previous stages were successful and there was a decision made to deploy the model — this stage will be activated. You might need to put your model into an existing pipeline, create your own or deploy to cloud computing services.
-
-1. Plan Deployment
-- Deployment Plan
-1. Plan Monitoring and Maintenance
-- Monitoring and Maintenance Plan
-1. Produce Final Report
-- Final Report
-- Final Presentation
-1. Review Project
-- Experience Documentation
-
-<br> 
-
 <hr>
-
-<br>
-
-
-## Your Applied Project
-
-The project this semester in relationship to CRISP-DM phases: 
-
-PROJECT STEP  |  CRISP-DM PHASE
---------------|------------------
-Week 1 - Tax Incentives and Neighborhood Change   |  (1) Business Understanding  
-Week 2 - Developing Community Indices to Measure Change    |  (2) Data Understanding; (3) Data Preparation
-Week 3 – Descriptive Analysis of Community Change   |  (2) Data Understanding; (4) Modeling
-Week 4 – Predictive Analysis of Community Change   |  (4) Modeling 
-Week 5 – Federal Tax Credits as the Treatment   |  (2) Data Understanding; (3) Data Preparation
-Week 6 – Regression Analysis  | (4) Modeling; (5) Evaluation 
-Week 7 - Finalize Models and Report  |  (5) Evaluation; (6) Deployment  
-
-As you can see, the steps are iterative as you start the project with Census data, look at patterns in neighborhood change, model change as a function of community demographic characteristics, then add new data on two tax credit programs (New Market Tax Credits and Low Income Housing Tax Credits). Using the new data you will iterate some more through modeling and evaluation of results. 
-
-In this context Phase (6) Deployment refers to your final report that will be packaged and published using GitHub pages and presented as a reproducible project. You can think about this as a modern form of a deliverable that a consulting firm might create for a government client that has hired the firm to conduct an expert evaluation of a federal program. The deliverable includes the recommendation of the team, as well as all of the data and methods used to produce those recommendations.  
-
-<br>
-
-
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "", @title = "Project Boards with Kanban",  @foldout   }
-
-<br> 
-
-## Kanban
-
-*Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
-
-*The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.*
-
-[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
-
-<br>
-
-<hr>
-
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/236558214" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
-<hr>
-
-<br>
-
-
-
-
-<br>
-
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "", @title = "Agile Management with Scrum", @foldout   }
-
-<br> 
-
-## Scrum
-
-> Scrum divides the larger project into a series of mini-projects, each of a consistent and fixed length ranging from one week to one month. Each mini-project cycle, called a sprint, kicks off at a meeting called sprint planning where the product owner defines and explains the top feature priorities. The development team forecasts what increments they can deliver by the end of the sprint and then makes a sprint plan to develop these increments. During the sprint, they coordinate closely and develop daily plans at daily standups. At the end of the sprint, the team demonstrates the increments to stakeholders and solicit feedback during sprint review. These increments should be potentially releasable and meet the pre-defined definition of done. To close a sprint, the team inspects itself and plans for how it can improve in the next sprint during the sprint retrospective (Sutherland & Schwaber, 2017).
-
-[Scrum Overview](http://www.datascience-pm.com/scrum/)
-
-[Kanban vs Scrum](https://www.atlassian.com/agile/kanban/kanban-vs-scrum)
-
-<br>
-
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "", @title = "Documentation", @foldout   }
-
-<br> 
-
-## Documentation Best Practices 
-
-> Nearly everyone knows that that they need good documentation, and most people try to create good documentation. And most people fail.
-> 
-> Usually, it’s not because they don’t try hard enough. Usually, it’s because they are not doing it the right way.
-> 
-> There are some very simple principles that govern documentation that are very rarely if ever spelled out. They seem to be a secret, though they shouldn’t be.
-
-[What nobody tells you about documentation](https://www.divio.com/blog/documentation/)
-
-<br>
-
-
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "", @title = "Metrics for Success", @foldout   }
-
-<br>
-
-## Metrics for Success
-
-Some easy heuristics to test whether the project management system is working: 
-
--	Can you easily reproduce the results from your project working from raw data to final models with a single script? 
--	Can you identify what changes have been made to your project, by whom, and when? 
--	Can someone else that was not a member of your team easily use your project? 
--	Are you building institutional capacity (libraries) to do future projects faster and better? 
-
-**Examples of Project Repositories Built for Reproducibility:**
-
-These GitHub repositories provide a few examples of work that is designed to be reproducible and extensible by providing access to the data and code used for analysis, or in the BBC case generating a set of reporting templates that be re-used and adapted by journalists across the agency to build institutional knowledge to make the organization more efficient. 
-
-- [City of Chicago Food Inspection Evaluation](https://chicago.github.io/food-inspections-evaluation/)
-- [US EPA Modeling Lake Trophic State](https://github.com/USEPA/LakeTrophicModelling)
-- [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
-- [Traffic Stops Across Connecticut](http://trafficstops.trendct.org/data/)
-
-<br>
-
-
-
-
-
-
-<!--- 
-######################################################
-####
-####      PROJECT DESCRIPTION
-####
-######################################################
--->
-
-
-
-** Applied Data Project
-
-
-
-
-
-*** { @unit = "", @title = "Evaluating Federal Programs", @reading,  @foldout   }
-
-## Data Analytics Project 
-
-CPP 528 is organized around a single large project that allows you to revisit and practice skills from 523, 524, 526 and 527. The research question is whether two large federal programs designed to revitalize distressed neighborhoods in US cities have been successful. 
-
-We will use 2000 to 2010 as the study period and look at broad trends in neighborhood change over this decade, then examine whether neighborhoods targeted by the programs have achieved any more success than they would have without the billion of dollars in federal subsidies. 
-
-For the project, your team has been hired by the federal government to provide a rigorous assessment of program impact. You need to compile the data necessary for the analysis, run some models, and provide your client with a final report stating your assessment of program impact.
-
-The research question: Has each federal program been successful? 
-
-The project will be split into the following steps: 
-
-*	Week 1: Neighborhood Revitalization Background  
-*	Week 2: Construct Measures of Neighborhood Stability
-*	Week 3: Descriptive Analysis  
-*	Week 4: Predictive Analysis 
-*	Week 5: Merge Program Data 
-*	Week 6: Estimate Program Impact  
-*	Week 7: Finalize Deliverables 
- 
-
-<br>
-
-
-## Federal Programs 
-
-<br>
-<br>
-
-**Low Income Housing Tax Credits**
-
-Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DdUcOFRdyTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-<br>
-
-**New Market Tax Credits**
-
-New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
-
-Watch case studies on the impact that New Market Tax Credits have achieved in three communities: 
-
-[NMTC Case Studies](https://www.cohnreznick.com/nmtc-map)
-
-<br>
-<br>
-
-**Challenges of Catalyzing Change Through Tax Credits**
-
-FRONTLINE and NPR investigate the billions spent on affordable housing, and why so few get the help they need.
-
-[Frontline Episode: Poverty, Politics and Profit](https://www.pbs.org/wgbh/frontline/film/poverty-politics-and-profit/)
-
-*Make sure to watch Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
-
 <br>
 <br>
 
 
-## Data
-
-Project data comes from three sources. 
-
-**Harmonized Census Tracts:** 
-
-[Longitudinal Tracts Data Base](https://s4.ad.brown.edu/projects/diversity/Researcher/Bridging.htm)
-
-[Codebook](data/LTDB-codebook.pdf) 
-
-[Variables Constructed from the US Population Samples (long form questions)](data/LTDB_Std_All_Sample.zip)
-
-[Variables Constructed from the Full US Population (short form questions)](data/LTDB_Std_All_fullcount.zip)
-
-
-**New Market Tax Credits Database:**
-
-[Program Overview and Tract Eligibility Requirements](https://www.cdfifund.gov/programs-training/Programs/new-markets-tax-credit/Pages/default.aspx)
-
-[Data Download](https://www.cdfifund.gov/awards/state-awards/Pages/default.aspx)
-
-
-**Low Income Housing Tax Credits Database:** 
-
-[Data Download](https://lihtc.huduser.gov/)
-
-Look for the section labeled: "If you want a complete list of projects for the entire U.S., click here to download a ZIP archive of the entire LIHTC Database in dBase format."
-
-
-*** { @unit = "", @title = "Grading Rubric", @assignment, @foldout   }
-
-<br>
-
-## Grading Rubric
-
-You will find the rubric used to grade the final project here: 
-
-[[RUBRIC](project/project-rubric.pdf)]
-
-<br>
 
 
 
 
+# Week 1 - Introduction to Project Management  
 
-
-<!--- 
-######################################################
-####
-####      WEEK 1
-####
-######################################################
--->
-
-
-** Week 1 - Introduction to Project Management  
-
-
-
-*** { @unit = "", @title = "Unit Overview", @lecture, @foldout }
-
-<br>
 
 ## Description
 
@@ -762,8 +207,7 @@ This section introduces project management frameworks for data science.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u77n2nKmIP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
-## Learning Objectives
+**Learning Objectives**
 
 Once you have completed this section you will be able to:
 
@@ -772,24 +216,8 @@ Once you have completed this section you will be able to:
 * apply key principles of the Kanban task system 
 * begin building a repository optimized for effect project management 
 
-
-<br>
 <br>
 
-
-
-
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "", @title = "Readings", @reading, @foldout  }
-
-<br>
-<br>
 
 ## Project Management 
 
@@ -799,17 +227,15 @@ According to the articles, what are the key components of a good project managem
 **Required**
 
 1.	[The “Gold Standard” for Data Science Project Management](https://towardsdatascience.com/the-gold-standard-of-data-science-project-management-13d68c9e85d6)
-2.	[Best Practices for Data Science Project Workflows and File Organization](https://github.com/moldach/project-directory), available on GitHub
-3. [One-Page Visual Guide to CRISP-DM](https://exde.files.wordpress.com/2009/03/crisp_visualguide.pdf)
-
-*NOTE that you will see some conflicting advice on best practices, and some practices that are only appropriate when you are working with large teams or automating things like testing, so not everything will be appropriate for your project this semester. Your first time reading the material just try to get a general sense of the types of project management practices are being prescribed but don't get lost in the details just yet. You can adapt some practices and table others. You will have a rubric for your final project that will help guide which practices are important for this class.*
-
 
 **Background**
 
+1.	[Best Practices for Data Science Project Workflows and File Organization](https://github.com/moldach/project-directory), available on GitHub
+1.  [One-Page Visual Guide to CRISP-DM](https://exde.files.wordpress.com/2009/03/crisp_visualguide.pdf)
 1.	[Zen And The aRt Of Workflow Maintenance](https://speakerdeck.com/jennybc/zen-and-the-art-of-workflow-maintenance)  
-2.	[Cookie Cutter Data Science:](https://drivendata.github.io/cookiecutter-data-science/)
+1.	[Cookie Cutter Data Science:](https://drivendata.github.io/cookiecutter-data-science/)
 
+*NOTE that you will see some conflicting advice on best practices, and some practices that are only appropriate when you are working with large teams or automating things like testing, so not everything will be appropriate for your project this semester. Your first time reading the material just try to get a general sense of the types of project management practices are being prescribed but don't get lost in the details just yet. You can adapt some practices and table others. You will have a rubric for your final project that will help guide which practices are important for this class.*
 <br>
 
 
@@ -819,9 +245,9 @@ Which community characteristics or conditions best predict revitalization is emm
 
 **Required**
 
-1. Lincoln Institute (2008): [People or Place? Revisiting the Who Versus the Where of Urban Development](articles/revitalization/people-or-place-revisiting-the-debate.pdf)
-2. What Works Collaborative (2012): [Building Successful Neighborhoods](articles/revitalization/building-successful-neighborhoods.pdf)
-3. Burnette (2017): [Predicting Gentrification](articles/revitalization/predicting-revitalization.pdf)
+1. What Works Collaborative (2012): [Building Successful Neighborhoods](articles/revitalization/building-successful-neighborhoods.pdf)  
+1. Lincoln Institute (2008): [People or Place? Revisiting the Who Versus the Where of Urban Development](articles/revitalization/people-or-place-revisiting-the-debate.pdf)  
+1. Burnette (2017): [Predicting Gentrification](articles/revitalization/predicting-revitalization.pdf)  
 
 **Watch:**
 
@@ -873,122 +299,31 @@ FRONTLINE and NPR investigate the billions spent on affordable housing, and why 
 
 
 
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "Due Mar 23rd", @title = "Lab 01", @assignment, @foldout  }
-
-<br>
-
-## Lab-01 - Conceptualizing Neighborhood Change 
-
-Over the next seven weeks you will be analyzing community revitalization efforts, and federal programs designed to channel private sector capital into distressed neighborhoods. 
-
-**Project Schedule**
-
-Each week you will complete one part of the analysis and submit your results for review. The instructor will play the role of your manager on this project, providing feedback and guidance on how to improve and revise each step to prepare it for the final deliverables.
-
-*	Week 1: Neighborhood Revitalization Background  
-*	Week 2: Construct Measures of Neighborhood Stability
-*	Week 3: Descriptive Analysis  
-*	Week 4: Predictive Analysis 
-*	Week 5: Merge Program Data 
-*	Week 6: Estimate Program Impact  
-*	Week 7: Finalize Deliverables 
-
-It’s important to start with a strong mental model of how communities change during revitalization efforts, and establish your own criteria for what successful revitalization looks like. Is it just about place? Just about people? Or some mix of the two? 
-
-The main challenge with many place-based efforts is that the easiest way to achieve success if you are not careful about what you are measuring is to move all of the poor people out of the neighborhood and move middle-class families into the neighborhood. Education test scores immediately rise. Unemployment rates drop. Income increases. But note that all of this impact can be achieved without actually raising anyone’s income, improving schools, or reducing unemployment if we are just shifting wealthy people to distressed neighborhoods and moving poor people out. 
-
-On the other hand, it is not realistic to assume no population movement in and out of a neighborhood. Even if a distressed community is not undergoing gentrification you still see a large proportion of poor people pushed out because they are evicted from apartments, moving closer to employment opportunities, or leave for other reasons. Churn is a natural part of neighborhood dynamics, and it is higher among the poor regardless of the neighborhood they live in. 
-
-For this lab, skim the following article and blog:
-
-1. Freeman, L. (2005). Displacement or succession? Residential mobility in gentrifying neighborhoods. Urban Affairs Review, 40(4), 463-491. [[PDF](articles/gentrification/displacement-or-succession.pdf)]
-2. Macaig (2015): Gentrification in America Report [[PDF](articles/gentrification/gentrification-in-america-report.pdf)]
-
-Consider two neighborhoods. Both are distressed in 2000. Both experience significant rises in income and increases in high school graduation rates. One is experiencing healthy revitalization for residents, and one is experiencing rapid gentrification. How can we tell these two cases apart? 
-
-For the lab, report the following: 
-
-1.	Select three census variables from the Longitudinal Tracts Data Base that can be used collectively as indicators for gentrification. The variables do not need to be used together an index. 
-2.	How would you measure each variable to accurately capture gentrification in a city? As a count? A ratio or percentage? A percentile relative to all other tracts in the United States? As a percentile relative to all other tracts in the city? Justify your answer with reasoning about which comparison is important. 
-3.	For each variable, explain what you expect to observe in neighborhoods that are gentrifying, and what you expect to observe in neighborhoods that are revitalizing (rates or measures of the variable are increasing or decreasing). 
-
-Submit a word document with your responses to these questions for at least three variables. 
-
-[ [LTDB CODEBOOK](data/LTDB-codebook.pdf) ]
 
 
 
-## Submit Solutions to Canvas:
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
-
-<br>
-<br>
-
-
-
-
-
-
-
-
-<!---     #######################################################       -->
-<!---     #######################################################       -->
-
-*** { @unit = "Due Mar 23rd", @title = "Applied Project Step 01", @assignment, @foldout  }
-
-<br>
 
 ## Step 01 - Configure Your Project Repository on GitHub 
 
 
-**Directory Structure**
 
-Your final deliverable will consist of two 10-slide presentations: 
+### Process Management 
 
-1. Results determining whether the tax policies are having the intended impact. 
-2. An guide to using the repository to replicate the study. 
+**Kanban**
 
-You need to provide careful documentation of how you get from raw data in your project to final results. Think about it as a book where each chapter covers a distinct task: 
+*Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
 
-* Creating instruments to measure community health 
-* Identifying indicators of gentrification 
-* Descriptive analysis of neighborhood change 
-* Community demographics that predict revitalization 
-* Impact of federal programs 
-* Packaging of final deliverables
+*The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.*
 
-You will activate the GitHub page option for your repository and use the main landing page as the executive summary and index for HTML files that you generate in R Studio from your analysis. 
+[What is Kanban?](https://www.digite.com/kanban/what-is-kanban/)
 
-For example, this was a project students did with the Syracuse Land Bank to help them identify data that could be used to target rehabilitation projects:
+<br>
+<hr>
 
-[https://lecy.github.io/SyracuseLandBank/](
-https://lecy.github.io/SyracuseLandBank/)
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/236558214" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
-And another guide describing how you might document the journey from raw data to the final dataset that you use for your analysis. Every step should be explicit, and you should openly discuss the how and why of data wrangling:
-
-[https://github.com/jtleek/datasharing](https://github.com/jtleek/datasharing)
-
-Your repository will have the following directories: 
-
-* data 
-  - raw
-  - processed 
-  - final 
-* functions 
-* analysis 
-* docs (website files go here) 
-
-Each folder should contain it's own README.md file with notes on what the folder contains. 
-
-Learn more about Portability and Version Control:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JOH3pZ47MVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Managing Process
+<hr>
+<br>
 
 **Kanban Boards in GitHub**
 
@@ -1041,7 +376,51 @@ And to close it add an X to the box:
 
 - [X] finalize attendance list 
 
-You do not have to submit something for this step, but let the instructor know when you have your Kanban board set up on GitHub for inspection. 
+Let the instructor know when you have your Kanban board set up on GitHub for inspection. 
+
+
+### Directory Structure
+
+Your final deliverable will consist of two 10-slide presentations: 
+
+1. Results determining whether the tax policies are having the intended impact. 
+2. An guide to using the repository to replicate the study. 
+
+You need to provide careful documentation of how you get from raw data in your project to final results. Think about it as a book where each chapter covers a distinct task: 
+
+* Creating instruments to measure community health 
+* Identifying indicators of gentrification 
+* Descriptive analysis of neighborhood change 
+* Community demographics that predict revitalization 
+* Impact of federal programs 
+* Packaging of final deliverables
+
+You will activate the GitHub page option for your repository and use the main landing page as the executive summary and index for HTML files that you generate in R Studio from your analysis. 
+
+For example, this was a project students did with the Syracuse Land Bank to help them identify data that could be used to target rehabilitation projects:
+
+[https://lecy.github.io/SyracuseLandBank/](https://lecy.github.io/SyracuseLandBank/)
+
+And another guide describing how you might document the journey from raw data to the final dataset that you use for your analysis. Every step should be explicit, and you should openly discuss the how and why of data wrangling:
+
+[https://github.com/jtleek/datasharing](https://github.com/jtleek/datasharing)
+
+Your repository will have the following directories: 
+
+* data 
+  - raw
+  - processed 
+  - final 
+* functions 
+* analysis 
+* docs (website files go here) 
+
+Each folder should contain it's own README.md file with notes on what the folder contains. 
+
+Learn more about Portability and Version Control:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JOH3pZ47MVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 <br>
@@ -1050,286 +429,59 @@ You do not have to submit something for this step, but let the instructor know w
 
 
 
-<!---     #######################################################       -->
-<!---     #######################################################       -->
 
-*** { @unit = "", @title = "YellowDig Topic", @assignment, @foldout  }
 
-<br>
 
-## Can Tax Credits Be An Effective Mechanism for Neighborhood Revitalization? 
 
-At some point in this project you might pause and wonder, of [all of the possible mechanisms for catalyzing economic development](articles/revitalization/Revitalizing_Inner_City_Neighborhoods.pdf), why are we using tax credits, and do they really work? 
 
-Even more weird, the money does not even go to the neighborhoods in need. The credits are claimed by intermediaries, whose job is then to convince others to invest in the neighborhoods. 
 
-One convincing argument is that if cities tried to directly invest in distressed neighborhoods they would likely run out of resources before achieving impact. Alternatively, if tax credits are structured correctly every one dollar the government spends can bring five or ten dollars of private investement to a community. That doesn't guarantee the investments are going to the right projects or benefitting the people in need, but it is at least a provacative story proponents can tell. 
 
-The mystery is what makes this case study so interesting. Tax credits have potential to make a big impact, or the potential to waste a lot of money. 
+# Week 2 - Data Management 
 
-For your topic this week, reflect on the idea of using tax credits as a mechanisms to catalyze development. How might these policy tools go wrong? The biggest criticism against a lot of these programs is that you cannot determine which investors would have invested in the neighborhood without the tax credits, so even when we see a lot of private investment it is hard to tell how much was caused by the tax credit. This is the primary selection problem that makes research challenging in this space. 
 
-But it's not the only issue. Consider the Frontline news story on some recent fraud tha was uncovered. It's not surprising that when there are billions of dollars at stake the program invites corruption. 
 
-[Frontline Episode: Poverty, Politics and Profit](https://www.pbs.org/wgbh/frontline/film/poverty-politics-and-profit/)
+## Building a Neighborhood Change Database
 
-*Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
+In this project we are ultimately interested in building models to explain neighborhood change between 1990 and 2010.
 
-<hr> 
+![](https://raw.githubusercontent.com/DS4PS/cpp-528-spr-2020/master/assets/img/median-home-value-change-2000-to-2010.png)
 
-After reading a little about the programs, what are your views on the mechanisms? 
+Census data is central to this analysis. We have begun using the harmonized Longitudinal Tracts Data Base, and by now you understand the challenges of working with the data. 
 
-What is your instinctive response after learning some of the details of how they operate? 
-
-Before we explore the data, what is your apriori hypothesis? Do you think they will work as designed? 
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
+This unit covers the remaining data steps necessary to wrangle the harmonized census data into a meaningful format necessary to conduct descriptive analysis. 
 
 <br>
 
+## Lessons on Using Open Data
+
+In my experience Census data is ALWAYS way more complicated than it needs to be because it was designed by people whose primary job is to collect the data and build datasets. They are not the primary users of the data. Since they have to publish tables that allow policy-makers to ask and answer thousands of questions about US society in a way that doesn't violate privacy of individuals, the result is a framework with over 40,000 variables to account for myriad combinations of multiple variables that are needed to answer specifc questions. And also the result is an overwhelming amount of information and complixity for the typical user. 
+
+The week's lab demonstrates an important and strategic approach to using open-source administrative datasets. Just because you are using a free data source, you don't have to use their architecture. If the strugure of the data is confusing, find a framing that makes sense for you and your use cases and convert the raw data to that architecture. It is an up-front cost that often pays back the time invested with dividends. 
+
+I learned this lesson speaking with the DataWheel team, a group of programmers from MIT that started a company that creates awesome visualizations and reports using government data, most prominently on the DataUSA.io website. They describe their work in the following way: 
+
+> Our team, comprised of economists, data scientists, designers, researchers and business executives, worked for over a year with input from policymakers, government officials and everyday citizens to develop Data USA, the most comprehensive website and visualization engine of public US Government data. 
+> 
+> Data USA puts public US Government data in your hands. Instead of searching through multiple data sources that are often incomplete and difficult to access, you can simply point to Data USA to answer your questions. Data USA provides an open, easy-to-use platform that turns data into knowledge. It allows millions of people to conduct their own analyses and create their own stories about America – its people, places, industries, skill sets and educational institutions. Ultimately, accelerating society’s ability to learn and better understand itself.
+
+The brilliant thing they have done is taking data that is already *public* and *free* but almost impossible to use because of its complexity, and they redesigned the databases to make it easier to use. The reason their site works so well is they have essentially rebuilt two dozen large government databases, but removed all of the legacy design limitations and added the insight that the data needs to be linked to be valuable. They then built an API so that they can share the data with themselves. Specifically, each time a webpage is loaded for a city or other location it pulls the data on the locality fresh from their datbases and renders all of the website content in real time. 
+
+It's a simple insight, but an important one. When you start a large data project you should always be asking yourself, what would the data need to look like to make my analysis easy to implement? 
 
 
+## Lab Preview 
 
+This lab demonstrates a very minor redesign of the Longitudinal Tracts Database files to make the rest of the project smoother. 
 
+Variable names are standardized, files combined, meta-data on tracts made accessible, and a harmonization file is created to make it much faster and easier to use variables within the ten datasets. 
 
-
-
-
-
-<!--- 
-######################################################
-####
-####      WEEK 2
-####
-######################################################
--->
-
-
-** Week 2 - Measuring Neighborhood Health 
-
-
-*** { @unit = "", @title = "Unit Overview", @foldout }
-
-<br>
-
-## Description
-
-This week you will practice variable transformations by creating indices or scales of community health from census data. This exercise is an extension of work you have done in CPP 529. 
-
-It is also recommended that you begin organize your data step folders on GitHub as part of your final project. See below for some detailed instructions. 
+You will follow the steps that were deployed to accomplish this, build a new data dictionary that has a more intuitive structure, and create a couple of functions to operationalize a more intuitive work flow with the data. 
 
 <br>
 <br>
 
 
-*** { @unit = "", @title = "Readings", @reading, @foldout }
 
-<br>
-
-There are no assigned readings for this week, but the following resources are provided for examples of studies that have created community health indices, and reference material on creating reliable instruments or scales. 
-
-<br>
-
-## Background Reading 
-
-**Manduca, R., & Sampson, R. J. (2019). Punishing and toxic neighborhood environments independently predict the intergenerational social mobility of black and white children. Proceedings of the National Academy of Sciences, 116(16), 7772-7777.** [[PDF](articles/community-index/toxic-neighborhoods-and-social-mobility.pdf)]
-
-*We use data on intergenerational social mobility by neighborhood to examine how social and physical environments beyond concentrated poverty predict children’s long-term well-being. First, we examine neighborhoods that are harsh on children’s development: those characterized by high levels of violence, incarceration, and lead exposure….Our explanatory variables are constructed from the Community Survey of the PHDCN, which interviewed a representative sample of Chicago residents about their neighborhood social environments in 1995 and 2002 (combined N of ∼12,000); violent crime rates per 100,000 population from 1995 to 2000, derived from offenses reported by citizens to the police; incarceration rates per population from 1995 to 2000, derived from prison admission data; and lead exposure among children from 1995 to 1997, derived from more than 150,000 blood-level tests conducted by Chicago’s health department.*
-
-**Economic Innovation Group. (2016). The 2016 distressed communities index: An analysis of community well-being across the United States.**  [[PDF](articles/community-index/distressed-communities-index-report.pdf)] [[WEBSITE](https://eig.org/dci)]
-
-[METHODOLOGY](https://eig.org/dci/methodology)
-
-Excerpt from NPR: “A Look At The Wealth And Income Gap, By ZIP Code”: 
-
-*"The United States is still a land of opportunity for many. But when it comes to life outcomes, geography is too often destiny," says a report from the Economic Innovation Group, a research organization. Despite the economic recovery, the report says, life for those in the most distressed ZIP codes looks "much more like an ongoing downturn. Large swaths of the country are indeed being left behind by economic growth and change." The report calculates what it calls a "distressed community index" using seven metrics: housing vacancy rates, the number of adults working, the poverty rate, median income, the number of people with high school degrees, the change in employment and the rate of business formation.*
-
-**Ellen, I. G., & Turner, M. A. (1997). Does neighborhood matter? Assessing recent evidence. Housing Policy Debate, 8(4), 833-866.** [[PDF](https://github.com/DS4PS/cpp-529-master/blob/master/articles/social-mobility/does-neighborhood-matter-assessing-recent-evidence.pdf)]
-
-## Reference Material on Reliability 
-
-This section introduces the field of measurement theory in psychology and social sciences, which is used to create scales or indices that allow us to observe and document things that are not easy to measure. 
-
-> Many variables studied by psychologists are straightforward and simple to measure. These include sex, age, height, weight, and birth order. You can often tell whether someone is male or female just by looking. You can ask people how old they are and be reasonably sure that they know and will tell you. Although people might not know or want to tell you how much they weigh, you can have them step onto a bathroom scale. Other variables studied by psychologists—perhaps the majority—are not so straightforward or simple to measure. We cannot accurately assess people’s level of intelligence by looking at them, and we certainly cannot put their self-esteem on a bathroom scale. **These kinds of variables are called latent CONSTRUCTS** (pronounced CON-structs) and include personality traits (e.g., extraversion), emotional states (e.g., fear), attitudes (e.g., toward taxes), and abilities (e.g., athleticism). [[Understanding Psychological Measurement](https://opentextbc.ca/researchmethods/chapter/understanding-psychological-measurement/)]
-
-We are less interested in psychological measures as in constructs of neighborhood quality. But we will use some of the tools developed in psychometrics to help us develop a reliable measure of neighborhood quality. 
-
-Schäffer, U. (2007). Management accounting & control scales handbook. Springer Science & Business Media. [ [2-page PDF](https://github.com/DS4PS/cpp-529-master/raw/master/articles/measurement/introduction-to-construct-measurement.pdf) ] 
-
-*Pitkin, B. (2001). Theories of neighborhood change: Implications for community development policy and practice. UCLA Advanced Policy Institute, 28.* [[PDF](articles/neighborhood-change-theories/theories-of-neighborhood-change.pdf)]
-
-*Measurement Theory and Practice, from: Smith, F. (2002). Research methods in pharmacy practice. Pharmaceutical Press.* [ [PDF](articles/measurement/measurement-theory-and-practice.pdf) ]
-
-*Schäffer, U. (2007). Management accounting & control scales handbook. Springer Science & Business Media.* [ [full text](articles/measurement/Management-Accounting-and-Control-Scales-Handbook.pdf) ]
-
-*MacKenzie, S. B., Podsakoff, P. M., & Podsakoff, N. P. (2011). Construct measurement and validation procedures in MIS and behavioral research: Integrating new and existing techniques. MIS quarterly, 35(2), 293-334.* [ [PDF](articles/measurement/construct-measurement-and-validation-in-behavioral-research.pdf) ]
-<br>
-<br>
-
-
-
-*** { @unit = "MON Mar 30th", @title = "Lab 02", @assignment, @foldout }
-
-<br>
-
-
-## Week 2 – Developing Community Indices to Measure Change 
-
-We are going to look at how distressed urban communities change between 2000 and 2010. Median home value with be one of the primary variables we will use in the model since it captures a lot of information about the ‘neighborhood’ (census tract). But we will also utilize some neighborhood health metrics as predictors and outcomes. 
-
-### Part 1:
-
-We would like to understand some general dimensions of community health (or vulnerability) in order to measure the initial conditions of communities in 2000. Your task this week will be to develop and report **three reliable instruments** describing your community, each using at least three independent variables (by independent I mean you can’t use things like median household income and per capita income, or percent white and percent non-white, as separate variables since those are two measures of the same underlying constructs). Each of your indices needs to achieve a Conbach’s alpha reliability score of at least 0.70. 
-
-I would suggest a measure of economic strength of the community, a measure of vulnerability of the community, and another measure of your choice. You might think in terms of human capital, social capital, financial capital, or population demographics and diversity. Review your labs from CPP 529 for some ideas. 
-
-Report the following: 
-
-* Your three instruments
-* The latent constructs that you believe they measure
-* The summary statistics for **urban** census tracts (min, 25th percentile, median, mean, 75th percentile, max) 
-* Reliability scores for each instrument 
-
-
-
-### Reliability
-
-To test the reliability of your instrument you first need to transform each raw variable into a meaningful metric. For example, many of the census variables will be reported as raw counts of people or households within the census tract. You might divide by the tract population for each to change them into percentages before comparison since census tracts are difference sizes (for example, percentage of households that are white in a tract, a percentage foreign born, and percentage of people over the age of 65). 
-
-In many cases translating variables into Z scores can make the data easier to use and is necessary before aggregating individual variables into an index to avoid over-weighting one variable. A z-score normalizes a variable by making the mean for each measure zero, and the standard deviation one. In doing so you can now add three variables together that are measured on very different scales. This step is only appropriate when working with continous data. 
-
-```r
-# pseudo-code only
-Z1 <- standardize( X1 )
-Z2 <- standardize( X2 )
-Z3 <- standardize (X3 )
-calculate_alpha( Z1, Z2, Z3 )
-```
-
-### Identifying Urban Counties and 
-
-Note that we are comparing neighborhoods (census tracts) within cities, so comparisons with rural areas are not very meaningful. Before you begin your analysis drop all of the rural tracts located outside of metropolitan areas. 
-
-Also note that the cost of living in cities varies a tremendous amount. The median value of a home in a poor neighborhood in San Francisco or New York might still be higher than most median home values in Iowa. So it is important to think through your comparisons, especially when calculating Z-scores (standard normal scores) for each variable. Should the reference point be all other census tracts located in cities in the US? Or should it be all other census tracts in the same city? 
-
-In most cases within-city comparisons will be more meaningful than across city comparisons, especially when calculating things like percentiles and Z-scores. This is because the measures capture opportunities and opportunity costs primarily within the same metro area. If a census tract in a rust-belt city has high school graduation rates that are low compared to national norms, but still relatively high compared to other tracts in the city, it will still be a desirable neighborhood since it is one of the best options in the city. The relative comparison to other local tracts better captures the way information will be used by citizens when making decisions like where to purchase their next home. 
-
-If the LTDB does not have sufficient info on urban versus rural tracts, or metro area traits, you will need to find this meta-data elsewhere. You can try the NBER: Combined MSA CBSA FIPS County Crosswalk 2005, 2011-2017: [CSV DOWNLOAD](https://data.nber.org/cbsa-msa-fips-ssa-county-crosswalk/cbsatocountycrosswalk.csv)
-
-https://data.nber.org/data/cbsa-msa-fips-ssa-county-crosswalk.html
-
-And note in the data dictionary for CBSA Name (copied below): "blanks are rural"
-
-You can add metro attributes and urban / rural status by merging the crosswalk data using county FIPS codes. 
-
-```r
-URL <- "https://data.nber.org/cbsa-msa-fips-ssa-county-crosswalk/cbsatocountycrosswalk.csv"
-crosswalk <- read.csv( URL, stringsAsFactors=F )
-
-# all metro areas in the country
-sort( unique( crosswalk$cbsaname ) )
-
-crosswalk$urban <- ifelse( crosswalk$cbsaname == "", "rural", "urban" )
-
-keep.these <- c( "countyname","state","fipscounty", 
-                 "msa","msaname", 
-                 "cbsa","cbsaname",
-                 "urban" )
-
-cw <- dplyr::select( crosswalk, keep.these )
-
-# merge into census data by county FIPS
-# watch the leading zeros problem
-```
-
-And the data dictionary for the file: 
-
-```
-_dta:
-  1.  cbsatocountycrosswalk2005 set up by Jean Roth , jroth@nber.org , 20 Dec 2016
-  2.  Source: fr05_cbsa_msa_xwalk_pub.txt
-  3.  NBER URL: http://www.nber.org/data/cbsa-msa-fips-ssa-county-crosswalk.html
-  4.  Source Page: http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Acute-Inpatient-Files-for-Download-Items/CMS022637.html
-  5.  Source File URL: http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Downloads/fr05_cbsa_msa_xwalk_pub.zip
-  6.  by Jean Roth , jroth@nber.org , 28 Nov 2016
-
-ssacounty:
-  1.  Los Angeles FIPS 06037 can have two SSA county codes: 05210 and 05200
-
-  obs:         3,293                          
- vars:            21                          20 Dec 2016 11:41
- size:       757,390                          (_dta has notes)
------------------------------------------------------------------------------------------------------------
-              storage   display    value
-variable name   type    format     label      variable label
------------------------------------------------------------------------------------------------------------
-countyname      str26   %26s                  County Name
-state           str2    %9s                   State
-ssacounty       str5    %9s                 * SSA County Code
-fipscounty      str5    %9s                   FIPS County Code
-msa             str6    %9s                   Old MSA
-l               str1    %9s                   Lugar
-msaname         str48   %48s                  Old MSA Name
-cbsa            str5    %9s                   CBSA - if blank then rural area (set equal to first 2 digits of ssa code)
-cbsaname        str50   %50s                  CBSA Name
-cbsaold         long    %12.0g                 (Blanks are Rural)
-cbsanameold     str42   %42s                   (Blanks are Rural)
-ssast           str2    %9s                   SSA State code
-fipst           str2    %9s                   FIPS State code
-y2005           float   %9.0g                 Present in 2005 source file
-y2011           float   %9.0g                 Present in 2011 source file
-y2012           float   %9.0g                 Present in 2012 source file
-y2013           float   %9.0g                 Present in 2013 source file
-y2014           float   %9.0g                 Present in 2014 source file
-y2015           float   %9.0g                 Present in 2015 source file
-y2016           float   %9.0g                 Present in 2016 source file
-y2017           float   %9.0g                 Present in 2017 source file
-                                            * indicated variables have notes
-------------------------------------------------------------------------------------------------------------
-Sorted by: fipscounty  ssacounty
-```
-
-Note that you might need to construct a new FIPS code from existing FIPS codes. Recall they all have the structure:
-
-```r
-# S - state (2)
-# C - county (3)
-# T - census tract (6)
-
-SS-CCC-TTTTTT
-
-county.fips <- paste0( st.fips, ct.fips )
-```
-
-But beware of the leading zeros problem if your data is numeric! You might need to add zeros: 
-
-```r
-st.fips <- state + 10000
-st.fips <- substr( st.fips, 4, 5 )  # extract last two numbers 
-ct.fips <- county + 10000
-ct.fips <- substr( ct.fips, 3, 5 )  # extract last three numbers 
-county.fips <- paste0( st.fips, ct.fips )
-```
-
-<hr> 
-
-The following articles provide examples of studies that utilize neighborhood quality indices: 
-
-**Manduca, R., & Sampson, R. J. (2019). Punishing and toxic neighborhood environments independently predict the intergenerational social mobility of black and white children. Proceedings of the National Academy of Sciences, 116(16), 7772-7777.** [PDF](articles/community-index/toxic-neighborhoods-and-social-mobility.pdf)
-
-*We use data on intergenerational social mobility by neighborhood to examine how social and physical environments beyond concentrated poverty predict children’s long-term well-being. First, we examine neighborhoods that are harsh on children’s development: those characterized by high levels of violence, incarceration, and lead exposure….Our explanatory variables are constructed from the Community Survey of the PHDCN, which interviewed a representative sample of Chicago residents about their neighborhood social environments in 1995 and 2002 (combined N of ∼12,000); violent crime rates per 100,000 population from 1995 to 2000, derived from offenses reported by citizens to the police; incarceration rates per population from 1995 to 2000, derived from prison admission data; and lead exposure among children from 1995 to 1997, derived from more than 150,000 blood-level tests conducted by Chicago’s health department.*
-
-**Economic Innovation Group. (2016). The 2016 distressed communities index: An analysis of community well-being across the United States.**  [PDF](articles/community-index/distressed-communities-index-report.pdf) [WEBSITE](https://eig.org/dci)
-
-[METHODOLOGY](https://eig.org/dci/methodology)
-
-Excerpt from NPR: “A Look At The Wealth And Income Gap, By ZIP Code”: 
-
-*"The United States is still a land of opportunity for many. But when it comes to life outcomes, geography is too often destiny," says a report from the Economic Innovation Group, a research organization. Despite the economic recovery, the report says, life for those in the most distressed ZIP codes looks "much more like an ongoing downturn. Large swaths of the country are indeed being left behind by economic growth and change." The report calculates what it calls a "distressed community index" using seven metrics: housing vacancy rates, the number of adults working, the poverty rate, median income, the number of people with high school degrees, the change in employment and the rate of business formation.*
-
-<hr> 
-
-<br>
 
 ## Data 
 
@@ -1350,36 +502,6 @@ The second dataset contains only variables that come from the Dicennial Census s
 <a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-02-tutorial.html">Index Construction Example</a>
 
 <br> 
-
-## Lab 02 Deliverables:
-
-This section will become the first chapter in the methodology section of your final report. Draft the section as if you are explaining the methodologies to someone that is not on your team and unfamiliar with the background literature. Make sure you document the reasoning behind each step. 
-
-It should be split into three sections. 
-
-1. The first will describe and justify the selection of the gentrification metrics. 
-2. The second will describe the construction of your three neighborhood health indices and their reliability scores. 
-3. The third will present descriptive statistics on all of the metrics for all urban census tracts. 
-
-Use common sense when constructing your metrics, and be sure to describe your methodology using R Markdown documents, showing your code for all of the steps. 
-
-Write up your results and submit your RMD file and the knitted HML version. 
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
-
-<br>
-<br>
-
-
-
-
-*** { @unit = "", @title = "Final Project Data Steps", @assignment, @foldout }
-
-<br>
-
-You can review the final project requirements here: [rubric](project/project-rubric.pdf). 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8cbcs87VHP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Set Up Your Data Directory
 
@@ -1498,57 +620,371 @@ The following video showcases how to collaborate on GitHub using GitHub Desktop 
 <br> 
 
 
-## CRISP-DM Guide to Documenting Data Steps
 
-The following list from the CRISP-DM guide contains suggestions about data steps to consider including in your documentation to fully describe your modeling process: 
+### Identifying Urban Counties
 
-**Data Understanding**
+Note that we are comparing neighborhoods (census tracts) within cities, so comparisons with rural areas are not very meaningful. Before you begin your analysis drop all of the rural tracts located outside of metropolitan areas. 
 
-The second stage consists of collecting and exploring the input dataset. The set goal might be unsolvable using the input data, you might need to use public datasets, or even create a specific one for the set goal.
+Also note that the cost of living in cities varies a tremendous amount. The median value of a home in a poor neighborhood in San Francisco or New York might still be higher than most median home values in Iowa. So it is important to think through your comparisons, especially when calculating Z-scores (standard normal scores) for each variable. Should the reference point be all other census tracts located in cities in the US? Or should it be all other census tracts in the same city? 
 
-1. Collect Initial Data
-- Initial Data Collection Report
-1. Describe Data
-- Data Description Report
-1. Explore Data
-- Data Exploration Report
-1. Verify Data Quality
-- Data Quality Report
+In most cases within-city comparisons will be more meaningful than across city comparisons, especially when calculating things like percentiles and Z-scores. This is because the measures capture opportunities and opportunity costs primarily within the same metro area. If a census tract in a rust-belt city has high school graduation rates that are low compared to national norms, but still relatively high compared to other tracts in the city, it will still be a desirable neighborhood since it is one of the best options in the city. The relative comparison to other local tracts better captures the way information will be used by citizens when making decisions like where to purchase their next home. 
+
+If the LTDB does not have sufficient info on urban versus rural tracts, or metro area traits, you will need to find this meta-data elsewhere. You can try the NBER: Combined MSA CBSA FIPS County Crosswalk 2005, 2011-2017: [CSV DOWNLOAD](https://data.nber.org/cbsa-msa-fips-ssa-county-crosswalk/cbsatocountycrosswalk.csv)
+
+https://data.nber.org/data/cbsa-msa-fips-ssa-county-crosswalk.html
+
+And note in the data dictionary for CBSA Name (copied below): "blanks are rural"
+
+You can add metro attributes and urban / rural status by merging the crosswalk data using county FIPS codes. 
+
+```r
+URL <- "https://data.nber.org/cbsa-msa-fips-ssa-county-crosswalk/cbsatocountycrosswalk.csv"
+crosswalk <- read.csv( URL, stringsAsFactors=F )
+
+# all metro areas in the country
+sort( unique( crosswalk$cbsaname ) )
+
+crosswalk$urban <- ifelse( crosswalk$cbsaname == "", "rural", "urban" )
+
+keep.these <- c( "countyname","state","fipscounty", 
+                 "msa","msaname", 
+                 "cbsa","cbsaname",
+                 "urban" )
+
+cw <- dplyr::select( crosswalk, keep.these )
+
+# merge into census data by county FIPS
+# watch the leading zeros problem
+```
+
+And the data dictionary for the file: 
+
+```
+_dta:
+  1.  cbsatocountycrosswalk2005 set up by Jean Roth , jroth@nber.org , 20 Dec 2016
+  2.  Source: fr05_cbsa_msa_xwalk_pub.txt
+  3.  NBER URL: http://www.nber.org/data/cbsa-msa-fips-ssa-county-crosswalk.html
+  4.  Source Page: http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Acute-Inpatient-Files-for-Download-Items/CMS022637.html
+  5.  Source File URL: http://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Downloads/fr05_cbsa_msa_xwalk_pub.zip
+  6.  by Jean Roth , jroth@nber.org , 28 Nov 2016
+
+ssacounty:
+  1.  Los Angeles FIPS 06037 can have two SSA county codes: 05210 and 05200
+
+  obs:         3,293                          
+ vars:            21                          20 Dec 2016 11:41
+ size:       757,390                          (_dta has notes)
+-----------------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+-----------------------------------------------------------------------------------------------------------
+countyname      str26   %26s                  County Name
+state           str2    %9s                   State
+ssacounty       str5    %9s                 * SSA County Code
+fipscounty      str5    %9s                   FIPS County Code
+msa             str6    %9s                   Old MSA
+l               str1    %9s                   Lugar
+msaname         str48   %48s                  Old MSA Name
+cbsa            str5    %9s                   CBSA - if blank then rural area (set equal to first 2 digits of ssa code)
+cbsaname        str50   %50s                  CBSA Name
+cbsaold         long    %12.0g                 (Blanks are Rural)
+cbsanameold     str42   %42s                   (Blanks are Rural)
+ssast           str2    %9s                   SSA State code
+fipst           str2    %9s                   FIPS State code
+y2005           float   %9.0g                 Present in 2005 source file
+y2011           float   %9.0g                 Present in 2011 source file
+y2012           float   %9.0g                 Present in 2012 source file
+y2013           float   %9.0g                 Present in 2013 source file
+y2014           float   %9.0g                 Present in 2014 source file
+y2015           float   %9.0g                 Present in 2015 source file
+y2016           float   %9.0g                 Present in 2016 source file
+y2017           float   %9.0g                 Present in 2017 source file
+                                            * indicated variables have notes
+------------------------------------------------------------------------------------------------------------
+Sorted by: fipscounty  ssacounty
+```
+
+Note that you might need to construct a new FIPS code from existing FIPS codes. Recall they all have the structure:
+
+```r
+# S - state (2)
+# C - county (3)
+# T - census tract (6)
+
+SS-CCC-TTTTTT
+
+county.fips <- paste0( st.fips, ct.fips )
+```
+
+But beware of the leading zeros problem if your data is numeric! You might need to add zeros: 
+
+```r
+st.fips <- state + 10000
+st.fips <- substr( st.fips, 4, 5 )  # extract last two numbers 
+ct.fips <- county + 10000
+ct.fips <- substr( ct.fips, 3, 5 )  # extract last three numbers 
+county.fips <- paste0( st.fips, ct.fips )
+```
+
+<hr> 
+
+
+
+## Lab Instructions
+ 
+*NOTE that the due date has been extended a week. Lab 03 and Lab 04 are both due on the same date. Additional code has been provided in the lab to siplify your tasks in order to account for the compressed schedule.*
+
+
+<a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-03-instructions.html">LAB INSTRUCTIONS</a>
+
+<br>
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">Submit Lab</a>
+
+<br>
+<br>
+
+
+
+
+
+
+
+## YellowDig Topic
+
+**Post on {{page.yellowdig.post-01}}**
+
+Can Tax Credits Be An Effective Mechanism for Neighborhood Revitalization? 
+
+At some point in this project you might pause and wonder, of [all of the possible mechanisms for catalyzing economic development](articles/revitalization/Revitalizing_Inner_City_Neighborhoods.pdf), why are we using tax credits, and do they really work? 
+
+Even more weird, the money does not even go to the neighborhoods in need. The credits are claimed by intermediaries, whose job is then to convince others to invest in the neighborhoods. 
+
+One convincing argument is that if cities tried to directly invest in distressed neighborhoods they would likely run out of resources before achieving impact. Alternatively, if tax credits are structured correctly every one dollar the government spends can bring five or ten dollars of private investement to a community. That doesn't guarantee the investments are going to the right projects or benefitting the people in need, but it is at least a provacative story proponents can tell. 
+
+The mystery is what makes this case study so interesting. Tax credits have potential to make a big impact, or the potential to waste a lot of money. 
+
+For your topic this week, reflect on the idea of using tax credits as a mechanisms to catalyze development. How might these policy tools go wrong? The biggest criticism against a lot of these programs is that you cannot determine which investors would have invested in the neighborhood without the tax credits, so even when we see a lot of private investment it is hard to tell how much was caused by the tax credit. This is the primary selection problem that makes research challenging in this space. 
+
+But it's not the only issue. Consider the Frontline news story on some recent fraud tha was uncovered. It's not surprising that when there are billions of dollars at stake the program invites corruption. 
+
+[Frontline Episode: Poverty, Politics and Profit](https://www.pbs.org/wgbh/frontline/film/poverty-politics-and-profit/)
+
+*Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
+
+<hr> 
+
+After reading a little about the programs, what are your views on the mechanisms? 
+
+What is your instinctive response after learning some of the details of how they operate? 
+
+Before we explore the data, what is your apriori hypothesis? Do you think they will work as designed? 
+
+-----
+
+**Post your ideas to YellowDig** 
+
+<a class="uk-button uk-button-primary" href="{{page.yellowdig_url}}">YELLOWDIG</a>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+
+
+
+# Week 3 - Measuring Neighborhood Health 
+
+
+
+## Description
+
+This week you will practice variable transformations by creating indices or scales of community health from census data. This exercise is an extension of work you have done in CPP 529. 
+
+It is also recommended that you begin organize your data step folders on GitHub as part of your final project. See below for some detailed instructions. 
+
+There are no assigned readings for this week, but the following resources are provided for examples of studies that have created community health indices, and reference material on creating reliable instruments or scales. 
+
+<br>
+
+## Background Reading 
+
+**Manduca, R., & Sampson, R. J. (2019). Punishing and toxic neighborhood environments independently predict the intergenerational social mobility of black and white children. Proceedings of the National Academy of Sciences, 116(16), 7772-7777.** [[PDF](articles/community-index/toxic-neighborhoods-and-social-mobility.pdf)]
+
+*We use data on intergenerational social mobility by neighborhood to examine how social and physical environments beyond concentrated poverty predict children’s long-term well-being. First, we examine neighborhoods that are harsh on children’s development: those characterized by high levels of violence, incarceration, and lead exposure….Our explanatory variables are constructed from the Community Survey of the PHDCN, which interviewed a representative sample of Chicago residents about their neighborhood social environments in 1995 and 2002 (combined N of ∼12,000); violent crime rates per 100,000 population from 1995 to 2000, derived from offenses reported by citizens to the police; incarceration rates per population from 1995 to 2000, derived from prison admission data; and lead exposure among children from 1995 to 1997, derived from more than 150,000 blood-level tests conducted by Chicago’s health department.*
+
+**Economic Innovation Group. (2016). The 2016 distressed communities index: An analysis of community well-being across the United States.**  [[PDF](articles/community-index/distressed-communities-index-report.pdf)] [[WEBSITE](https://eig.org/dci)]
+
+[METHODOLOGY](https://eig.org/dci/methodology)
+
+Excerpt from NPR: “A Look At The Wealth And Income Gap, By ZIP Code”: 
+
+*"The United States is still a land of opportunity for many. But when it comes to life outcomes, geography is too often destiny," says a report from the Economic Innovation Group, a research organization. Despite the economic recovery, the report says, life for those in the most distressed ZIP codes looks "much more like an ongoing downturn. Large swaths of the country are indeed being left behind by economic growth and change." The report calculates what it calls a "distressed community index" using seven metrics: housing vacancy rates, the number of adults working, the poverty rate, median income, the number of people with high school degrees, the change in employment and the rate of business formation.*
+
+**Ellen, I. G., & Turner, M. A. (1997). Does neighborhood matter? Assessing recent evidence. Housing Policy Debate, 8(4), 833-866.** [[PDF](https://github.com/DS4PS/cpp-529-master/blob/master/articles/social-mobility/does-neighborhood-matter-assessing-recent-evidence.pdf)]
+
+## Reference Material on Reliability 
+
+This section introduces the field of measurement theory in psychology and social sciences, which is used to create scales or indices that allow us to observe and document things that are not easy to measure. 
+
+> Many variables studied by psychologists are straightforward and simple to measure. These include sex, age, height, weight, and birth order. You can often tell whether someone is male or female just by looking. You can ask people how old they are and be reasonably sure that they know and will tell you. Although people might not know or want to tell you how much they weigh, you can have them step onto a bathroom scale. Other variables studied by psychologists—perhaps the majority—are not so straightforward or simple to measure. We cannot accurately assess people’s level of intelligence by looking at them, and we certainly cannot put their self-esteem on a bathroom scale. **These kinds of variables are called latent CONSTRUCTS** (pronounced CON-structs) and include personality traits (e.g., extraversion), emotional states (e.g., fear), attitudes (e.g., toward taxes), and abilities (e.g., athleticism). [[Understanding Psychological Measurement](https://opentextbc.ca/researchmethods/chapter/understanding-psychological-measurement/)]
+
+We are less interested in psychological measures as in constructs of neighborhood quality. But we will use some of the tools developed in psychometrics to help us develop a reliable measure of neighborhood quality. 
+
+Schäffer, U. (2007). Management accounting & control scales handbook. Springer Science & Business Media. [ [2-page PDF](https://github.com/DS4PS/cpp-529-master/raw/master/articles/measurement/introduction-to-construct-measurement.pdf) ] 
+
+*Pitkin, B. (2001). Theories of neighborhood change: Implications for community development policy and practice. UCLA Advanced Policy Institute, 28.* [[PDF](articles/neighborhood-change-theories/theories-of-neighborhood-change.pdf)]
+
+*Measurement Theory and Practice, from: Smith, F. (2002). Research methods in pharmacy practice. Pharmaceutical Press.* [ [PDF](articles/measurement/measurement-theory-and-practice.pdf) ]
+
+*Schäffer, U. (2007). Management accounting & control scales handbook. Springer Science & Business Media.* [ [full text](articles/measurement/Management-Accounting-and-Control-Scales-Handbook.pdf) ]
+
+*MacKenzie, S. B., Podsakoff, P. M., & Podsakoff, N. P. (2011). Construct measurement and validation procedures in MIS and behavioral research: Integrating new and existing techniques. MIS quarterly, 35(2), 293-334.* [ [PDF](articles/measurement/construct-measurement-and-validation-in-behavioral-research.pdf) ]
+<br>
+<br>
+
+
+
+
+
+## Developing Community Indices to Measure Change 
+
+We are going to look at how distressed urban communities change between 2000 and 2010. Median home value with be one of the primary variables we will use in the model since it captures a lot of information about the ‘neighborhood’ (census tract). But we will also utilize some neighborhood health metrics as predictors and outcomes. 
+
+### Part 1:
+
+We would like to understand some general dimensions of community health (or vulnerability) in order to measure the initial conditions of communities in 2000. Your task this week will be to develop and report **three reliable instruments** describing your community, each using at least three independent variables (by independent I mean you can’t use things like median household income and per capita income, or percent white and percent non-white, as separate variables since those are two measures of the same underlying constructs). Each of your indices needs to achieve a Conbach’s alpha reliability score of at least 0.70. 
+
+I would suggest a measure of economic strength of the community, a measure of vulnerability of the community, and another measure of your choice. You might think in terms of human capital, social capital, financial capital, or population demographics and diversity. Review your labs from CPP 529 for some ideas. 
+
+Report the following: 
+
+* Your three instruments
+* The latent constructs that you believe they measure
+* The summary statistics for **urban** census tracts (min, 25th percentile, median, mean, 75th percentile, max) 
+* Reliability scores for each instrument 
+
+
+
+### Reliability
+
+To test the reliability of your instrument you first need to transform each raw variable into a meaningful metric. For example, many of the census variables will be reported as raw counts of people or households within the census tract. You might divide by the tract population for each to change them into percentages before comparison since census tracts are difference sizes (for example, percentage of households that are white in a tract, a percentage foreign born, and percentage of people over the age of 65). 
+
+In many cases translating variables into Z scores can make the data easier to use and is necessary before aggregating individual variables into an index to avoid over-weighting one variable. A z-score normalizes a variable by making the mean for each measure zero, and the standard deviation one. In doing so you can now add three variables together that are measured on very different scales. This step is only appropriate when working with continous data. 
+
+```r
+# pseudo-code only
+Z1 <- standardize( X1 )
+Z2 <- standardize( X2 )
+Z3 <- standardize (X3 )
+calculate_alpha( Z1, Z2, Z3 )
+```
+
+
+The following articles provide examples of studies that utilize neighborhood quality indices: 
+
+**Manduca, R., & Sampson, R. J. (2019). Punishing and toxic neighborhood environments independently predict the intergenerational social mobility of black and white children. Proceedings of the National Academy of Sciences, 116(16), 7772-7777.** [PDF](articles/community-index/toxic-neighborhoods-and-social-mobility.pdf)
+
+*We use data on intergenerational social mobility by neighborhood to examine how social and physical environments beyond concentrated poverty predict children’s long-term well-being. First, we examine neighborhoods that are harsh on children’s development: those characterized by high levels of violence, incarceration, and lead exposure….Our explanatory variables are constructed from the Community Survey of the PHDCN, which interviewed a representative sample of Chicago residents about their neighborhood social environments in 1995 and 2002 (combined N of ∼12,000); violent crime rates per 100,000 population from 1995 to 2000, derived from offenses reported by citizens to the police; incarceration rates per population from 1995 to 2000, derived from prison admission data; and lead exposure among children from 1995 to 1997, derived from more than 150,000 blood-level tests conducted by Chicago’s health department.*
+
+**Economic Innovation Group. (2016). The 2016 distressed communities index: An analysis of community well-being across the United States.**  [PDF](articles/community-index/distressed-communities-index-report.pdf) [WEBSITE](https://eig.org/dci)
+
+[METHODOLOGY](https://eig.org/dci/methodology)
+
+Excerpt from NPR: “A Look At The Wealth And Income Gap, By ZIP Code”: 
+
+*"The United States is still a land of opportunity for many. But when it comes to life outcomes, geography is too often destiny," says a report from the Economic Innovation Group, a research organization. Despite the economic recovery, the report says, life for those in the most distressed ZIP codes looks "much more like an ongoing downturn. Large swaths of the country are indeed being left behind by economic growth and change." The report calculates what it calls a "distressed community index" using seven metrics: housing vacancy rates, the number of adults working, the poverty rate, median income, the number of people with high school degrees, the change in employment and the rate of business formation.*
+
+<hr> 
 
 <br>
 
 
-**Data Preparation**
-
-As we all know, bad input inevitably leads to bad output. Therefore no matter what you do in modeling — if you made major mistakes while preparing the data — you will end up returning to this stage and doing it over again.
-
-1. Select Data
-- The rationale for Inclusion/Exclusion
-1. Clean Data
-- Data Cleaning Report
-1. Construct Data
-- Derived Attributes
-- Generated Records
-1. Integrate Data
-- Merged Data
-1. Format Data
-- Reformatted Data
-1. Dataset Description
 
 
-![](assets/img/crisp-dm-process-diagram.png)
 
+
+
+
+## Lab 02 Deliverables:
+
+This section will become the first chapter in the methodology section of your final report. Draft the section as if you are explaining the methodologies to someone that is not on your team and unfamiliar with the background literature. Make sure you document the reasoning behind each step. 
+
+It should be split into three sections. 
+
+1. The first will describe and justify the selection of the gentrification metrics. 
+2. The second will describe the construction of your three neighborhood health indices and their reliability scores. 
+3. The third will present descriptive statistics on all of the metrics for all urban census tracts. 
+
+Use common sense when constructing your metrics, and be sure to describe your methodology using R Markdown documents, showing your code for all of the steps. 
+
+Write up your results and submit your RMD file and the knitted HML version. 
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
 <br>
+
+
+You can review the final project requirements here: [rubric](project/project-rubric.pdf). 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8cbcs87VHP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
+
+## Lab-01 - Conceptualizing Neighborhood Change 
+
+Over the next seven weeks you will be analyzing community revitalization efforts, and federal programs designed to channel private sector capital into distressed neighborhoods. 
+
+**Project Schedule**
+
+Each week you will complete one part of the analysis and submit your results for review. The instructor will play the role of your manager on this project, providing feedback and guidance on how to improve and revise each step to prepare it for the final deliverables.
+
+*	Week 1: Neighborhood Revitalization Background  
+*	Week 2: Construct Measures of Neighborhood Stability
+*	Week 3: Descriptive Analysis  
+*	Week 4: Predictive Analysis 
+*	Week 5: Merge Program Data 
+*	Week 6: Estimate Program Impact  
+*	Week 7: Finalize Deliverables 
+
+It’s important to start with a strong mental model of how communities change during revitalization efforts, and establish your own criteria for what successful revitalization looks like. Is it just about place? Just about people? Or some mix of the two? 
+
+The main challenge with many place-based efforts is that the easiest way to achieve success if you are not careful about what you are measuring is to move all of the poor people out of the neighborhood and move middle-class families into the neighborhood. Education test scores immediately rise. Unemployment rates drop. Income increases. But note that all of this impact can be achieved without actually raising anyone’s income, improving schools, or reducing unemployment if we are just shifting wealthy people to distressed neighborhoods and moving poor people out. 
+
+On the other hand, it is not realistic to assume no population movement in and out of a neighborhood. Even if a distressed community is not undergoing gentrification you still see a large proportion of poor people pushed out because they are evicted from apartments, moving closer to employment opportunities, or leave for other reasons. Churn is a natural part of neighborhood dynamics, and it is higher among the poor regardless of the neighborhood they live in. 
+
+For this lab, skim the following article and blog:
+
+1. Freeman, L. (2005). Displacement or succession? Residential mobility in gentrifying neighborhoods. Urban Affairs Review, 40(4), 463-491. [[PDF](articles/gentrification/displacement-or-succession.pdf)]
+2. Macaig (2015): Gentrification in America Report [[PDF](articles/gentrification/gentrification-in-america-report.pdf)]
+
+Consider two neighborhoods. Both are distressed in 2000. Both experience significant rises in income and increases in high school graduation rates. One is experiencing healthy revitalization for residents, and one is experiencing rapid gentrification. How can we tell these two cases apart? 
+
+For the lab, report the following: 
+
+1.	Select three census variables from the Longitudinal Tracts Data Base that can be used collectively as indicators for gentrification. The variables do not need to be used together an index. 
+2.	How would you measure each variable to accurately capture gentrification in a city? As a count? A ratio or percentage? A percentile relative to all other tracts in the United States? As a percentile relative to all other tracts in the city? Justify your answer with reasoning about which comparison is important. 
+3.	For each variable, explain what you expect to observe in neighborhoods that are gentrifying, and what you expect to observe in neighborhoods that are revitalizing (rates or measures of the variable are increasing or decreasing). 
+
+Submit a word document with your responses to these questions for at least three variables. 
+
+[ [LTDB CODEBOOK](data/LTDB-codebook.pdf) ]
+
+
+
+## Submit Solutions to Canvas:
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
+
 <br>
-
-
-<!---
-
-
-
-*** { @unit = "FRI Apr 3rd", @title = "YellowDig Discussion", @assignment }
-
 <br>
 
 ## Revisiting Gentrification 
@@ -1590,97 +1026,6 @@ Next week, after you have finished your lab report back on what level of gentrif
 
 
 -->
-
-
-
-
-
-
-
-
-<!--- 
-######################################################
-####
-####      WEEK 3
-####
-######################################################
--->
-
-** Week 3 - Putting Your Data House in Order
-
-
-
-*** { @unit = "", @title = "Unit Overview", @foldout }
-
-
-<br>
-
-## Building a Neighborhood Change Database
-
-In this project we are ultimately interested in building models to explain neighborhood change between 1990 and 2010.
-
-![](https://raw.githubusercontent.com/DS4PS/cpp-528-spr-2020/master/assets/img/median-home-value-change-2000-to-2010.png)
-
-Census data is central to this analysis. We have begun using the harmonized Longitudinal Tracts Data Base, and by now you understand the challenges of working with the data. 
-
-This unit covers the remaining data steps necessary to wrangle the harmonized census data into a meaningful format necessary to conduct descriptive analysis. 
-
-<br>
-
-## Lessons on Using Open Data
-
-In my experience Census data is ALWAYS way more complicated than it needs to be because it was designed by people whose primary job is to collect the data and build datasets. They are not the primary users of the data. Since they have to publish tables that allow policy-makers to ask and answer thousands of questions about US society in a way that doesn't violate privacy of individuals, the result is a framework with over 40,000 variables to account for myriad combinations of multiple variables that are needed to answer specifc questions. And also the result is an overwhelming amount of information and complixity for the typical user. 
-
-The week's lab demonstrates an important and strategic approach to using open-source administrative datasets. Just because you are using a free data source, you don't have to use their architecture. If the strugure of the data is confusing, find a framing that makes sense for you and your use cases and convert the raw data to that architecture. It is an up-front cost that often pays back the time invested with dividends. 
-
-I learned this lesson speaking with the DataWheel team, a group of programmers from MIT that started a company that creates awesome visualizations and reports using government data, most prominently on the DataUSA.io website. They describe their work in the following way: 
-
-> Our team, comprised of economists, data scientists, designers, researchers and business executives, worked for over a year with input from policymakers, government officials and everyday citizens to develop Data USA, the most comprehensive website and visualization engine of public US Government data. 
-> 
-> Data USA puts public US Government data in your hands. Instead of searching through multiple data sources that are often incomplete and difficult to access, you can simply point to Data USA to answer your questions. Data USA provides an open, easy-to-use platform that turns data into knowledge. It allows millions of people to conduct their own analyses and create their own stories about America – its people, places, industries, skill sets and educational institutions. Ultimately, accelerating society’s ability to learn and better understand itself.
-
-The brilliant thing they have done is taking data that is already *public* and *free* but almost impossible to use because of its complexity, and they redesigned the databases to make it easier to use. The reason their site works so well is they have essentially rebuilt two dozen large government databases, but removed all of the legacy design limitations and added the insight that the data needs to be linked to be valuable. They then built an API so that they can share the data with themselves. Specifically, each time a webpage is loaded for a city or other location it pulls the data on the locality fresh from their datbases and renders all of the website content in real time. 
-
-It's a simple insight, but an important one. When you start a large data project you should always be asking yourself, what would the data need to look like to make my analysis easy to implement? 
-
-
-## Lab Preview 
-
-This lab demonstrates a very minor redesign of the Longitudinal Tracts Database files to make the rest of the project smoother. 
-
-Variable names are standardized, files combined, meta-data on tracts made accessible, and a harmonization file is created to make it much faster and easier to use variables within the ten datasets. 
-
-You will follow the steps that were deployed to accomplish this, build a new data dictionary that has a more intuitive structure, and create a couple of functions to operationalize a more intuitive work flow with the data. 
-
-<br>
-<br>
-
-
-
-
-
-
-
-*** { @unit = "MON Apr 13th", @title = "Lab 03", @assignment, @foldout }
-
-<br>
-
-## Lab Instructions
- 
-*NOTE that the due date has been extended a week. Lab 03 and Lab 04 are both due on the same date. Additional code has been provided in the lab to siplify your tasks in order to account for the compressed schedule.*
-
-
-<a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-03-instructions.html">LAB INSTRUCTIONS</a>
-
-<br>
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">Submit Lab</a>
-
-<br>
-<br>
-
-
-
 
 
 
