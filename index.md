@@ -14,13 +14,13 @@ info:
  course_number: CPP 528 
  course_level: Graduate 
  course_website: 'https://canvas.asu.edu/courses/49307'
- course_start_end_dates: March 16 to May 01, 2020
+ course_start_end_dates: October 11 to Dec 4, 2020
  course_prerequisites:  
  class_meets_when:  Asynchronous  
  class_meets_where:  'https://asu.zoom.us/j/557182841'
  review_sessions_when: TBD 
  review_sessions_where: Zoom
- discussion_board_url: 'https://ds4ps.org/cpp-528-spr-2020/help/'
+ discussion_board_url: 'https://ds4ps.org/cpp-528-fall-2020/help/'
 
 instructor:
 -  name: Cristian E. Nuno
