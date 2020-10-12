@@ -159,7 +159,7 @@ Once you have completed this section you will be able to:
 
 ## Background Material 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u77n2nKmIP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uQxRUoqnRtc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Required Reading:**
 
@@ -210,6 +210,8 @@ Once you have completed this section you will be able to:
 Just like GitHub pages are a powerful feature available in each repository, GitHub also has project management tools built right in. 
 
 [Creating a Project Board](https://help.github.com/en/github/managing-your-work-on-github/creating-a-project-board)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nGRnHgeDAwA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. At the top of your repo, click on **Projects** 
 2. Select **New Project**  
@@ -263,9 +265,10 @@ You will find the final project rubric here:
 
 For your lab assignment this week split the rubric into tasks on your Kanban board on GitHub and make a preliminary plan for team members to take the lead on specific tasks.
 
+
 Let the instructor know when you have your board set up and ready for inspection by submitting the link for your project board. 
 
-[insert submission link]
+[Week 01 Lab Submission Link](https://canvas.asu.edu/courses/70101/assignments/1721185)
 
 
 <br>
