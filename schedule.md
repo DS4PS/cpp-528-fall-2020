@@ -438,20 +438,46 @@ CRISP-DM is one example of a project task-list, but not the only option. You wil
 
 <br>
 
-**Working with GitHub Desktop***
+### Portability & Version Control
 
-The following video showcases how to collaborate on GitHub using GitHub Desktop and RStudio. The video shows how to: 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FQpA2-lzNus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* clone a repository from GitHub;
-* create a new branch from master;
-* commit your changes;
-* push your changes;
-* submit a pull request;
-* add commits to a branch other than master; and 
-* how to pull in changes from master.
+Fundamentally, portability and version control are all about making sure that other people are:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nFPPJHmX7Lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
+1. able to re-run your code; and
+2. establish a clear history of edits that make it possible to identify, communicate, and ultimately resolve bugs in your code.
+
+These concepts will be enforced through four tools:
+* RStudio Projects;
+* The renv package;
+* The .gitignore file; and
+* Version control techniques via GitHub. 
+
+#### Lectures & Tutorial Videos
+
+This week will be the most demanding in terms of learning and directly applying what is covered in this week's videos. To break up the videos into digestable pieces of content, each tool is covered in two types of videos: lectures & tutorials. 
+
+All content covered in each of these videos is documented in this [Presentation](https://docs.google.com/presentation/d/1h5VXC6PDgZaZjfk9k56EJX0VlTlzYfxeAdWSW4vK-88/edit?usp=sharing). All transcripts from each lecture are preserved in the [Document](https://docs.google.com/document/d/1XnqtaHtKDpPZOV7ObpnglBewJGK6g_nS8HB88qMSHVw/edit?usp=sharing).
+
+
+The videos are presented in the order that they should be watched:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hAA9K4RYjhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A5W8mQf8ej8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_VmpLMuxv14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y_2PovxwUQc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4ee7a3qAYKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BYgfjwRQobY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xnji-nM16aA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xZTVulTBIzM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 
@@ -532,11 +558,6 @@ gropu project
 
 **Directory Structure**
 
-Your final deliverable will consist of two 10-slide presentations: 
-
-1. Results determining whether the tax policies are having the intended impact. 
-2. An guide to using the repository to replicate the study. 
-
 You need to provide careful documentation of how you get from raw data in your project to final results. Think about it as a book where each chapter covers a distinct task: 
 
 * Creating instruments to measure community health 
@@ -567,10 +588,6 @@ Your repository will have the following directories:
 * docs (website files go here) 
 
 Each folder should contain it's own README.md file with notes on what the folder contains. 
-
-Learn more about Portability and Version Control:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JOH3pZ47MVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
