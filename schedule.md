@@ -474,7 +474,7 @@ Tutorial:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A5W8mQf8ej8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-##### `renv` package**
+##### `renv` package
 
 Lecture:
 
@@ -484,7 +484,7 @@ Tutorial:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y_2PovxwUQc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-##### `.gitignore` file**
+##### `.gitignore` file
 
 Lecture:
 
