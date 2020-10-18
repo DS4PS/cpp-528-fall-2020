@@ -451,47 +451,57 @@ These concepts will be enforced through four tools:
 * The .gitignore file; and
 * Version control techniques via GitHub. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FQpA2-lzNus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-#### Lectures & Tutorial Videos
+#### Slide deck & transcript
 
 This week will be the most demanding in terms of learning and directly applying what is covered in this week's videos. To break up the videos into digestable pieces of content, each tool is covered in two types of videos: lectures & tutorials. 
 
 All content covered in each of these videos is documented in this [Presentation](https://docs.google.com/presentation/d/1h5VXC6PDgZaZjfk9k56EJX0VlTlzYfxeAdWSW4vK-88/edit?usp=sharing). All transcripts from each lecture are preserved in the [Document](https://docs.google.com/document/d/1XnqtaHtKDpPZOV7ObpnglBewJGK6g_nS8HB88qMSHVw/edit?usp=sharing).
 
-
 The videos are presented in the order that they should be watched:
 
-**Portability & RStudio Projects**
 
+
+##### Intro to WK02 Concepts
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FQpA2-lzNus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+##### Intro to Portability & RStudio Projects
 Lecture:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hAA9K4RYjhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Tutorial:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A5W8mQf8ej8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**`renv` package**
+##### `renv` package**
 
 Lecture:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_VmpLMuxv14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Tutorial:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y_2PovxwUQc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**`.gitignore` file**
+##### `.gitignore` file**
 
 Lecture:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4ee7a3qAYKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Tutorial:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BYgfjwRQobY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Git Feature Branch Workflow**
+##### Git Feature Branch Workflow
 
 Lecture:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xnji-nM16aA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Tutorial:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xZTVulTBIzM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
