@@ -440,8 +440,6 @@ CRISP-DM is one example of a project task-list, but not the only option. You wil
 
 ### Portability & Version Control
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FQpA2-lzNus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Fundamentally, portability and version control are all about making sure that other people are:
 
 1. able to re-run your code; and
@@ -453,6 +451,8 @@ These concepts will be enforced through four tools:
 * The .gitignore file; and
 * Version control techniques via GitHub. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FQpA2-lzNus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Lectures & Tutorial Videos
 
 This week will be the most demanding in terms of learning and directly applying what is covered in this week's videos. To break up the videos into digestable pieces of content, each tool is covered in two types of videos: lectures & tutorials. 
@@ -462,23 +462,37 @@ All content covered in each of these videos is documented in this [Presentation]
 
 The videos are presented in the order that they should be watched:
 
+**Portability & RStudio Projects**
+
+Lecture:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hAA9K4RYjhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Tutorial:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A5W8mQf8ej8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+**`renv` package**
+
+Lecture:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_VmpLMuxv14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Tutorial:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y_2PovxwUQc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+**`.gitignore` file**
+
+Lecture:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4ee7a3qAYKE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Tutorial:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BYgfjwRQobY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+**Git Feature Branch Workflow**
+
+Lecture:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xnji-nM16aA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Tutorial:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xZTVulTBIzM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 
 
 ## Lab Overview
