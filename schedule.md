@@ -20,7 +20,7 @@ yellowdig:
 labs:
   lab-01:  'Tuesday, October 20th'
   lab-02:  'Tuesday, October 27th'
-  lab-03:  'Tuesday, November 3rd'
+  lab-03:  'Friday, November 6th'
   lab-04:  'Tuesday, November 10th'
   lab-05:  'Tuesday, November 17th'
   lab-06:  'Tuesday, November 24th'
@@ -873,16 +873,14 @@ This phase emphasizes the important work of:
 
 **Descriptive Analysis**
 
-[TUTORIAL ON DESCRIPTIVE ANALYSIS](labs/lab-04-tutorial.html)
+[TUTORIAL ON DESCRIPTIVE ANALYSIS](labs/lab-03-tutorial.html)
 
-<a class="uk-button uk-button-default" href="../labs/lab-04-instructions.html">Lab Instructions</a>
-
-https://ds4ps.org/cpp-528-spr-2020/labs/lab-04-instructions.html
+<a class="uk-button uk-button-default" href="../labs/lab-03-instructions.html">Lab Instructions</a>
 
 <br>
 <hr>
 
-**Due on {{page.labs.lab-02}}**
+**Due on {{page.labs.lab-03}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">Submit Lab</a>
 
@@ -929,7 +927,7 @@ Next week, after you have finished your lab report back on what level of gentrif
 <br>
 
 
-**Post your reflection to YellowDig by {{page.yellowdig.post-02}}**
+**Post your reflection to YellowDig by {{page.yellowdig.post-03}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
 

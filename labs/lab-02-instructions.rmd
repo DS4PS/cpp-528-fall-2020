@@ -82,7 +82,7 @@ We have built a new data dictionary that solves these issues. It enables searchi
 
 ```{r}
 # store data dictionary file path
-DD_FILEPATH <- here::here( "data/ltdb_data_dictionary.csv" )
+DD_FILEPATH <- here::here( "data/raw/ltdb_data_dictionary.csv" )
 
 # import data dictionary
 dd <- read.csv( DD_FILEPATH, stringsAsFactors=F )
