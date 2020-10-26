@@ -1,5 +1,5 @@
 ---
-title: 'Lab 03 - Preparing Data For Analysis'
+title: 'Lab 02 - Preparing Data For Analysis'
 output:
   html_document:
     theme: readable
@@ -13,9 +13,10 @@ output:
 ---
 
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=F, warning=F, eval=T)
 library( dplyr )
+library( here )
 library( pander )
 ```
 
@@ -80,7 +81,11 @@ We have built a new data dictionary that solves these issues. It enables searchi
 
 
 ```{r}
-dd <- read.csv( "data/LTDB-DATA-DICTIONARY.CSV", stringsAsFactors=F )
+# store data dictionary file path
+DD_FILEPATH <- here::here( "data/ltdb_data_dictionary.csv" )
+
+# import data dictionary
+dd <- read.csv( DD_FILEPATH, stringsAsFactors=F )
 ```
 
 ```{r, echo=F}
@@ -318,7 +323,9 @@ Files in the **raw** folder will contain all of the original data files you have
 
 Files in the **wrangling** folder will include mostly scripts and intermediary steps you use to clean and transform your data. Any intermediary datasets you produce as part of the process that are not used in the final analysis can also live here. I will also include descriptive reports or tables that I create to check for errors in the datasets or to describe the data. 
 
-You will load data from the **raw** folder, and ultimately write data to the **rodeo** folder using scripts in your **wrangling** folder. This means that a script needs to be able to go up one level to the main folder, and back down into another folder for read or write steps. It is useful to note the path trick for going up a level:
+You will load data from the **raw** folder, and ultimately write data to the **rodeo** folder using scripts in your **wrangling** folder. This means that a script needs to be able to go up one level to the main folder, and back down into another folder for read or write steps. 
+
+This is why the [`here` package](https://ds4ps.org/cpp-528-fall-2020/schedule/#intro-to-portability--rstudio-projects) is introduced to you this week: so that you only need to point to where the data lives at the time of loading rather than constantly being aware of where your working directory is located at all times. *However, it is useful to note the path trick for going up a level*:
 
 ```
 dat <- read.csv( "../raw/file-name.csv" )
