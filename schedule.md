@@ -669,7 +669,7 @@ You should not be doing data wrangling in your analytical steps with the excepti
 
 **Due on {{page.labs.lab-02}}**
 
-<a class="uk-button uk-button-default" href="labs/lab-02-instructions.html">LAB INSTRUCTIONS</a>
+<a class="uk-button uk-button-default" href="../labs/lab-02-instructions.html">LAB INSTRUCTIONS</a>
 
 <br>
 
@@ -1020,7 +1020,7 @@ We would like to understand some general dimensions of community health (or vuln
 
 <br>
 
-<a class="uk-button uk-button-default" href="labs/lab-02-tutorial.html">Index Construction Example</a>
+<a class="uk-button uk-button-default" href="../labs/lab-02-tutorial.html">Index Construction Example</a>
 
 <br> 
 
