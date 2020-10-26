@@ -527,12 +527,6 @@ Most of the variables you need will come from the first dataset, which is compri
 
 The second dataset contains only variables that come from the Dicennial Census short form, and thus they are population measures and not sample estimates. 
 
-<br>
-
-<a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-02-tutorial.html">Index Construction Example</a>
-
-<br> 
-
 **Set Up Your Data Directory**
 
 While working on Lab-02 start building out your **data** directory for your project. 
@@ -675,7 +669,7 @@ You should not be doing data wrangling in your analytical steps with the excepti
 
 **Due on {{page.labs.lab-02}}**
 
-<a class="uk-button uk-button-default" href="https://ds4ps.org/cpp-528-spr-2020/labs/lab-03-instructions.html">LAB INSTRUCTIONS</a>
+<a class="uk-button uk-button-default" href="labs/lab-02-instructions.html">LAB INSTRUCTIONS</a>
 
 <br>
 
@@ -692,7 +686,7 @@ You should not be doing data wrangling in your analytical steps with the excepti
 
 **Refining a Theory of Neighborhood Change**
 
-The first step in the CRISP-R model is developing a **"Business Understanding"** of the problem. In evaluation we will refer to this step as defining our theory of change for the program - how we believe the program or project is creating impact. 
+The first step in the CRISP-DM model is developing a **"Business Understanding"** of the problem. In evaluation we will refer to this step as defining our theory of change for the program - how we believe the program or project is creating impact. 
 
 *This stage is aimed toward getting a general understanding of the client’s business. It is crucial in most cases to understand the application of the product to be developed. If it is skipped — you might end up with a great solution for a problem that does not exist.*
 
@@ -1023,6 +1017,12 @@ We are going to look at how distressed urban communities change between 2000 and
 **Part 1:**
 
 We would like to understand some general dimensions of community health (or vulnerability) in order to measure the initial conditions of communities in 2000. Your task this week will be to develop and report **three reliable instruments** describing your community, each using at least three independent variables (by independent I mean you can’t use things like median household income and per capita income, or percent white and percent non-white, as separate variables since those are two measures of the same underlying constructs). Each of your indices needs to achieve a Conbach’s alpha reliability score of at least 0.70. 
+
+<br>
+
+<a class="uk-button uk-button-default" href="labs/lab-02-tutorial.html">Index Construction Example</a>
+
+<br> 
 
 I would suggest a measure of economic strength of the community, a measure of vulnerability of the community, and another measure of your choice. You might think in terms of human capital, social capital, financial capital, or population demographics and diversity. Review your labs from CPP 529 for some ideas. 
 
