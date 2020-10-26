@@ -1,7 +1,7 @@
 # ignore CSV files that are within the .zip files
-data/*Global_Neighborhood.csv
-data/*fullcount.csv
-data/ltdb_std_all_sample/
+data/raw/
+data/wrangling/
+data/rodeo/
 
 # ignore custom data dictionary to ensure students do not copy
 data/ltdb_data_dictionary.csv
