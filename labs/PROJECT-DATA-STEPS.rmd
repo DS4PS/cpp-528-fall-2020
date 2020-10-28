@@ -5,7 +5,9 @@ output:
     theme: readable
     df_print: paged
     highlight: tango
-    css: textbook.css
+    toc: yes
+    toc_float: no
+    css: 'lab-instructions.css'
 ---
 
 # Tutorial on cleaning the LTDB 
