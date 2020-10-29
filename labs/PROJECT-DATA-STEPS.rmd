@@ -7,7 +7,6 @@ output:
     highlight: tango
     toc: yes
     toc_float: no
-    css: 'lab-instructions.css'
 ---
 
 # Tutorial on cleaning the LTDB 
