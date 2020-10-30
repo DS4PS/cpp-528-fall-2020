@@ -1065,7 +1065,7 @@ Excerpt from NPR: “A Look At The Wealth And Income Gap, By ZIP Code”:
 <br>
 
 
-**Lab 02 Deliverables:**
+**Lab 04 Deliverables:**
 
 This section will become the first chapter in the methodology section of your final report. Draft the section as if you are explaining the methodologies to someone that is not on your team and unfamiliar with the background literature. Make sure you document the reasoning behind each step. 
 
@@ -1079,15 +1079,14 @@ Use common sense when constructing your metrics, and be sure to describe your me
 
 Write up your results and submit your RMD file and the knitted HML version. 
 
+**Due on {{page.labs.lab-04}}**
+
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
 <br>
 
 
 You can review the final project requirements here: [rubric](project/project-rubric.pdf). 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8cbcs87VHP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 <br>
 <hr>
