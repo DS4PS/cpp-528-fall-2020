@@ -42,22 +42,11 @@ Omit cases that have a median home value less than $10,000 in 2000.
 
 Omit cases with growth rates above 200%. 
 
+# Part 2 - Predict MHV Change 
 
+Select at least three census variables that you feel will be good predictors of change in MHV between 2000 and 2010. 
 
-# Part 2 - Community Health 
-
-Reconstruct your three community health scales from Lab 02. 
-
-Run three bivariate regressions predicting MHV growth with each community health metric, and one regression with all three metrics together. 
-
-Which metric, if any, best predicts change in home value? Does this fit with your expectations? 
-
-
-# Part 3 - Predict MHV Change 
-
-How select at least three census variables that you feel will be good predictors of change in MHV between 2000 and 2010. 
-
-Run the model while including metro-level fixed effects (**cbsa** name or FIPS). Make sure you check for variable skew and multicollearity and adjust accordingly. 
+Run the model while including metro-level fixed effects (**cbsa** name or FIPS). Make sure you check for variable skew and multicollinearity and adjust accordingly. 
 
 What are the results? Which factor was most important? Did it meet your expectations? Were there any variables that were not significant that you expected to be? 
 
