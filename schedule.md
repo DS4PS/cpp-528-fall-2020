@@ -990,7 +990,7 @@ Since we are using the median home value variable which represents an entire cen
 
 <a class="uk-button uk-button-default" href="../labs/lab-04-instructions.html">Lab Instructions</a>
 
-Use common sense when constructing your metrics, and be sure to describe your methodology using R Markdown documents, showing your code for all of the steps. 
+Give context into *why* you are working on this lab and be sure to describe your methodology using R Markdown documents, showing your code for all of the steps. 
 
 Write up your results and submit your RMD file and the knitted HML version when both upload to Canvas and share with your teammates via GitHub. 
 
@@ -1032,7 +1032,7 @@ Which control variables did you find to best predict the revitalization in your 
 
 
 
-# Week 6 - Adding Federal Data 
+# Week 5 - Adding Federal Data 
 
 
 
@@ -1041,166 +1041,97 @@ Which control variables did you find to best predict the revitalization in your 
 
 <br>
 
+This week offers an opportunity to analyze real-world policy data to make sense of two large federal programs.
 
+The first part, Lab 04, asks you to build a model of home value change using census data that describes tracts in 2000 and 2010.
 
-Introduction to models where the outcome is home value: hedonic pricing models. 
+Lab 05 then extends this baseline model by adding data on the New Market Tax Credits (NMTC) and Low Income Housing Tax Credit (LIHTC) programs.
 
-The main insight is that home price is a variable that aggregates a tremendous amount of information about characteristics of houses, neighborhoods, and cities. We can use regression to separate out these difference attributes at different levels, and see they each contributes to the market value of a home. 
+The labs are designed to give you experience working with real-world data and all of its flaws, and to reinforce some of the content from CPP 523, 524, and 525.
 
-Since we are using the median home value variable which represents an entire census tract we focus on how neighborhood attributes and changes in attributes over time impact the average home price in the tract. 
+The analysis is complex, so we are looking for modest models with a small number of variables, which gives you a chance to clean up the data if necessary and spend time interpreting results.
 
-[Hedonic Pricing Models Overview](https://github.com/DS4PS/cpp-528-spr-2020/raw/master/articles/home-value-change/hedonic-pricing-method.pdf)
-
-[Hedonic Pricing Regression Example in R](https://github.com/buruzaemon/hedonic)
-
-[Valuation Using Hedonic Pricing Models](https://scholarship.sha.cornell.edu/cgi/viewcontent.cgi?article=1058&context=crer)
-
-
-<br>
-
-
-
-
-## Lab-05 - Conceptualizing Neighborhood Change 
-
-Over the next seven weeks you will be analyzing community revitalization efforts, and federal programs designed to channel private sector capital into distressed neighborhoods. 
-
-**Project Schedule**
-
-Each week you will complete one part of the analysis and submit your results for review. The instructor will play the role of your manager on this project, providing feedback and guidance on how to improve and revise each step to prepare it for the final deliverables.
-
-*	Week 1: Neighborhood Revitalization Background  
-*	Week 2: Construct Measures of Neighborhood Stability
-*	Week 3: Descriptive Analysis  
-*	Week 4: Predictive Analysis 
-*	Week 5: Merge Program Data 
-*	Week 6: Estimate Program Impact  
-*	Week 7: Finalize Deliverables 
-
-It’s important to start with a strong mental model of how communities change during revitalization efforts, and establish your own criteria for what successful revitalization looks like. Is it just about place? Just about people? Or some mix of the two? 
-
-The main challenge with many place-based efforts is that the easiest way to achieve success if you are not careful about what you are measuring is to move all of the poor people out of the neighborhood and move middle-class families into the neighborhood. Education test scores immediately rise. Unemployment rates drop. Income increases. But note that all of this impact can be achieved without actually raising anyone’s income, improving schools, or reducing unemployment if we are just shifting wealthy people to distressed neighborhoods and moving poor people out. 
-
-On the other hand, it is not realistic to assume no population movement in and out of a neighborhood. Even if a distressed community is not undergoing gentrification you still see a large proportion of poor people pushed out because they are evicted from apartments, moving closer to employment opportunities, or leave for other reasons. Churn is a natural part of neighborhood dynamics, and it is higher among the poor regardless of the neighborhood they live in. 
-
-For this lab, skim the following article and blog:
-
-1. Freeman, L. (2005). Displacement or succession? Residential mobility in gentrifying neighborhoods. Urban Affairs Review, 40(4), 463-491. [[PDF](articles/gentrification/displacement-or-succession.pdf)]
-2. Macaig (2015): Gentrification in America Report [[PDF](articles/gentrification/gentrification-in-america-report.pdf)]
-
-Consider two neighborhoods. Both are distressed in 2000. Both experience significant rises in income and increases in high school graduation rates. One is experiencing healthy revitalization for residents, and one is experiencing rapid gentrification. How can we tell these two cases apart? 
-
-For the lab, report the following: 
-
-1.	Select three census variables from the Longitudinal Tracts Data Base that can be used collectively as indicators for gentrification. The variables do not need to be used together an index. 
-2.	How would you measure each variable to accurately capture gentrification in a city? As a count? A ratio or percentage? A percentile relative to all other tracts in the United States? As a percentile relative to all other tracts in the city? Justify your answer with reasoning about which comparison is important. 
-3.	For each variable, explain what you expect to observe in neighborhoods that are gentrifying, and what you expect to observe in neighborhoods that are revitalizing (rates or measures of the variable are increasing or decreasing). 
-
-Submit a word document with your responses to these questions for at least three variables. 
-
-[ [LTDB CODEBOOK](data/LTDB-codebook.pdf) ]
-
-
-### Subsidies distort incentives 
-
-US healthcare is so expensive relative to other countries because health insurance distorts incentives. If you have insurance then the marginal cost of selecting premium care over basic or preventative care is very low. If you are a doctor practicing medicine in a system where hospitals are frequently sued then any time you have to make a decision involving a treatment that probably won't help but likely won't hurt you will take the safe option and prescribe more procedures and name-brand drugs to protect yourself. As a result neither patients nor doctors have any incentive to control costs.
-
-Similarly, economic development policy that was designed to help communities can actually hurt them. Development is capital-intensive, which means most poor communities do not have the resources needed to catalyze their own growth. So state and federal programs have been created to cover infrastructure costs and programs to attract or expand companies. But they are problematic in that they pay 
-
-https://www.strongtowns.org/journal/2018/8/22/the-more-we-grow-the-poorer-we-become-td9nw
-
-
-https://www.strongtowns.org/journal/2011/6/13/the-growth-ponzi-scheme-part-1.html
-
-
-
-
-**Post your reflection YellowDig:**
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
-
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-
-# Week 6 - Adding Federal Program Data 
-
-
-This week offers an opportunity to analyze real-world policy data to make sense of two large federal programs. 
-
-The first part, Lab 05, asks you to build a model of home value change using census data that describes tracts in 2000 and the community health scales you created. 
-
-Lab 06 then extends this baseline model by adding data on the New Market Tax Credits (NMTC) and Low Income Housing Tax Credit (LIHTC) programs. 
-
-The labs are designed to give you experience working with real-world data and all of its flaws, and to reinforce some of the content from CPP 523, 524, and 525. 
-
-The analysis is complex, so we are looking for modest models with a small number of variables, which gives you a chance to clean up the data if necessary and spend time interpretting results. 
-
-Your final grade is primarily based upon your group's ability to compile all of the steps into a repository that makes this project fully transparent and reproducible (revisit the final project rubric if you have questions). So spend as much time as you can on the models, but be sure to leave time for putting it all together. 
-
-<br>
-
-
-
-<br>
-
-
-Summary of Tax Credit Programs
+## Summary of Tax Credit Programs
 
 
 <br>
 
 [Background Info on NMTC & LIHTC](../lectures/NMTC-and-LIHTC-overview.pdf)
 
-
-
 <br>
 
-<a class="uk-button uk-button-default" href="../labs/lab-05-tutorial.html">Tutorial</a>
+## Lab Overview
+
+This last step in your project will walk you through adding data from two federal programs designed to help low-income communities.
+
+You will use the following tutorial to add federal program data to your models. Ultimately, you will go onto use the difference-in-difference framework introduced here to estimate the impact of each program. 
+
+### Lab Instructions
+
+* Use your baseline model predicting tract change from Lab 04 as the starting point. 
+* Create a log-linear diff-in-diff model following these steps and add your control variables from Lab 04. 
 
 <a class="uk-button uk-button-default" href="../labs/lab-05-instructions.html">Lab Instructions</a>
 
+Give context into *why* you are working on this lab and be sure to describe your methodology using R Markdown documents, showing your code for all of the steps. 
 
-<br>
+Write up your results and submit your RMD file and the knitted HML version when both upload to Canvas and share with your teammates via GitHub. 
 
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
-
-<br>
-
-<a class="uk-button uk-button-default" href="../labs/lab-06-tutorial.html">Tutorial</a>
-
-
-<br>
-
-
-
-## Submit Solutions to Canvas:
+**Due on {{page.labs.lab-05}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
 <br>
+<hr>
+
+## YellowDig Discussion
+
+Share your final models and insights on the outcome.
+
+Do Low Income Tax Credits seem to have an impact on home values?
+
+Do New Market Tax Credits impact home values?
+
+**Post your reflection to YellowDig by {{page.yellowdig.post-05}}**
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
 
 
-### Models
+<br>
+<hr>
+<br>
 
-Share your final models and insights on the outcome. 
 
-Which control variables did you find to best predict the revitalization in your model? 
+# Week 6 - Bringing it all together
 
-Do Low Income Tax Credits seem to have an impact on home values? 
 
-Do New Market Tax Credits impact home values? 
+## Place building blocks into the `analysis/` directory
+This week offers you an opportunity to finally use the `analysis/` directory. As a team, you will determine which teammates' lab will be used as the building blocks for your group website.
+
+The reason why you're picking one person's lab is so that you can all agree which labs to move from the `labs/` directory into the `analysis/` directory. Once those labs are there, please drop the last names from the file as these are now team-owned labs.
+
+## Review the chapter requirements within the project rubric
+Once selected, you should return to your [project rubric](../project/project-rubric.pdf) and make sure you are able to add more context to write the following four documents:
+* Chapter on descriptive analysis of neighborhood change
+* Chapter predicting change with neighborhood characteristics
+* Chapter describing tax credit programs (NMTC & LIHTC)
+* Predictive models after adding tax credit programs
+
+## Deliverables
+
+This week your team deliverable is to:
+* Create a boiler plate GitHub Pages website
+* Create an executive summary
+* Schedule office hours with me as a team to review your work / address any point points
+
+**Due on {{page.labs.lab-06}}**
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT WEBSITE URL</a>
 
 
 **Post your reflection YellowDig:**
+
+I only have one question for you: what pain point did you experience this week? If you could go back in time, how would you resolve these problems?
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
 
@@ -1236,7 +1167,7 @@ The weekly YellowDig point restrictions have been lifted this week, so all of yo
 
 Make sure to review the project rubric to ensure you have included all of the necessary components: 
 
-[Grading Rubric](https://github.com/DS4PS/cpp-528-spr-2020/raw/master/project/project-rubric.pdf)
+[Grading Rubric](../project/project-rubric.pdf)
 
 
 ## Submit to Canvas:
