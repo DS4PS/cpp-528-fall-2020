@@ -1,5 +1,5 @@
 ---
-title: 'Adding Federal Program Data'
+title: 'Lab 05: Adding Federal Program Data'
 output:
   html_document:
     theme: readable
@@ -20,6 +20,7 @@ knitr::opts_chunk$set( echo=TRUE, message=F, warning=F, eval=T, fig.width=10 )
 
 ```{r}
 library( dplyr )
+library( here )
 library( knitr )
 library( pander )
 library( stargazer )
@@ -84,9 +85,10 @@ Load your wrangled datasets and prepare your variables for analysis:
 
 
 ```{r}
-d1 <- readRDS( "data/rodeo/LTDB-2000.rds" )
-d2 <- readRDS( "data/rodeo/LTDB-2010.rds" )
-md <- readRDS( "data/rodeo/LTDB-META-DATA.rds" )
+# remember to use here::here() when importing data
+d1 <- readRDS( here::here( "data/rodeo/LTDB-2000.rds" ) )
+d2 <- readRDS( here::here( "data/rodeo/LTDB-2010.rds" ) )
+md <- readRDS( here::here( "data/rodeo/LTDB-META-DATA.rds" ) )
 
 d1 <- select( d1, - year )
 d2 <- select( d2, - year )
@@ -1001,7 +1003,7 @@ Use this script to add federal program data to your models.
 Use the difference-in-difference framework introduced here to estimate the impact of each program. 
 
 * Use your baseline model predicting tract change from Lab 05 as the starting point. 
-* Create a log-linear diff-in-diff model following these steps and add your control variables from Lab 05. 
+* Create a log-linear diff-in-diff model following these steps and add your control variables from Lab 04. 
 
 Report and interpret the main results from the models. **Are the programs effective at catalyzing neighborhood improvement?** We are assuming median home value captures the increased market demand that reflects the desirability of improvements.
 
