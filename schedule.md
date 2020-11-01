@@ -956,49 +956,25 @@ Next week, after you have finished your lab report back on what level of gentrif
 
 
 
-# Week 4 - Measuring Neighborhood Health 
+# Week 4 - Predicting Neighborhood Change 
 
-This week you will practice variable transformations by creating indices or scales of community health from census data. This exercise is an extension of work you have done in CPP 529. 
-
-It is also recommended that you begin organize your data step folders on GitHub as part of your final project. See below for some detailed instructions. 
-
-There are no assigned readings for this week, but the following resources are provided for examples of studies that have created community health indices, and reference material on creating reliable instruments or scales. 
+This week you will accomplish two things: practice variable transformations and build your baseline model of neighborhood change before adding the policy variables in the next lab. 
 
 <br>
 
 ## Background Reading 
 
-**Manduca, R., & Sampson, R. J. (2019). Punishing and toxic neighborhood environments independently predict the intergenerational social mobility of black and white children. Proceedings of the National Academy of Sciences, 116(16), 7772-7777.** [[PDF](articles/community-index/toxic-neighborhoods-and-social-mobility.pdf)]
+Introduction to models where the outcome is home value: hedonic pricing models. 
 
-*We use data on intergenerational social mobility by neighborhood to examine how social and physical environments beyond concentrated poverty predict children’s long-term well-being. First, we examine neighborhoods that are harsh on children’s development: those characterized by high levels of violence, incarceration, and lead exposure….Our explanatory variables are constructed from the Community Survey of the PHDCN, which interviewed a representative sample of Chicago residents about their neighborhood social environments in 1995 and 2002 (combined N of ∼12,000); violent crime rates per 100,000 population from 1995 to 2000, derived from offenses reported by citizens to the police; incarceration rates per population from 1995 to 2000, derived from prison admission data; and lead exposure among children from 1995 to 1997, derived from more than 150,000 blood-level tests conducted by Chicago’s health department.*
+The main insight is that home price is a variable that aggregates a tremendous amount of information about characteristics of houses, neighborhoods, and cities. We can use regression to separate out these difference attributes at different levels, and see they each contributes to the market value of a home. 
 
-**Economic Innovation Group. (2016). The 2016 distressed communities index: An analysis of community well-being across the United States.**  [[PDF](articles/community-index/distressed-communities-index-report.pdf)] [[WEBSITE](https://eig.org/dci)]
+Since we are using the median home value variable which represents an entire census tract we focus on how neighborhood attributes and changes in attributes over time impact the average home price in the tract. 
 
-[METHODOLOGY](https://eig.org/dci/methodology)
+[Hedonic Pricing Models Overview](articles/home-value-change/hedonic-pricing-method.pdf)
 
-Excerpt from NPR: “A Look At The Wealth And Income Gap, By ZIP Code”: 
+[Hedonic Pricing Regression Example in R](https://github.com/buruzaemon/hedonic)
 
-*"The United States is still a land of opportunity for many. But when it comes to life outcomes, geography is too often destiny," says a report from the Economic Innovation Group, a research organization. Despite the economic recovery, the report says, life for those in the most distressed ZIP codes looks "much more like an ongoing downturn. Large swaths of the country are indeed being left behind by economic growth and change." The report calculates what it calls a "distressed community index" using seven metrics: housing vacancy rates, the number of adults working, the poverty rate, median income, the number of people with high school degrees, the change in employment and the rate of business formation.*
-
-**Ellen, I. G., & Turner, M. A. (1997). Does neighborhood matter? Assessing recent evidence. Housing Policy Debate, 8(4), 833-866.** [[PDF](https://github.com/DS4PS/cpp-529-master/blob/master/articles/social-mobility/does-neighborhood-matter-assessing-recent-evidence.pdf)]
-
-## Reference Material on Reliability 
-
-This section introduces the field of measurement theory in psychology and social sciences, which is used to create scales or indices that allow us to observe and document things that are not easy to measure. 
-
-> Many variables studied by psychologists are straightforward and simple to measure. These include sex, age, height, weight, and birth order. You can often tell whether someone is male or female just by looking. You can ask people how old they are and be reasonably sure that they know and will tell you. Although people might not know or want to tell you how much they weigh, you can have them step onto a bathroom scale. Other variables studied by psychologists—perhaps the majority—are not so straightforward or simple to measure. We cannot accurately assess people’s level of intelligence by looking at them, and we certainly cannot put their self-esteem on a bathroom scale. **These kinds of variables are called latent CONSTRUCTS** (pronounced CON-structs) and include personality traits (e.g., extraversion), emotional states (e.g., fear), attitudes (e.g., toward taxes), and abilities (e.g., athleticism). [[Understanding Psychological Measurement](https://opentextbc.ca/researchmethods/chapter/understanding-psychological-measurement/)]
-
-We are less interested in psychological measures as in constructs of neighborhood quality. But we will use some of the tools developed in psychometrics to help us develop a reliable measure of neighborhood quality. 
-
-Schäffer, U. (2007). Management accounting & control scales handbook. Springer Science & Business Media. [ [2-page PDF](https://github.com/DS4PS/cpp-529-master/raw/master/articles/measurement/introduction-to-construct-measurement.pdf) ] 
-
-*Pitkin, B. (2001). Theories of neighborhood change: Implications for community development policy and practice. UCLA Advanced Policy Institute, 28.* [[PDF](articles/neighborhood-change-theories/theories-of-neighborhood-change.pdf)]
-
-*Measurement Theory and Practice, from: Smith, F. (2002). Research methods in pharmacy practice. Pharmaceutical Press.* [ [PDF](articles/measurement/measurement-theory-and-practice.pdf) ]
-
-*Schäffer, U. (2007). Management accounting & control scales handbook. Springer Science & Business Media.* [ [full text](articles/measurement/Management-Accounting-and-Control-Scales-Handbook.pdf) ]
-
-*MacKenzie, S. B., Podsakoff, P. M., & Podsakoff, N. P. (2011). Construct measurement and validation procedures in MIS and behavioral research: Integrating new and existing techniques. MIS quarterly, 35(2), 293-334.* [ [PDF](articles/measurement/construct-measurement-and-validation-in-behavioral-research.pdf) ]
+[Valuation Using Hedonic Pricing Models](https://scholarship.sha.cornell.edu/cgi/viewcontent.cgi?article=1058&context=crer)
 <br>
 <br>
 
@@ -1008,96 +984,38 @@ Schäffer, U. (2007). Management accounting & control scales handbook. Springer 
 
 ## Lab Overview 
 
-**Developing Community Indices to Measure Change**
+**The dependent variable in our model is the median home value**. The choice draws on a large body of work on “hedonic pricing models” which assert that home values are a good price mechanism to capture the state of a neighborhood because they “price in” all of the characteristics of the house as well as the features of the neighborhood and surrounding city.
 
-We are going to look at how distressed urban communities change between 2000 and 2010. Median home value with be one of the primary variables we will use in the model since it captures a lot of information about the ‘neighborhood’ (census tract). But we will also utilize some neighborhood health metrics as predictors and outcomes. 
+[TUTORIAL ON PREDICTING MHV CHANGE](labs/lab-04-tutorial.html)
 
-**Part 1:**
-
-We would like to understand some general dimensions of community health (or vulnerability) in order to measure the initial conditions of communities in 2000. Your task this week will be to develop and report **three reliable instruments** describing your community, each using at least three independent variables (by independent I mean you can’t use things like median household income and per capita income, or percent white and percent non-white, as separate variables since those are two measures of the same underlying constructs). Each of your indices needs to achieve a Conbach’s alpha reliability score of at least 0.70. 
-
-<br>
-
-<a class="uk-button uk-button-default" href="../labs/lab-02-tutorial.html">Index Construction Example</a>
-
-<br> 
-
-I would suggest a measure of economic strength of the community, a measure of vulnerability of the community, and another measure of your choice. You might think in terms of human capital, social capital, financial capital, or population demographics and diversity. Review your labs from CPP 529 for some ideas. 
-
-Report the following: 
-
-* Your three instruments
-* The latent constructs that you believe they measure
-* The summary statistics for **urban** census tracts (min, 25th percentile, median, mean, 75th percentile, max) 
-* Reliability scores for each instrument 
-
-
-**Reliability**
-
-To test the reliability of your instrument you first need to transform each raw variable into a meaningful metric. For example, many of the census variables will be reported as raw counts of people or households within the census tract. You might divide by the tract population for each to change them into percentages before comparison since census tracts are difference sizes (for example, percentage of households that are white in a tract, a percentage foreign born, and percentage of people over the age of 65). 
-
-In many cases translating variables into Z scores can make the data easier to use and is necessary before aggregating individual variables into an index to avoid over-weighting one variable. A z-score normalizes a variable by making the mean for each measure zero, and the standard deviation one. In doing so you can now add three variables together that are measured on very different scales. This step is only appropriate when working with continous data. 
-
-```r
-# pseudo-code only
-Z1 <- standardize( X1 )
-Z2 <- standardize( X2 )
-Z3 <- standardize (X3 )
-calculate_alpha( Z1, Z2, Z3 )
-```
-
-
-The following articles provide examples of studies that utilize neighborhood quality indices: 
-
-**Manduca, R., & Sampson, R. J. (2019). Punishing and toxic neighborhood environments independently predict the intergenerational social mobility of black and white children. Proceedings of the National Academy of Sciences, 116(16), 7772-7777.** [PDF](articles/community-index/toxic-neighborhoods-and-social-mobility.pdf)
-
-*We use data on intergenerational social mobility by neighborhood to examine how social and physical environments beyond concentrated poverty predict children’s long-term well-being. First, we examine neighborhoods that are harsh on children’s development: those characterized by high levels of violence, incarceration, and lead exposure….Our explanatory variables are constructed from the Community Survey of the PHDCN, which interviewed a representative sample of Chicago residents about their neighborhood social environments in 1995 and 2002 (combined N of ∼12,000); violent crime rates per 100,000 population from 1995 to 2000, derived from offenses reported by citizens to the police; incarceration rates per population from 1995 to 2000, derived from prison admission data; and lead exposure among children from 1995 to 1997, derived from more than 150,000 blood-level tests conducted by Chicago’s health department.*
-
-**Economic Innovation Group. (2016). The 2016 distressed communities index: An analysis of community well-being across the United States.**  [PDF](articles/community-index/distressed-communities-index-report.pdf) [WEBSITE](https://eig.org/dci)
-
-[METHODOLOGY](https://eig.org/dci/methodology)
-
-Excerpt from NPR: “A Look At The Wealth And Income Gap, By ZIP Code”: 
-
-*"The United States is still a land of opportunity for many. But when it comes to life outcomes, geography is too often destiny," says a report from the Economic Innovation Group, a research organization. Despite the economic recovery, the report says, life for those in the most distressed ZIP codes looks "much more like an ongoing downturn. Large swaths of the country are indeed being left behind by economic growth and change." The report calculates what it calls a "distressed community index" using seven metrics: housing vacancy rates, the number of adults working, the poverty rate, median income, the number of people with high school degrees, the change in employment and the rate of business formation.*
-
-<hr> 
-<br>
-
-
-**Lab 04 Deliverables:**
-
-This section will become the first chapter in the methodology section of your final report. Draft the section as if you are explaining the methodologies to someone that is not on your team and unfamiliar with the background literature. Make sure you document the reasoning behind each step. 
-
-It should be split into three sections. 
-
-1. The first will describe and justify the selection of the gentrification metrics. 
-2. The second will describe the construction of your three neighborhood health indices and their reliability scores. 
-3. The third will present descriptive statistics on all of the metrics for all urban census tracts. 
+<a class="uk-button uk-button-default" href="../labs/lab-04-instructions.html">Lab Instructions</a>
 
 Use common sense when constructing your metrics, and be sure to describe your methodology using R Markdown documents, showing your code for all of the steps. 
 
-Write up your results and submit your RMD file and the knitted HML version. 
+Write up your results and submit your RMD file and the knitted HML version when both upload to Canvas and share with your teammates via GitHub. 
 
 **Due on {{page.labs.lab-04}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
 <br>
+<hr>
 
+## YellowDig Discussion
 
-You can review the final project requirements here: [rubric](project/project-rubric.pdf). 
+Share your final models and insights on the outcome.
+
+Which control variables did you find to best predict the revitalization in your model?
+
+**Post your reflection to YellowDig by {{page.yellowdig.post-04}}**
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.yellowdig_url}}">YELLOWDIG</a>
+
 
 <br>
 <hr>
 <br>
 
-**Submit Solutions to Canvas:**
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
-
-<hr>
-<br>
 
 
 
@@ -1114,9 +1032,7 @@ You can review the final project requirements here: [rubric](project/project-rub
 
 
 
-
-
-# Week 5 - Predicting Neighborhood Change 
+# Week 6 - Adding Federal Data 
 
 
 
