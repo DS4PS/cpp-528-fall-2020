@@ -7,7 +7,6 @@ output:
     highlight: tango
     toc: yes
     toc_float: no
-    css: 'lab-instructions.css'
 ---
 
 ```{r setup, include=FALSE}
@@ -59,7 +58,21 @@ s.type <- "html"
 
 # Overview
 
-This last step in your project will walk you through adding data from two federal programs designed to help low-income
+This last step in your project will walk you through adding data from two federal programs designed to help low-income communities.
+
+## Run This Tutorial Locally
+
+Similar to Week 03, you will need to re-run this tutorial locally. However, you're not doing it to produce data objects; rather, you are doing it to show the reader how you obtained federal data.
+
+To re-run the tutorial locally, follow these steps:
+
+1. Open a blank text file in RStudio by going to `File` --> `New File` --> `Text File`.
+2. [Copy the raw `.rmd` file](https://raw.githubusercontent.com/DS4PS/cpp-528-fall-2020/master/labs/lab-05-instructions.rmd);
+3. Paste the `.rmd` code into the blank text file.
+4. Save the blank test file in `labs/wk05/data_steps.rmd`.
+5. Click on the `Knit` to knit the results to a HTML file.
+
+As best practice, a teamm mate should volunteer to do this on behalf of the team. Store the work in a new branch, push to GitHub, and create a pull request so that `main` can be updated.
 
 
 **About the NMTC Program**
@@ -1002,7 +1015,7 @@ Use this script to add federal program data to your models.
 
 Use the difference-in-difference framework introduced here to estimate the impact of each program. 
 
-* Use your baseline model predicting tract change from Lab 05 as the starting point. 
+* Use your baseline model predicting tract change from Lab 04 as the starting point. 
 * Create a log-linear diff-in-diff model following these steps and add your control variables from Lab 04. 
 
 Report and interpret the main results from the models. **Are the programs effective at catalyzing neighborhood improvement?** We are assuming median home value captures the increased market demand that reflects the desirability of improvements.
