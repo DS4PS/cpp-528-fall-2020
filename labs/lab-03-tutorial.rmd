@@ -57,10 +57,10 @@ s.type <- "html"
 
 For this part of the project you will: 
 
-- Using the 2000 to 2010 template, calculate change in the MHV variable between 1990 and 2000.
--	Measure gentrification that occurs between 2000-2010.
+- Calculate change in the MHV variable between 2000 and 2010.
+-	Measure gentrification that occurs between 2000 and 2010.
 - Pick a city and create a new dorling cartogram to visualize your data.
-- Prepare descriptive statistics and chloropleth maps describing the MHV change variable, gentrification, and your neighborhood health metrics. 
+- Prepare descriptive statistics and chloropleth maps describing the MHV change variable and gentrification.
 
 This tutorial demonstrates some of the initial steps of variable creation and data exploration for the project. 
 
