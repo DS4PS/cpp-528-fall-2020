@@ -60,27 +60,13 @@ It was somewhat surprising to see such high growth rates of home value in the US
 
 For Part 01 of the lab, reproduce the descriptive analysis demonstrated in the tutorial but do it for periods 1990 to 2000 instead of the 2000 to 2010 period used in the tutorial. 
 
-How do changes in home value differ between the 1990-200 period and 2000-2010? 
-
-What do the authors suggest would predict fall in central city home values between 1990 and 2000? 
+How do changes in home value differ between the 1990-2000 period and 2000-2010? 
 
 Note that we are using all urban tracts, not just central cities, so the results might be different. 
 
+*If you have time*, what do the authors suggest would predict fall in central city home values between 1990 and 2000? 
 
-
-## Part 02 - Change in Neighborhood Vitality
-
-
-In previous labs you have created several indices that measure different dimensions of neighborhood health (or disfunction). Similar to the analysis of home values, provide some descriptives tables and visualizations of your data in 2000 and changes between 2000 and 2010. 
-
-Do patterns of neighborhood vitality follow the same patterns as home values? Do we see consistent increases over time? What percentage of tracts improved, according to your measures, and what percentage got worse? 
-
-What is the correlation between change in neighborhood health metrics and change in home value? Consider using the pairs() function from the previous lab to describe these relationships. 
-
-
-
-
-## Part 03 - Measuring Gentrification
+## Part 02 - Measuring Gentrification
 
 You were asked to come up with a way to conceptualize gentrification. 
 
@@ -90,13 +76,7 @@ Provide an explanation and justification of the way you measure gentrification i
 
 Check out the Urban Displacement Project's [METHODOLOGY](https://www.urbandisplacement.org/sites/default/files/images/udp_methodology_for_ny_-_jan_2019.pdf) for some ideas. 
 
-
-
-
-
-
-
-## Part 04 - Spatial Patterns
+## Part 03 - Spatial Patterns
 
 Histograms and scatterplots help us understand the statistical properties and relationships between variables in our dataset. Due to the nature of cities, these relationships are all shaped by their location in the city. Geography matters a great deal in urban policy, so it should not be ignored. 
 
@@ -120,18 +100,7 @@ Please create the following choropleth maps and report your main findings:
 
 * create a map that highlights tracts that are candidates for gentrification in 2000 and tracts that gentify between 2000 and 2010. 
 
-Do you find any meaningful patterns in where gentification occurs? 
-
-
-**Community Health**
-
-* Map your community health indices in 2000. 
-* Map changes in your community health indices between 2000 and 2010. 
-
-Do you believe that your indices are stable over time, i.e. that a change in an index value represents an actual improvement in the community? Or are changes more akin to inflation where everyone experiences a nominal rise in wealth but not a real rise? 
-
-
-
+Do you find any meaningful patterns in where genrtification occurs? 
 
 
 -----
