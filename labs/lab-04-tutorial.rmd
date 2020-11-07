@@ -392,12 +392,15 @@ You might want to calculate several metro-level statistics for your model (growt
 
 ```{r}
 # average growth in median home value for the city
-d <- 
+cbsa_stats_df <- 
   d %>%
   group_by( cbsaname ) %>%
-  mutate( metro.mhv.change = median( mhv.change, na.rm=T ),
+  summarize( metro.mhv.change = median( mhv.change, na.rm=T ),
              metro.mhv.growth = 100 * median( mhv.growth, na.rm=T ) ) %>%
   ungroup() 
+
+# view results
+cbsa_stats_df %>% head()
 ```
 
 
