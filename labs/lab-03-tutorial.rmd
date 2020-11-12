@@ -389,7 +389,7 @@ The percent change variable provides some context for growth rates of value in c
 # but need to go back and see which cases are problematic
 
 
-mhv.00[ mhv.00 < 1000 ] <- NA
+mhv.00[ mhv.00 < 10000 ] <- NA
 pct.change <- mhv.change / mhv.00
 summary( pct.change )
 ```
@@ -405,7 +405,7 @@ sum( pct.change > 5, na.rm=T )
 
 d %>% 
   filter( pct.change > 5 ) %>% 
-  head() 
+  head()
 ```
 
 
@@ -493,7 +493,7 @@ mhv.change <- mhv.10 - mhv.00
 # an average home value below $10k is really low -
 # these must be mostly vacant lots?
 
-mhv.00[ mhv.00 < 1000 ] <- NA
+mhv.00[ mhv.00 < 10000 ] <- NA
 pct.change <- 100 * ( mhv.change / mhv.00 )
 summary( pct.change )
 
