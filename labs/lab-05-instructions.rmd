@@ -115,12 +115,12 @@ d <- merge( d, md, by="tractid" )
 
 
 ```{r}
-URL1 <- "https://raw.githubusercontent.com/DS4PS/cpp-528-spr-2020/master/labs/data/raw/NMTC/nmtc-sheet-01.csv"
-nmtc <- read.csv( URL1, stringsAsFactors=F )
+NMTC_URL <- "https://raw.githubusercontent.com/DS4PS/cpp-528-spr-2020/master/labs/data/raw/NMTC/nmtc-sheet-01.csv"
+nmtc <- read.csv( NMTC_URL, stringsAsFactors=F )
 head( nmtc ) 
 
-URL <- "https://raw.githubusercontent.com/DS4PS/cpp-528-spr-2020/master/labs/data/raw/LIHTC/LIHTCPUB.csv"
-lihtc <- read.csv( URL, stringsAsFactors=F )
+LIHTC_URL <- "https://raw.githubusercontent.com/DS4PS/cpp-528-spr-2020/master/labs/data/raw/LIHTC/LIHTCPUB.csv"
+lihtc <- read.csv( LIHTC_URL, stringsAsFactors=F )
 head( lihtc )
 
 # remove anything not a number from the string
@@ -425,7 +425,7 @@ This is not a perfect example because it is documenting how specific addresses a
 <hr>
 <br>
 
-![](images/data-manifest.png)
+![](https://github.com/DS4PS/cpp-528-fall-2020/raw/master/labs/images/data-manifest.png)
 
 <br>
 <hr>
@@ -804,7 +804,7 @@ What would the control/comparison group be in this case, then?
 The challenge is that we most certainly have a non-equivalent comparison group (see the previous section). And we know that this makes it impossible to use a post-test only design without building bias into our results. 
 
 
-![](images/validity-post-test-only-02.png)
+![](https://github.com/DS4PS/cpp-528-fall-2020/raw/master/labs/images/validity-post-test-only-02.png)
 
 When we run a model that includes a dummy variable for the treatment on the right-hand side with some controls, it is using a post-test only design. The control variables might help account for some pre-treatment differences, but you will almost never achieve valid inferences with this approach. No matter how many control variables you have, unless your data was generated using randomization to ensure the two groups are equivalent, no journal would ever publish an OLS model at one point in time with controls and let you call it a causal model. 
 
@@ -812,7 +812,7 @@ So let's go through some options.
 
 A reflexive design would compare the recipient tracts to themselves before and after the program. Any changes observed would be attributed to the program. We fail to achieve validity if we expect changes independent of the program. In this case we have MANY broad economic process at the neighborhood, city, metro, state and national level that can impact home values. It would be hard to sell this as an unbiased estimate.
 
-![](images/validity-reflexive.png)
+![](https://github.com/DS4PS/cpp-528-fall-2020/raw/master/labs/images/validity-reflexive.png)
 
 
 The difference-in-difference estimate seems like the most robust option since it allows for pre-treatment differences as long as the parallel lines assumption is met. That is to say, the rates of growth for the treated and untreated tracts were similar in the period 1990 to 2000. Which is another way of saying we believe that C2-C1 is a good approximation of what the home value change would have been without the program. 
