@@ -527,58 +527,77 @@ Most of the variables you need will come from the first dataset, which is compri
 
 The second dataset contains only variables that come from the Dicennial Census short form, and thus they are population measures and not sample estimates. 
 
-**Set Up Your Data Directory**
+**Set Up Your Directory Structure**
 
-While working on Lab-02 start building out your **data** directory for your project. 
-
-````
-project (main github folder)
-|-- data (folder)
-|   |-- data-raw (folder for original datasets)
-|   |-- data-wrangling (folder for data steps)
-|   |-- data-rodeo (folder for data used in models)
-|   |-- README.md (documentation for what data folder contains)
-````
-
-You can do this locally on your computer. Create a folder called LABS, and add the following: 
+While working on Lab-02 start building out your directory structure for your project. Below is an example of the folders and sub-folders you'll need to make:
 
 ````
-LABS
-|-- labs
-|   |-- lab-02.rmd
-|-- data (folder)
-|   |-- data-raw (folder for original data)
-|   |-- data-wrangling (folder for data steps)
-|   |-- data-rodeo (folder for data used in models)
+. (root/main/project directory)
+├── README.md
+├── analysis
+│   └── README.md
+├── assets
+│   ├── README.md
+│   ├── css
+│   │   └── README.md
+│   └── images
+│       └── README.md
+├── <RStudio Project Label>.Rproj
+├── data
+│   ├── README.md
+│   ├── raw
+│   │   ├── LTDB-DATA-DICTIONARY.xlsx
+│   │   ├── LTDB-codebook.pdf
+│   │   ├── LTDB_County_1980_Global_Neighborhood.csv
+│   │   ├── LTDB_County_1990_Global_Neighborhood.csv
+│   │   ├── LTDB_County_2000_Global_Neighborhood.csv
+│   │   ├── LTDB_County_2010_Global_Neighborhood.csv
+│   │   ├── LTDB_Std_1970_fullcount.csv
+│   │   ├── LTDB_Std_1980_fullcount.csv
+│   │   ├── LTDB_Std_1990_fullcount.csv
+│   │   ├── LTDB_Std_2000_fullcount.csv
+│   │   ├── LTDB_Std_2010_fullcount.csv
+│   │   ├── LTDB_Std_All_Sample.zip
+│   │   ├── LTDB_Std_All_fullcount.zip
+│   │   ├── README.md
+│   │   ├── cbsa-crosswalk.rds
+│   │   ├── ltdb_data_dictionary.csv
+│   │   ├── ltdb_std_1970_sample.csv
+│   │   ├── ltdb_std_1980_sample.csv
+│   │   ├── ltdb_std_1990_sample.csv
+│   │   ├── ltdb_std_2000_sample.csv
+│   │   └── ltdb_std_2010_sample.csv
+│   ├── rodeo
+│   │   ├── LTDB-1970.rds
+│   │   ├── LTDB-1980.rds
+│   │   ├── LTDB-1990.rds
+│   │   ├── LTDB-2000.rds
+│   │   ├── LTDB-2010.rds
+│   │   ├── LTDB-META-DATA.rds
+│   │   └── README.md
+│   └── wrangling
+│       └── README.md
+├── labs
+│   ├── wk01
+│       └── README.md
+│   ├── wk02
+│       └── README.md
+│   ├── wk03
+│       └── README.md
+│   ├── wk04
+│       └── README.md
+│   ├── wk05
+│       └── README.md
+│   ├── wk06
+│       └── README.md
+│   └── wk07
+│       └── README.md
 ````
 
-Now you can read the data into your lab using a relative reference: 
-
-```
-dat <- read.csv( "../data/raw-data/file-name.csv", stringsAsFactors=F )
-```
-
-The two periods tells R to go up one level in the directory structure, then back down into the data folder. 
-
-This will mirror your final project directory structure, but your RMD files will be in the **analysis** folder instead of **labs**. 
-
-````
-gropu project
-|-- analysis
-|   |-- step-01.rmd
-|-- data (folder)
-|   |-- data-raw (folder for original data)
-|   |-- data-wrangling (folder for data steps)
-|   |-- data-rodeo (folder for data used in models)
-````
-
-
-
-**Directory Structure**
+**Consider each lab as a chapter in the book that is your final group website**
 
 You need to provide careful documentation of how you get from raw data in your project to final results. Think about it as a book where each chapter covers a distinct task: 
 
-* Creating instruments to measure community health 
 * Identifying indicators of gentrification 
 * Descriptive analysis of neighborhood change 
 * Community demographics that predict revitalization 
@@ -594,16 +613,6 @@ For example, this was a project students did with the Syracuse Land Bank to help
 And another guide describing how you might document the journey from raw data to the final dataset that you use for your analysis. Every step should be explicit, and you should openly discuss the how and why of data wrangling:
 
 [https://github.com/jtleek/datasharing](https://github.com/jtleek/datasharing)
-
-Your repository will have the following directories: 
-
-* data 
-  - raw
-  - processed 
-  - final 
-* functions 
-* analysis 
-* docs (website files go here) 
 
 Each folder should contain it's own README.md file with notes on what the folder contains. 
 
@@ -650,7 +659,7 @@ sort( unique( x ) )    # variable stored as a character vector
 sort( levels( x ) )    # variable stored as a factor 
 ```
 
-The final step of the data wrangling scripts should be to save the new data file into the **data-rodeo** folder. 
+The final step of the data wrangling scripts should be to save the new data file into the **rodeo** folder. 
 
 You might generate several files that are used at the modeling stage. As a rule of thumb, if the file is used to create descriptive statistics or for any models in your analysis it should be saved in the rodeo folder. 
 
