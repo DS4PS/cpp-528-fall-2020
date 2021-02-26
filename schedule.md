@@ -60,55 +60,7 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 
 
 
-# Course Overview 
- 
-CPP 528 is the third course in the Foundations of Data Science sequence. This semester synthesizes and extends work from 526 and 527 by introducing project management frameworks to your workflow. 
-
-You will apply this knowledge through an applied data project looking at neighborhood change in US metro areas. The project is designed as if you are being hired by the government to evaluate two large federal programs designed to revitalize distressed communities. Your final deliverable will be a report detailing your conclusions. The report will link to a GitHub repository that provides all of the data and code needed to reproduce the results from your study. 
-
-You will be assigned to teams. Each team will work on the class project independently. The goal of working in a team is to put the project management principles into practice, and to get some experience collaborating on a project that is large enough that tasks must be split between members and redudancy can be used for quality assurance purposes. 
-
-## Project Management
-
-The course is designed to teach standard frameworks for organizing large data projects and coordinating team efforts using tools in GitHub and R Studio.
-
-Some easy heuristics to test whether the project management system is working: 
-
--	Can you easily reproduce the results from your project working from raw data to final models with a single script? 
--	Can you identify what changes have been made to your project, by whom, and when? 
--	Can someone else that was not a member of your team easily use your project? 
--	Are you building institutional capacity (libraries) to do future projects faster and better? 
-
-**Examples of Project Repositories Built for Reproducibility:**
-
-These GitHub repositories provide a few examples of work that is designed to be reproducible and extensible by providing access to the data and code used for analysis, or in the BBC case generating a set of reporting templates that be re-used and adapted by journalists across the agency to build institutional knowledge to make the organization more efficient. 
-
-- [City of Chicago Food Inspection Evaluation](https://chicago.github.io/food-inspections-evaluation/)
-- [US EPA Modeling Lake Trophic State](https://github.com/USEPA/LakeTrophicModelling)
-- [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
-- [Traffic Stops Across Connecticut](http://trafficstops.trendct.org/data/)
-
-
-## Neighborhood Change Project
-
-CPP 528 is organized around a single large project that allows you to revisit and practice skills from 523, 524, 526 and 527. 
-
-For the project, your team has been hired by the federal government to provide a rigorous assessment of program impact. You will assess whether two large federal programs designed to revitalize distressed neighborhoods in US cities have been successful. 
-
-You need to compile the data necessary for the analysis, run some models, and provide your client with a final report stating your assessment of program impact.
-
-**Low Income Housing Tax Credits**
-
-Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
-
-**New Market Tax Credits**
-
-New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
-
-**Has each federal program been successful in facilitating economic development in distressed communities?**
-
-We will use 2000 to 2010 as the study period and look at broad trends in neighborhood change over this decade, then examine whether neighborhoods targeted by the programs have achieved any more success than they would have without the billion of dollars in federal subsidies. 
-
+# Course Overview
 
 ## Course Cadence 
 
@@ -146,193 +98,23 @@ These analysis will mirror with following project management steps:
 
 # Week 1 - Introduction to Project Management  
 
-**Learning Objectives**
+---
 
-Once you have completed this section you will be able to:
+<a class="uk-button uk-button-default" style="width:150px" href="sched/week-01/">OVERVIEW</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:150px" href="sched/week-01/">LECTURE</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:150px" href="labs/lab-01/">LAB</a>
 
-* list key principles of project management in the data science context 
-* identify popular project management systems like Kanban and CRISP-DS
-* apply key principles of the Kanban task system 
-* begin building a repository optimized for effect project management 
-
-
-
-## Background Material 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uQxRUoqnRtc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-**Required Reading:**
-
-1.  [Motivating the Topic](https://ds4ps.org/cpp-528-fall-2020/motivation/) 
-1.	[The “Gold Standard” for Data Science Project Management](https://towardsdatascience.com/the-gold-standard-of-data-science-project-management-13d68c9e85d6)
-
-> According to the articles, what are the key components of a good project management system in data science? 
-
-
-**Background Reading:**
-
-1.	[Project Management Tools](https://ds4ps.org/cpp-528-fall-2020/project-management/) 
-1.  [Best Practices for Data Science Project Workflows and File Organization](https://github.com/moldach/project-directory), available on GitHub
-1.  [One-Page Visual Guide to CRISP-DM](https://exde.files.wordpress.com/2009/03/crisp_visualguide.pdf)
-1.	[Zen And The aRt Of Workflow Maintenance](https://speakerdeck.com/jennybc/zen-and-the-art-of-workflow-maintenance)  
-1.	[Cookie Cutter Data Science:](https://drivendata.github.io/cookiecutter-data-science/)
-
-
-
-
-## Lab Overview
-
-**Configure Your Project Repository on GitHub**
+---
 
 **Due {{page.labs.lab-01}}**
 
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
+---
 
-[**What is Kanban?**](https://www.digite.com/kanban/what-is-kanban/)
-
-*Kanban is a visual system for managing work as it moves through a process. Kanban visualizes both the process (the workflow) and the actual work passing through that process. The goal of Kanban is to identify potential bottlenecks in your process and fix them so work can flow through it cost-effectively at an optimal speed or throughput.*
-
-*The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.*
-
-
-<br>
-<hr>
-
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/236558214" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
-<hr>
-<br>
-
-**Kanban Boards in GitHub**
-
-> The Kanban Method is an evolutionary improvement process. It helps you adopt small changes and improve gradually at a pace and size that your team can handle easily. It encourages the use of the scientific method – you form a hypothesis, you test it and you make changes depending on the outcome of your test... Your key task is to evaluate your process constantly and improve continuously as needed and as possible.
-
-Just like GitHub pages are a powerful feature available in each repository, GitHub also has project management tools built right in. 
-
-[Creating a Project Board](https://help.github.com/en/github/managing-your-work-on-github/creating-a-project-board)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nGRnHgeDAwA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-1. At the top of your repo, click on **Projects** 
-2. Select **New Project**  
-3. Name and describe your board purpose, and select **Templates**  
-4. Choose the **Basic Kanban** option  
-5. Create four boards: 
-  - **Ideas** 
-  - **To Do** 
-  - **Doing** 
-  - **Done** 
-6. Brainstorm project tasks with your team for the coming week and add all of the cards to **To Do** 
-7. Assign immediate tasks to each person, add their names to their cards, and move to **Doing**  
-8. Update the board each week with completed tasks, new assignments, and new tasks  
-
-One thing that takes practice is breaking complex operations down into discrete tasks. Think about this like wedding planning - sending out invitations is one task, booking a venue another, etc. But you can break down a task like invitations much further:
-
-*	[ ] create invite list  
-*	[ ] acquire addresses  
-*	[ ] track RSVPs  
-*	[ ] finalize attendance list  
-
-
-You can create one large task with a check-list of sub-tasks, or a set of distinct tasks. Both are viable ways to organize the work. 
-
-As a general rule of thumb when using project boards to manage a team, I would group tasks only if they will all be done by the same person in the same time period. If one person is tasked with sending out invites, and another with collecting RSVPs and collating to the final attendee list, split them up. 
-
-<hr>
-
-Note a check-box is created like this: 
-
-````
-*	[ ] finalize attendance list  
-````
-
-And to close it add an X to the box: 
-
-````
-*	[X] finalize attendance list  
-````
-
-- [X] finalize attendance list 
-
-
-**Lab Instructions:**
-
-**Post on {{page.labs.lab-01}}**
-
-You will find the final project rubric here: 
-
-[[RUBRIC](project/project-rubric.pdf)]
-
-For your lab assignment this week split the rubric into tasks on your Kanban board on GitHub and make a preliminary plan for team members to take the lead on specific tasks.
-
-
-Let the instructor know when you have your board set up and ready for inspection by submitting the link for your project board. 
-
-[Week 01 Lab Submission Link](https://canvas.asu.edu/courses/70101/assignments/1721185)
-
-
-<br>
-
-
-
-## YellowDig Topic
-
-Can Tax Credits Be An Effective Mechanism for Neighborhood Revitalization? 
-
-**New Market Tax Credits**
-
-New Market Tax Credits (NMTC) are mechanisms designed to catalyze economic development in distressed communities by attrating investments from private developers. 
-
-Watch case studies on the impact that New Market Tax Credits have achieved in three communities: 
-
-[NMTC Case Studies](https://www.cohnreznick.com/nmtc-map)
-
-**Low Income Housing Tax Credits**
-
-Low Income Housing Tax Credits (LIHTC) are one of the primary policy instruments used to incentivize the construction of new affordable housing units in the United States. Learn about LIHTC:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DdUcOFRdyTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
-At some point in this project you might pause and wonder, of [all of the possible mechanisms for catalyzing economic development](articles/revitalization/Revitalizing_Inner_City_Neighborhoods.pdf), why are we using tax credits, and do they really work? 
-
-Even more weird, the money does not even go to the neighborhoods in need. The credits are claimed by intermediaries, whose job is then to convince others to invest in the neighborhoods. 
-
-One convincing argument is that if cities tried to directly invest in distressed neighborhoods they would likely run out of resources before achieving impact. Alternatively, if tax credits are structured correctly every one dollar the government spends can bring five or ten dollars of private investement to a community. That doesn't guarantee the investments are going to the right projects or benefitting the people in need, but it is at least a provacative story proponents can tell. 
-
-The mystery is what makes this case study so interesting. Tax credits have potential to make a big impact, or the potential to waste a lot of money. 
-
-For your topic this week, reflect on the idea of using tax credits as a mechanisms to catalyze development. How might these policy tools go wrong? The biggest criticism against a lot of these programs is that you cannot determine which investors would have invested in the neighborhood without the tax credits, so even when we see a lot of private investment it is hard to tell how much was caused by the tax credit. This is the primary selection problem that makes research challenging in this space. 
-
-But it's not the only issue. Consider the Frontline news story on some recent fraud tha was uncovered. It's not surprising that when there are billions of dollars at stake the program invites corruption. 
-
-[Frontline Episode: Poverty, Politics and Profit](https://www.pbs.org/wgbh/frontline/film/poverty-politics-and-profit/)
-
-*Chap 3 on Low Income Housing Tax Credits - it start at 19:00.*
-
-
-**Neighborhood Revitalization Background Reading:**
-
-Skim the following articles on how to best structure projects to help distressed neighborhoods: 
-
-1. What Works Collaborative (2012): [Building Successful Neighborhoods](articles/revitalization/building-successful-neighborhoods.pdf)  
-1. Lincoln Institute (2008): [People or Place? Revisiting the Who Versus the Where of Urban Development](articles/revitalization/people-or-place-revisiting-the-debate.pdf)  
-1. Burnette (2017): [Predicting Gentrification](articles/revitalization/predicting-revitalization.pdf)  
-
-
-<br>
-<hr> 
-
-After reading a little about the programs, what are your views on the mechanisms? 
-
-What is your instinctive response after learning some of the details of how they operate? 
-
-Before we explore the data, what is your apriori hypothesis? Do you think they will work as designed? 
-
------
-
-> Share one insight from the background reading on YellowDig, and make a prediction whether you think the data will show that either program works.
+<a class="uk-button uk-button-default" style="width:150px" href="discuss/yellowdig-01">TOPIC</a>
 
 **Post by {{page.yellowdig.post-01}}**
 
