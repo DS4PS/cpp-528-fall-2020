@@ -65,7 +65,7 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 
 # Course Overview
 
-<a class="uk-button uk-button-default" style="width:150px" href="sched/week-00/">MOTIVATION</a>
+<a class="uk-button uk-button-default" style="width:150px" href="../sched/week-00/">MOTIVATION</a>
 <br><br>
 <a class="uk-button uk-button-default" style="width:150px" href="../motivation/">OVERVIEW</a>
 
@@ -107,23 +107,23 @@ These analysis will mirror with following project management steps:
 
 ---
 
-<a class="uk-button uk-button-default" style="width:150px" href={{ page.videos.vid-01 }}>OVERVIEW</a>
+<a class="uk-button uk-button-default" style="width:200px" href="{{ page.videos.vid-01 }}">OVERVIEW</a>
 <br><br>
-<a class="uk-button uk-button-default" style="width:150px" href="sched/week-01/">LECTURE</a>
+<a class="uk-button uk-button-default" style="width:200px" href="../sched/week-01/">LECTURE</a>
 <br><br>
-<a class="uk-button uk-button-default" style="width:150px" href="labs/lab-01/">LAB</a>
+<a class="uk-button uk-button-default" style="width:200px" href="../labs/lab-01/">LAB</a>
 
 ---
 
 **Due {{page.labs.lab-01}}**
 
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
+<a class="uk-button uk-button-primary" style="width:200px" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
 ---
 
 **Post by {{page.yellowdig.post-01}}**
 
-<a class="uk-button uk-button-default" style="width:200px" href="discuss/yellowdig-01">YELLOWDIG TOPIC</a>
+<a class="uk-button uk-button-default" style="width:200px" href="../discuss/yellowdig-01">YELLOWDIG TOPIC</a>
 
 <a class="uk-button uk-button-primary" style="width:200px" href="{{page.yellowdig_url}}">CREATE POST</a>
 
