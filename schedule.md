@@ -25,7 +25,10 @@ labs:
   lab-05:  'Tuesday, November 17th'
   lab-06:  'Tuesday, November 24th'
   
-  
+
+videos: 
+  vid-01: 'https://www.youtube.com/embed/uQxRUoqnRtc'
+
 projects: 
   website: 'Friday, December 4th'
   
@@ -104,7 +107,7 @@ These analysis will mirror with following project management steps:
 
 ---
 
-<a class="uk-button uk-button-default" style="width:150px" href="sched/week-01/">OVERVIEW</a>
+<a class="uk-button uk-button-default" style="width:150px" href={{ page.videos.vid-01 }}>OVERVIEW</a>
 <br><br>
 <a class="uk-button uk-button-default" style="width:150px" href="sched/week-01/">LECTURE</a>
 <br><br>
